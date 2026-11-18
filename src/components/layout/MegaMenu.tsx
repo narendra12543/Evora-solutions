@@ -5,7 +5,6 @@ import { useState } from "react";
 import {
   Cog,
   ShieldCheck,
-  DoorOpen,
   Warehouse,
   Zap,
   LayoutGrid,
@@ -31,12 +30,11 @@ interface ProductMegaMenuProps {
 // Pick an icon that matches the category name so the sidebar reads at a glance
 function getCategoryIcon(name: string) {
   const n = name.toLowerCase();
-  if (n.includes("motor")) return Cog;
-  if (n.includes("barrier")) return ShieldCheck;
-  if (n.includes("gate")) return DoorOpen;
-  if (n.includes("hangar")) return Warehouse;
-  if (n.includes("speed")) return Zap;
-  if (n.includes("sectional") || n.includes("overhead")) return LayoutGrid;
+  if (n.includes("storage") || n.includes("rack") || n.includes("pallet") || n.includes("shelving")) return Warehouse;
+  if (n.includes("conveyor") || n.includes("roller") || n.includes("belt")) return Package;
+  if (n.includes("mezzanine") || n.includes("cantilever") || n.includes("tier")) return LayoutGrid;
+  if (n.includes("automation") || n.includes("material") || n.includes("handling")) return Cog;
+  if (n.includes("motor") || n.includes("system")) return Zap;
   return Package;
 }
 
@@ -71,9 +69,9 @@ export default function ProductMegaMenu({
           underline
           gap-1
           font-medium
-          text-[#0F2747]
+          text-[#071530]
           transition
-          hover:text-[#0F2747]
+          hover:text-[#071530]
         "
       >
         Explore Products
@@ -107,10 +105,6 @@ export default function ProductMegaMenu({
           }
         `}
       >
-        {/* Background Effects — kept small and controlled, not oversized */}
-        <div className="pointer-events-none absolute -top-16 -left-16 h-56 w-56 rounded-full bg-orange-100/60 blur-[90px]" />
-        <div className="pointer-events-none absolute -bottom-16 -right-16 h-56 w-56 rounded-full bg-blue-100/60 blur-[90px]" />
-
         {/* Content */}
 
         <div className="relative z-10 flex">
@@ -120,7 +114,7 @@ export default function ProductMegaMenu({
             <div className="relative">
               {/* Sliding highlight pill — the signature element */}
               <div
-                className="absolute left-0 right-0 rounded-xl bg-[#0F2747] transition-transform duration-300 ease-out"
+                className="absolute left-0 right-0 rounded-xl bg-[#071530] transition-transform duration-300 ease-out"
                 style={{
                   height: 38,
                   transform: `translateY(${activeIndex * ROW_HEIGHT}px)`,
@@ -212,7 +206,7 @@ export default function ProductMegaMenu({
                         transition-all
                         duration-150
                         hover:bg-slate-50
-                        hover:text-[#0F2747]
+                        hover:text-[#071530]
                       "
                     >
                       <span
@@ -223,7 +217,7 @@ export default function ProductMegaMenu({
                           rounded-full
                           bg-slate-300
                           transition-colors
-                          group-hover:bg-orange-500
+                          group-hover:bg-[#F7941D]
                         "
                       />
 

@@ -51,7 +51,7 @@ export default async function EnquiryDetailsPage({
     return (
       <div className="space-y-6">
         <div>
-          <h1 className="text-3xl font-bold text-[#0F2747]">
+          <h1 className="text-3xl font-bold text-[#071530]">
             Enquiry Not Found
           </h1>
 
@@ -63,7 +63,7 @@ export default async function EnquiryDetailsPage({
 
         <Link
           href="/admin/enquiries"
-          className="inline-flex rounded-lg bg-[#0F2747] px-5 py-3 text-white"
+          className="inline-flex rounded-lg bg-[#071530] px-5 py-3 text-white"
         >
           Back to Enquiries
         </Link>
@@ -76,7 +76,7 @@ export default async function EnquiryDetailsPage({
       {/* Header */}
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div>
-          <h1 className="text-3xl font-bold text-[#0F2747]">
+          <h1 className="text-3xl font-bold text-[#071530]">
             Enquiry Details
           </h1>
 
@@ -88,7 +88,7 @@ export default async function EnquiryDetailsPage({
 
         <Link
           href="/admin/enquiries"
-          className="inline-flex rounded-lg bg-[#0F2747] px-5 py-3 text-white"
+          className="inline-flex rounded-lg bg-[#071530] px-5 py-3 text-white"
         >
           Back to Enquiries
         </Link>
@@ -96,7 +96,7 @@ export default async function EnquiryDetailsPage({
 
       {/* Customer Information */}
       <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-        <div className="bg-[#0F2747] px-6 py-4">
+        <div className="bg-[#071530] px-6 py-4">
           <h2 className="text-lg font-semibold text-white">
             Customer Information
           </h2>
@@ -108,7 +108,7 @@ export default async function EnquiryDetailsPage({
               Name
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {enquiry.name}
             </p>
           </div>
@@ -118,7 +118,7 @@ export default async function EnquiryDetailsPage({
               Email
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {enquiry.email}
             </p>
           </div>
@@ -128,7 +128,7 @@ export default async function EnquiryDetailsPage({
               Mobile
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {enquiry.mobile}
             </p>
           </div>
@@ -138,7 +138,7 @@ export default async function EnquiryDetailsPage({
               City
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {enquiry.city ??
                 "-"}
             </p>
@@ -148,7 +148,7 @@ export default async function EnquiryDetailsPage({
 
       {/* Product Information */}
       <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-        <div className="bg-[#0F2747] px-6 py-4">
+        <div className="bg-[#071530] px-6 py-4">
           <h2 className="text-lg font-semibold text-white">
             Product Information
           </h2>
@@ -160,7 +160,7 @@ export default async function EnquiryDetailsPage({
               Product Name
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {
                 enquiry.product
                   ?.name
@@ -173,7 +173,7 @@ export default async function EnquiryDetailsPage({
               Category
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {
                 enquiry.product
                   ?.category
@@ -203,7 +203,7 @@ export default async function EnquiryDetailsPage({
         <div className="border-t border-slate-200 px-6 py-4">
           <Link
             href={`/admin/products/${enquiry.productId}/edit`}
-            className="inline-flex rounded-lg border border-[#0F2747] px-4 py-2 text-[#0F2747]"
+            className="inline-flex rounded-lg border border-[#071530] px-4 py-2 text-[#071530]"
           >
             View Product
           </Link>
@@ -212,7 +212,7 @@ export default async function EnquiryDetailsPage({
 
       {/* Enquiry Information */}
       <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-        <div className="bg-[#0F2747] px-6 py-4">
+        <div className="bg-[#071530] px-6 py-4">
           <h2 className="text-lg font-semibold text-white">
             Enquiry Information
           </h2>
@@ -224,7 +224,7 @@ export default async function EnquiryDetailsPage({
               Quantity
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {
                 enquiry.quantity
               }
@@ -254,7 +254,7 @@ export default async function EnquiryDetailsPage({
               Created Date
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {new Date(
                 enquiry.createdAt
               ).toLocaleString()}
@@ -266,7 +266,7 @@ export default async function EnquiryDetailsPage({
               Updated Date
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {new Date(
                 enquiry.updatedAt
               ).toLocaleString()}
@@ -279,7 +279,7 @@ export default async function EnquiryDetailsPage({
             </p>
 
             <div className="mt-2 rounded-lg border border-slate-200 bg-slate-50 p-4">
-              <p className="whitespace-pre-line text-[#0F2747]">
+              <p className="whitespace-pre-line text-[#071530]">
                 {enquiry.message ??
                   "No message provided."}
               </p>
@@ -294,7 +294,7 @@ export default async function EnquiryDetailsPage({
       />
 
       <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-        <div className="flex items-center justify-between bg-[#0F2747] px-6 py-4">
+        <div className="flex items-center justify-between bg-[#071530] px-6 py-4">
             <h2 className="text-lg font-semibold text-white">
             Status History
             </h2>
@@ -314,7 +314,7 @@ export default async function EnquiryDetailsPage({
             </span>
 
             <div className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-4">
-            <p className="text-sm text-[#0F2747]">
+            <p className="text-sm text-[#071530]">
                 Workflow:
             </p>
 

@@ -7,76 +7,70 @@ import AboutIndustries from "@/components/public/about/AboutIndustries";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Aven Industrial Automation | Industrial Entrance Automation Company",
+  title: "About Evora Industrial Solutions | Industrial Storage Solutions & Conveyor Systems",
 
   description:
-  "Learn about Aven Industrial Automation (Aven Automation), a leading Industrial Automation and Industrial Entrance Automation company in Pune, Maharashtra. We manufacture and supply Automatic Gates, High Speed Doors, Industrial Doors, Boom Barriers, Dock Levelers, Dock Shelters, Conveyor Systems, Material Handling Equipment and complete automation solutions across India.",
+    "Learn about Evora Industrial Solutions (Evora Solutions), a leading provider of Industrial Storage Solutions and Industrial Conveyor Systems in Pune, Maharashtra. We design, manufacture and install Heavy Duty Pallet Racking, Cantilever Racking, Multi-tier Mezzanines, Roller Conveyors, Belt Conveyors, Modular Conveyors and complete warehouse material handling automation across India.",
 
-    keywords: [
-      // Brand
-      "About Aven Automation",
-      "Aven Automation",
-      "Aven Automation Pune",
-      "Aven Automation Maharashtra",
-      "Aven Automation India",
-      "Aven Industrial Automation",
-      "aven industrial automation",
-      "Aven Industrial Automation Pune",
-      "Aven Industrial Automation Maharashtra",
-      "Aven Industrial Automation India",
+  keywords: [
+    // Brand
+    "About Evora Solutions",
+    "Evora Solutions",
+    "Evora Solutions Pune",
+    "Evora Solutions Maharashtra",
+    "Evora Solutions India",
+    "Evora Industrial Solutions",
+    "evora industrial solutions",
+    "Evora Industrial Solutions Pune",
+    "Evora Industrial Solutions Maharashtra",
+    "Evora Industrial Solutions India",
 
-      // Company
-      "Industrial Automation Company",
-      "Industrial Entrance Automation Company",
-      "Industrial Automation Manufacturer",
-      "Industrial Automation Supplier",
-      "Industrial Automation Solutions",
-      "Automation Engineering Company",
-      "Factory Automation Company",
-      "Warehouse Automation Company",
+    // Company
+    "Industrial Storage Solutions Company",
+    "Industrial Conveyor Manufacturer",
+    "Industrial Storage System Supplier",
+    "Warehouse Racking Manufacturer",
+    "Material Handling System Supplier",
 
-      // Products
-      "Automatic Gates",
-      "Automatic Sliding Gate",
-      "Automatic Swing Gate",
-      "Telescopic Sliding Gate",
-      "Industrial Doors",
-      "Sectional Overhead Door",
-      "High Speed Doors",
-      "Rolling Shutters",
-      "Boom Barriers",
-      "Dock Levelers",
-      "Dock Shelters",
-      "Conveyor Systems",
-      "Roller Conveyor",
-      "Flat Belt Conveyor",
-      "Modular Belt Conveyor",
-      "Cleated Belt Conveyor",
-      "Curved Belt Conveyor",
-      "Incline Belt Conveyor",
-      "Material Handling Equipment",
+    // Products
+    "Heavy Duty Pallet Racking",
+    "Pallet Racking System",
+    "Cantilever Racking",
+    "Multi Tier Mezzanine Floors",
+    "Drive In Racking",
+    "Industrial Shelving Systems",
+    "Industrial Roller Conveyors",
+    "Powered Roller Conveyor",
+    "Gravity Roller Conveyor",
+    "Flat Belt Conveyor",
+    "Modular Belt Conveyor",
+    "Cleated Belt Conveyor",
+    "Curved Belt Conveyor",
+    "Incline Belt Conveyor",
+    "Slat Conveyor",
+    "Chain Conveyor",
+    "Warehouse Material Handling Equipment",
 
-      // Locations
-      "Industrial Automation Pune",
-      "Industrial Automation Pimpri Chinchwad",
-      "Industrial Automation Chakan",
-      "Industrial Automation Hinjawadi",
-      "Industrial Automation Maharashtra",
-      "Industrial Automation India",
-    ],
+    // Locations
+    "Industrial Storage Solutions Pune",
+    "Industrial Conveyor Systems Pune",
+    "Warehouse Racking Pune",
+    "Industrial Storage Solutions Maharashtra",
+    "Industrial Conveyor Systems India",
+  ],
   alternates: {
     canonical: "/about",
   },
   openGraph: {
     title:
-      "About Aven Automation | Industrial Entrance Automation Company",
+      "About Evora Solutions | Industrial Storage Solutions & Conveyor Systems",
 
     description:
-      "Trusted provider of Automatic Gates, Industrial Doors, Boom Barriers, Dock Systems and Industrial Entrance Automation Solutions.",
+      "Trusted provider of Heavy Duty Pallet Racking, Industrial Conveyor Systems, Multi-Tier Mezzanines and Complete Warehouse Material Handling Automation.",
 
-    url: "https://avenautomation.in/about",
+    url: "https://evorasolutions.in/about",
 
-    siteName: "Aven Automation",
+    siteName: "Evora Solutions",
 
     type: "website",
   },
@@ -84,10 +78,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "About Aven Automation",
+      "About Evora Solutions",
 
     description:
-      "Industrial Entrance Automation Solutions across India.",
+      "Industrial Storage Solutions & Industrial Conveyor Systems across India.",
   },
   robots: {
     index: true,
@@ -101,11 +95,8 @@ export default function AboutPage() {
       <AboutHero />
       <AboutIndustries />
       <CompanyOverview />
-      {/* <DirectorMessage /> */}
+      <DirectorMessage />
       <WhyChooseUsAbout />
-      
-
-      
     </>
   );
 }

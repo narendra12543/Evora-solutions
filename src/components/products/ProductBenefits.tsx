@@ -46,7 +46,7 @@ const benefits = [
     icon: BadgeCheck,
     title: "Professional Installation",
     description:
-      "Complete installation and technical support by Aven Automation.",
+      "Complete installation, load testing and technical support by Evora Solutions.",
   },
 ];
 
@@ -55,14 +55,13 @@ export default function ProductBenefits({
 }: ProductBenefitsProps) {
   return (
     <section className="mt-10">
-      <h2 className="text-2xl font-bold text-[#0F2747]">
+      <h2 className="text-2xl font-bold text-[#071530]">
         Why Choose {productName}?
       </h2>
 
       <p className="mt-3 text-slate-600">
-        Our {productName} solutions are designed to deliver reliability,
-        efficiency and long-term performance for industrial and commercial
-        applications.
+        Our {productName} systems are engineered to deliver high load durability,
+        space efficiency, and long-term performance for industrial storage and conveyor applications.
       </p>
 
       <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -72,13 +71,13 @@ export default function ProductBenefits({
           return (
             <div
               key={item.title}
-              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-[#0865D8] hover:shadow-lg"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0F2747]/10">
-                <Icon className="h-6 w-6 text-[#0F2747]" />
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#F8FAFC] text-[#0865D8] ring-1 ring-[#0865D8]/10">
+                <Icon className="h-6 w-6 text-[#0865D8]" />
               </div>
 
-              <h3 className="font-semibold text-[#0F2747]">
+              <h3 className="font-semibold text-[#071530]">
                 {item.title}
               </h3>
 

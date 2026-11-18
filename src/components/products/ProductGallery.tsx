@@ -94,7 +94,7 @@ const goNext = () => {
           src={selectedImage.imageUrl}
           alt={
             selectedImage.altText ??
-            `${productName} - Aven Automation`
+            `${productName} - Evora Solutions`
           }
           fill
           sizes="(max-width:768px) 100vw, 50vw"
@@ -115,7 +115,7 @@ const goNext = () => {
               }
               className={`relative h-24 overflow-hidden rounded-xl border-2 ${
                 selectedImage.id === image.id
-                  ? "border-[#0F2747]"
+                  ? "border-[#071530]"
                   : "border-slate-200"
               }`}
             >

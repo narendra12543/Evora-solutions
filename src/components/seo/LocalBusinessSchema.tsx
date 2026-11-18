@@ -3,33 +3,33 @@ export default function LocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
 
-    "@id": "https://avenautomation.in/#localbusiness",
+    "@id": "https://evorasolutions.in/#localbusiness",
 
-    name: "Aven Automation",
+    name: "Evora Solutions",
 
     alternateName: [
-      "Aven Industrial Automation",
-      "Aven Automation",
+      "Evora Industrial Solutions",
+      "Evora Solutions",
     ],
     
 
-    url: "https://avenautomation.in",
+    url: "https://evorasolutions.in",
 
-    image: "https://avenautomation.in/aven-logo.png",
+    image: "https://evorasolutions.in/evora-logo.png",
 
-    logo: "https://avenautomation.in/aven-logo.png",
+    logo: "https://evorasolutions.in/evora-logo.png",
 
     telephone: "+91 8766918892",
 
-    email: "sales@avenautomation.in",
+    email: "sales@evorasolutions.in",
 
     priceRange: "$$",
 
     description:
-      "Aven Automation is a leading Industrial Automation and Industrial Entrance Automation company providing Automatic Sliding Gates, Swing Gates, High Speed Doors, Industrial Doors, Rolling Shutters, Boom Barriers, Dock Levelers, Dock Shelters, Conveyor Systems and Material Handling Equipment across Pune, Maharashtra and India.",
+      "Evora Industrial Solutions (Evora Solutions) is a leading provider of Industrial Storage Solutions and Industrial Conveyor Systems providing Heavy Duty Pallet Racking, Cantilever Racks, Multi-Tier Mezzanine Floors, Industrial Roller Conveyors, Belt Conveyor Systems, and Material Handling Equipment across Pune, Maharashtra and India.",
 
     slogan:
-    "Industrial Automation & Industrial Entrance Automation Solutions",
+    "Industrial Storage Solutions & Industrial Conveyor Systems",
 
     address: {
       "@type": "PostalAddress",
@@ -103,35 +103,30 @@ export default function LocalBusinessSchema() {
     },
 
     knowsAbout: [
-      "Industrial Automation",
-      "Industrial Entrance Automation",
-      "Automatic Sliding Gates",
-      "Automatic Swing Gates",
-      "Industrial Doors",
-      "High Speed Doors",
-      "Rolling Shutters",
-      "Boom Barriers",
-      "Automatic Bollards",
-      "Dock Levelers",
-      "Dock Shelters",
-      "Conveyor Systems",
-      "Roller Bed Conveyor",
+      "Industrial Storage Solutions",
+      "Industrial Conveyor Systems",
+      "Heavy Duty Pallet Racking",
+      "Pallet Racking System",
+      "Cantilever Racking",
+      "Multi Tier Mezzanine Floors",
+      "Drive In Racking System",
+      "Industrial Shelving Systems",
+      "Industrial Roller Conveyors",
+      "Powered Roller Conveyor",
+      "Gravity Roller Conveyor",
       "Flat Belt Conveyor",
       "Modular Belt Conveyor",
       "Cleated Belt Conveyor",
       "Curved Belt Conveyor",
       "Incline Belt Conveyor",
+      "Chain Conveyor System",
+      "Slat Conveyor",
+      "Assembly Line Conveyors",
+      "Packaging Conveyors",
+      "Warehouse Conveyor Systems",
       "Material Handling Equipment",
-      "Automatic Garage Doors",
-      "Automatic Gates",
-      "Industrial Automation Solutions",
-      "Industrial Entrance Automation",
-      "Gate Automation",
-      "Warehouse Automation",
-      "Factory Automation",
-      "Access Control System",
-      "Parking Management System",
-      "Loading Bay Equipment",
+      "Warehouse Storage Optimization",
+      "Turnkey Warehouse Solutions",
     ],
 
   };

@@ -26,7 +26,7 @@ export default async function AdminDashboardPage() {
 
         {/* Admin Information Card */}
         <div className="mb-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-          <div className="border-b border-slate-200 bg-[#0F2747] px-6 py-4">
+          <div className="border-b border-slate-200 bg-[#071530] px-6 py-4">
             <h2 className="text-lg font-semibold text-white">
               Administrator Information
             </h2>

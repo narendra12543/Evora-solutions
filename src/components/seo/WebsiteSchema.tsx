@@ -3,47 +3,47 @@ export default function WebsiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
 
-    "@id": "https://avenautomation.in/#website",
+    "@id": "https://evorasolutions.in/#website",
 
-    name: "Aven Automation",
+    name: "Evora Solutions",
 
     alternateName: [
-      "Aven Industrial Automation",
-      "Aven Automation",
+      "Evora Industrial Solutions",
+      "Evora Solutions",
     ],
 
-    url: "https://avenautomation.in",
+    url: "https://evorasolutions.in",
 
     description:
-      "Aven Automation is a leading Industrial Automation and Industrial Entrance Automation company providing Automatic Gates, Industrial Doors, High Speed Doors, Boom Barriers, Dock Levelers, Dock Shelters, Conveyor Systems and Material Handling Equipment.",
+      "Evora Industrial Solutions (Evora Solutions) is a leading provider of Industrial Storage Solutions and Industrial Conveyor Systems providing Heavy Duty Pallet Racking, Cantilever Racks, Multi-Tier Mezzanine Floors, Industrial Roller Conveyors, Belt Conveyor Systems, and Material Handling Equipment.",
     about: [
-      "Industrial Automation",
-      "Industrial Entrance Automation",
-      "Automatic Gates",
-      "Industrial Doors",
-      "High Speed Doors",
-      "Boom Barriers",
-      "Dock Levelers",
-      "Conveyor Systems",
+      "Industrial Storage Solutions",
+      "Industrial Conveyor Systems",
+      "Heavy Duty Pallet Racking",
+      "Cantilever Racking",
+      "Multi Tier Mezzanines",
+      "Drive In Racks",
+      "Roller Conveyors",
+      "Belt Conveyors",
     ],
 
     inLanguage: "en-IN",
 
     publisher: {
       "@type": "Organization",
-      "@id": "https://avenautomation.in/#organization",
-      name: "Aven Automation",
-      url: "https://avenautomation.in",
+      "@id": "https://evorasolutions.in/#organization",
+      name: "Evora Solutions",
+      url: "https://evorasolutions.in",
       logo: {
         "@type": "ImageObject",
-        url: "https://avenautomation.in/aven-logo.png",
+        url: "https://evorasolutions.in/evora-logo.png",
       },
     },
 
     potentialAction: {
       "@type": "SearchAction",
       target:
-        "https://avenautomation.in/products?search={search_term_string}",
+        "https://evorasolutions.in/products?search={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

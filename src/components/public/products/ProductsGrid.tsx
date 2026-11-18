@@ -12,15 +12,15 @@ interface Props {
 
 function getAboutText(productName: string, category?: string) {
   return `${productName} is a premium ${
-    category ?? "industrial automation"
-  } solution designed to deliver reliable performance, enhanced safety and long-term durability for industrial, commercial and residential applications. Engineered using high-quality components to ensure smooth operation even in demanding environments, with complete supply, installation, testing and after-sales support from Aven Automation.`;
+    category ?? "industrial storage and conveyor"
+  } solution designed to deliver reliable performance, enhanced safety and long-term durability for warehouses, factories, and logistics facilities. Engineered using high-grade materials to ensure smooth operation even in demanding environments, with complete design, installation, testing and after-sales support from Evora Solutions.`;
 }
 
 export default function ProductsGrid({ products }: Props) {
   if (!products.length) {
     return (
       <div className="py-20 text-center">
-        <h3 className="text-2xl font-bold text-[#0F2747]">No Products Found</h3>
+        <h3 className="text-2xl font-bold text-[#071530]">No Products Found</h3>
         <p className="mt-3 text-slate-600">Try another filter.</p>
       </div>
     );
@@ -95,16 +95,16 @@ function ProductRow({ product, reverse }: { product: ProductType; reverse: boole
       {/* Text side */}
       <div className="w-full md:w-1/2">
         {product.category?.name && (
-          <span className="inline-block rounded-full bg-[#0F2747]/5 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#0F2747] transition-colors duration-300 group-hover:bg-[#0F2747]/10 sm:px-3 sm:text-[11px]">
+          <span className="inline-block rounded-full bg-[#071530]/5 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#071530] transition-colors duration-300 group-hover:bg-[#071530]/10 sm:px-3 sm:text-[11px]">
             {product.category.name}
           </span>
         )}
 
-        <h3 className="mt-3 text-xl font-bold leading-snug text-[#0F2747] transition-colors duration-300 sm:mt-4 sm:text-2xl md:text-2xl">
+        <h3 className="mt-3 text-xl font-bold leading-snug text-[#071530] transition-colors duration-300 sm:mt-4 sm:text-2xl md:text-2xl">
           {product.name}
         </h3>
 
-        <div className="mt-2.5 h-px w-12 bg-[#0F2747]/20 transition-all duration-500 group-hover:w-20 sm:mt-3 sm:w-16" />
+        <div className="mt-2.5 h-px w-12 bg-[#071530]/20 transition-all duration-500 group-hover:w-20 sm:mt-3 sm:w-16" />
 
         <p className="mt-2 text-[13px] leading-relaxed text-slate-600 sm:mt-3 sm:text-sm md:text-[15px]">
           {aboutText}
@@ -113,7 +113,7 @@ function ProductRow({ product, reverse }: { product: ProductType; reverse: boole
         <div className="mt-5 flex flex-wrap items-center gap-2.5 sm:mt-7 sm:gap-3">
           <Link
             href={`/products/${product.slug}`}
-            className="inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-full border border-[#0F2747]/20 px-3.5 py-2 text-xs font-semibold text-[#0F2747] transition-all duration-300 hover:bg-[#0F2747]/5 sm:gap-2 sm:px-4 sm:py-2 sm:text-sm"
+            className="inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-full border border-[#071530]/20 px-3.5 py-2 text-xs font-semibold text-[#071530] transition-all duration-300 hover:bg-[#071530]/5 sm:gap-2 sm:px-4 sm:py-2 sm:text-sm"
           >
             View Details
             <ArrowRight
@@ -124,7 +124,7 @@ function ProductRow({ product, reverse }: { product: ProductType; reverse: boole
 
           <Link
             href={`/products/${product.slug}#enquiry`}
-            className="inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-[#0F2747] px-3.5 py-2 text-xs font-semibold text-white shadow-md shadow-[#0F2747]/20 transition-all duration-300 hover:bg-[#0F2747]/90 hover:shadow-lg hover:shadow-[#0F2747]/30 sm:gap-2 sm:px-4 sm:py-2 sm:text-sm"
+            className="inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-[#071530] px-3.5 py-2 text-xs font-semibold text-white shadow-md shadow-[#071530]/20 transition-all duration-300 hover:bg-[#071530]/90 hover:shadow-lg hover:shadow-[#071530]/30 sm:gap-2 sm:px-4 sm:py-2 sm:text-sm"
           >
             <MessageCircle size={13} className="shrink-0 sm:size-[14px]" />
             Enquire Now

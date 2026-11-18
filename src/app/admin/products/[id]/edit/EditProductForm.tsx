@@ -92,7 +92,7 @@ export default function EditProductForm({
 
   const inputClass = useMemo(
     () =>
-      "w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] outline-none transition focus:border-[#0F2747] focus:ring-1 focus:ring-[#0F2747]",
+      "w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] outline-none transition focus:border-[#071530] focus:ring-1 focus:ring-[#071530]",
     []
   );
 
@@ -193,14 +193,14 @@ export default function EditProductForm({
           <span>/</span>
           <span>Products</span>
           <span>/</span>
-          <span className="font-medium text-[#0F2747]">
+          <span className="font-medium text-[#071530]">
             Edit
           </span>
         </div>
 
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-[#0F2747]">
+          <h1 className="text-3xl font-bold text-[#071530]">
             Edit Product
           </h1>
 
@@ -210,7 +210,7 @@ export default function EditProductForm({
         </div>
 
         <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-          <div className="border-b border-slate-200 bg-[#0F2747] px-6 py-4">
+          <div className="border-b border-slate-200 bg-[#071530] px-6 py-4">
             <h2 className="text-lg font-semibold text-white">
               Product Information
             </h2>
@@ -234,7 +234,7 @@ export default function EditProductForm({
               className="space-y-6"
             >
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Category *
                 </label>
 
@@ -263,7 +263,7 @@ export default function EditProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Product Name *
                 </label>
 
@@ -277,7 +277,7 @@ export default function EditProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Slug *
                 </label>
 
@@ -294,7 +294,7 @@ export default function EditProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Short Description
                 </label>
 
@@ -313,7 +313,7 @@ export default function EditProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Description
                 </label>
 
@@ -330,7 +330,7 @@ export default function EditProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Specifications
                 </label>
 
@@ -349,7 +349,7 @@ export default function EditProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Features
                 </label>
 
@@ -366,7 +366,7 @@ export default function EditProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Applications
                 </label>
 
@@ -383,7 +383,7 @@ export default function EditProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Brochure URL
                 </label>
 
@@ -400,7 +400,7 @@ export default function EditProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Datasheet URL
                 </label>
 
@@ -428,7 +428,7 @@ export default function EditProductForm({
                     }
                   />
 
-                  <span className="font-medium text-[#0F2747]">
+                  <span className="font-medium text-[#071530]">
                     Featured Product
                   </span>
                 </label>
@@ -446,7 +446,7 @@ export default function EditProductForm({
                     }
                   />
 
-                  <span className="font-medium text-[#0F2747]">
+                  <span className="font-medium text-[#071530]">
                     Active Product
                   </span>
                 </label>
@@ -456,7 +456,7 @@ export default function EditProductForm({
                 <button
                   type="submit"
                   disabled={loading}
-                  className="inline-flex items-center justify-center rounded-lg bg-[#0F2747] px-6 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:cursor-not-allowed disabled:opacity-70"
+                  className="inline-flex items-center justify-center rounded-lg bg-[#071530] px-6 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:cursor-not-allowed disabled:opacity-70"
                 >
                   {loading
                     ? "Updating..."
@@ -465,7 +465,7 @@ export default function EditProductForm({
 
                 <Link
                   href="/admin/products"
-                  className="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3 font-medium text-[#0F2747] transition hover:bg-slate-50"
+                  className="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3 font-medium text-[#071530] transition hover:bg-slate-50"
                 >
                   Cancel
                 </Link>

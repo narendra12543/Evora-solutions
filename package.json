@@ -6,7 +6,8 @@
     "schema": "src/prisma/schema.prisma"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
+    "dev:turbo": "next dev --turbo",
     "build": "prisma generate --schema=src/prisma/schema.prisma && next build",
     "postinstall": "prisma generate --schema=src/prisma/schema.prisma",
     "start": "next start",

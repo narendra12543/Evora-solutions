@@ -134,14 +134,14 @@ export default function ProductsCatalog({
                 Our Catalogue
               </span>
 
-              <h2 className="mt-1 text-xl font-bold text-[#0F2747] sm:text-2xl">
+              <h2 className="mt-1 text-xl font-bold text-[#071530] sm:text-2xl">
                 Built for Performance, Designed for Reliability
               </h2>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
-                Explore our range of Aven  Industrial automation engineered for
-                durability, security, and seamless integration across barriers, gates,
-                and high-speed door systems.
+                Explore our range of Evora Industrial Solutions engineered for
+                durability, space optimization, and seamless material flow across
+                heavy-duty pallet racking, warehouse storage, and industrial conveyor systems.
               </p>
 
               <div className="mt-6 h-px w-full bg-gradient-to-r from-slate-200 via-slate-200 to-transparent" />

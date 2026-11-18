@@ -28,7 +28,7 @@ export default function ProfileDropdown({
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
-        className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0F2747] font-semibold text-white transition hover:bg-[#163A68]"
+        className="flex h-10 w-10 items-center justify-center rounded-full bg-[#071530] font-semibold text-white transition hover:bg-[#163A68]"
       >
         {initial}
       </button>
@@ -40,14 +40,14 @@ export default function ProfileDropdown({
             <div className="p-2">
               <Link
                 href="/login"
-                className="block rounded-lg px-3 py-2 text-sm font-medium text-[#0F2747] transition hover:bg-orange-50 hover:text-orange-600"
+                className="block rounded-lg px-3 py-2 text-sm font-medium text-[#071530] transition hover:bg-[#F8FAFC] hover:text-[#0865D8]"
               >
                 Login
               </Link>
 
               <Link
                 href="/register"
-                className="block rounded-lg px-3 py-2 text-sm font-medium text-[#0F2747] transition hover:bg-orange-50 hover:text-orange-600"
+                className="block rounded-lg px-3 py-2 text-sm font-medium text-[#071530] transition hover:bg-[#F8FAFC] hover:text-[#0865D8]"
               >
                 Register
               </Link>
@@ -58,7 +58,7 @@ export default function ProfileDropdown({
           {user && (
             <>
               <div className="border-b border-slate-200 px-4 py-3">
-                <p className="font-semibold text-[#0F2747]">
+                <p className="font-semibold text-[#071530]">
                   {user.name}
                 </p>
 
@@ -71,7 +71,7 @@ export default function ProfileDropdown({
                 {user.role === Role.ADMIN && (
                   <Link
                     href="/admin"
-                    className="block rounded-lg px-3 py-2 text-sm font-medium text-[#0F2747] transition hover:bg-orange-50 hover:text-orange-600"
+                    className="block rounded-lg px-3 py-2 text-sm font-medium text-[#071530] transition hover:bg-[#F8FAFC] hover:text-[#0865D8]"
                   >
                     Admin Dashboard
                   </Link>
@@ -81,14 +81,14 @@ export default function ProfileDropdown({
 
                 <Link
                   href="/dashboard/enquiries"
-                  className="block rounded-lg px-3 py-2 text-sm font-medium text-[#0F2747] transition hover:bg-orange-50 hover:text-orange-600"
+                  className="block rounded-lg px-3 py-2 text-sm font-medium text-[#071530] transition hover:bg-[#F8FAFC] hover:text-[#0865D8]"
                 >
                   My Enquiries
                 </Link>
 
                 <Link
                   href="/dashboard/downloads"
-                  className="block rounded-lg px-3 py-2 text-sm font-medium text-[#0F2747] transition hover:bg-orange-50 hover:text-orange-600"
+                  className="block rounded-lg px-3 py-2 text-sm font-medium text-[#071530] transition hover:bg-[#F8FAFC] hover:text-[#0865D8]"
                 >
                   My Downloads
                 </Link>

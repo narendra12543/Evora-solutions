@@ -26,7 +26,7 @@ export default function ProductSpecifications({
 
   return (
     <div className="mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-      <h2 className="mb-6 text-2xl font-bold text-[#0F2747]">
+      <h2 className="mb-6 text-2xl font-bold text-[#071530]">
         Specifications
       </h2>
 
@@ -39,7 +39,7 @@ export default function ProductSpecifications({
                   key={key}
                   className="border-b border-slate-200 last:border-0"
                 >
-                  <td className="bg-slate-50 px-4 py-3 font-medium text-[#0F2747]">
+                  <td className="bg-slate-50 px-4 py-3 font-medium text-[#071530]">
                     {key}
                   </td>
 

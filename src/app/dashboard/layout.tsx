@@ -24,7 +24,7 @@ export default async function DashboardLayout({
         <aside className="w-full lg:sticky lg:top-24 lg:h-fit lg:w-80">
           <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             {/* Header */}
-            <div className="border-b border-slate-200 bg-[#0F2747] p-6">
+            <div className="border-b border-slate-200 bg-[#071530] p-6">
               <h2 className="text-lg font-semibold text-white">
                 My Dashboard
               </h2>
@@ -71,14 +71,14 @@ export default async function DashboardLayout({
 
                 <Link
                   href="/dashboard/enquiries"
-                  className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#0F2747]"
+                  className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#071530]"
                 >
                   My Enquiries
                 </Link>
 
                 <Link
                   href="/dashboard/downloads"
-                  className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#0F2747]"
+                  className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#071530]"
                 >
                   My Downloads
                 </Link>

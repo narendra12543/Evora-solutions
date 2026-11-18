@@ -46,7 +46,7 @@ export default function ProductForm({
   
 
   const inputClass =
-  "w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] placeholder:text-slate-400 outline-none focus:border-[#0F2747] focus:ring-1 focus:ring-[#0F2747]";
+  "w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] placeholder:text-slate-400 outline-none focus:border-[#071530] focus:ring-1 focus:ring-[#071530]";
   const handleSubmit = async (
     event: FormEvent<HTMLFormElement>
   ) => {
@@ -137,24 +137,24 @@ export default function ProductForm({
           <span>/</span>
           <span>Products</span>
           <span>/</span>
-          <span className="font-medium text-[#0F2747]">
+          <span className="font-medium text-[#071530]">
             Create
           </span>
         </div>
 
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-[#0F2747]">
+          <h1 className="text-3xl font-bold text-[#071530]">
             Create Product
           </h1>
 
           <p className="mt-2 text-slate-600">
-            Create a new Aven Industrial automationproduct.
+            Create a new Evora Industrial Solutions product.
           </p>
         </div>
 
         <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-          <div className="border-b border-slate-200 bg-[#0F2747] px-6 py-4">
+          <div className="border-b border-slate-200 bg-[#071530] px-6 py-4">
             <h2 className="text-lg font-semibold text-white">
               Product Information
             </h2>
@@ -178,7 +178,7 @@ export default function ProductForm({
               className="space-y-6"
             >
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Category *
                 </label>
 
@@ -205,7 +205,7 @@ export default function ProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Product Name *
                 </label>
 
@@ -219,7 +219,7 @@ export default function ProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Slug *
                 </label>
 
@@ -235,7 +235,7 @@ export default function ProductForm({
               </div>
 
               {/* <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Short Description
                 </label>
 
@@ -252,7 +252,7 @@ export default function ProductForm({
               </div> */}
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Description
                 </label>
 
@@ -267,7 +267,7 @@ export default function ProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Specifications
                 </label>
 
@@ -284,7 +284,7 @@ export default function ProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Features
                 </label>
 
@@ -299,7 +299,7 @@ export default function ProductForm({
               </div>
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                <label className="mb-2 block text-sm font-medium text-[#071530]">
                   Applications
                 </label>
 
@@ -317,7 +317,7 @@ export default function ProductForm({
 
               <div>
                 <div>
-                    <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                    <label className="mb-2 block text-sm font-medium text-[#071530]">
                         Brochure PDF
                     </label>
 
@@ -337,7 +337,7 @@ export default function ProductForm({
 
                 <div className="space-y-4">
                     <div>
-                        <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                        <label className="mb-2 block text-sm font-medium text-[#071530]">
                         Datasheet URL
                         </label>
 
@@ -354,7 +354,7 @@ export default function ProductForm({
                     </div>
 
                 <div>
-                    <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+                    <label className="mb-2 block text-sm font-medium text-[#071530]">
                     Datasheet PDF
                     </label>
 
@@ -382,7 +382,7 @@ export default function ProductForm({
                     }
                   />
 
-                  <span className="font-medium text-[#0F2747]">
+                  <span className="font-medium text-[#071530]">
                     Featured Product
                   </span>
                 </label>
@@ -400,7 +400,7 @@ export default function ProductForm({
                     }
                   />
 
-                  <span className="font-medium text-[#0F2747]">
+                  <span className="font-medium text-[#071530]">
                     Active Product
                   </span>
                 </label>
@@ -410,7 +410,7 @@ export default function ProductForm({
                 <button
                   type="submit"
                   disabled={loading}
-                  className="rounded-lg bg-[#0F2747] px-6 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:opacity-70"
+                  className="rounded-lg bg-[#071530] px-6 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:opacity-70"
                 >
                   {loading
                     ? "Creating..."

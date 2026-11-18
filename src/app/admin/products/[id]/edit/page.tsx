@@ -27,7 +27,7 @@ export default async function EditProductPage({
       <div className="min-h-screen bg-slate-50">
         <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
           <div className="rounded-2xl border border-slate-200 bg-white p-10 text-center shadow-sm">
-            <h1 className="text-3xl font-bold text-[#0F2747]">
+            <h1 className="text-3xl font-bold text-[#071530]">
               Product Not Found
             </h1>
 
@@ -37,7 +37,7 @@ export default async function EditProductPage({
 
             <Link
               href="/admin/products"
-              className="mt-6 inline-flex items-center justify-center rounded-lg bg-[#0F2747] px-6 py-3 font-medium text-white transition hover:bg-[#18385F]"
+              className="mt-6 inline-flex items-center justify-center rounded-lg bg-[#071530] px-6 py-3 font-medium text-white transition hover:bg-[#18385F]"
             >
               Back to Products
             </Link>

@@ -33,7 +33,9 @@ export default function SearchAndFilters({
             px-4
             py-3
             outline-none
-            focus:border-[#0F2747]
+            focus:border-[#0865D8]
+            focus:ring-2
+            focus:ring-[#0865D8]/20
           "
         />
 
@@ -51,7 +53,7 @@ export default function SearchAndFilters({
               transition
               ${
                 selectedCategory === "all"
-                  ? "bg-[#0F2747] text-white"
+                  ? "bg-[#071530] text-white shadow-sm"
                   : "bg-slate-100 text-slate-700 hover:bg-slate-200"
               }
             `}
@@ -72,7 +74,7 @@ export default function SearchAndFilters({
                 transition
                 ${
                   selectedCategory === category
-                    ? "bg-[#0F2747] text-white"
+                    ? "bg-[#071530] text-white shadow-sm"
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                 }
               `}
@@ -89,19 +91,20 @@ export default function SearchAndFilters({
             value={selectedCategory}
             onChange={(e) => onCategoryChange(e.target.value)}
             className="
-              rounded-2xl
+              rounded-xl
+              border
+              border-slate-300
               bg-white
               px-4
               py-3
               text-sm
               font-medium
-              text-[#0F2747]
+              text-[#071530]
               outline-none
               transition
-              focus:border-[#0F2747]
+              focus:border-[#0865D8]
               focus:ring-2
-              focus:ring-[#0F2747]/20
-              
+              focus:ring-[#0865D8]/20
             "
           >
             <option value="all">All Categories</option>

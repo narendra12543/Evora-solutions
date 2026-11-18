@@ -27,7 +27,7 @@ export default function SpecificationsSection({
 
   return (
     <section className="mt-6 px-4 sm:px-0">
-      <h2 className="mb-4 text-xl font-bold text-[#0F2747]">
+      <h2 className="mb-4 text-xl font-bold text-[#071530]">
         Technical Specifications
       </h2>
 
@@ -53,7 +53,7 @@ export default function SpecificationsSection({
                     py-2.5
                     align-top
                     font-medium
-                    text-[#0F2747]
+                    text-[#071530]
                     capitalize
                   "
                 >

@@ -25,7 +25,7 @@ export default async function AdminLayout({
           <aside className="w-full lg:sticky lg:top-24 lg:h-fit lg:w-72">
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               {/* Header */}
-              <div className="border-b border-slate-200 bg-[#0F2747] p-6">
+              <div className="border-b border-slate-200 bg-[#071530] p-6">
                 <h2 className="text-lg font-semibold text-white">
                   Admin Panel
                 </h2>
@@ -72,35 +72,35 @@ export default async function AdminLayout({
                   
                   <Link
                     href="/admin/categories"
-                    className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#0F2747]"
+                    className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#071530]"
                   >
                     Categories
                   </Link>
 
                   <Link
                     href="/admin/products"
-                    className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#0F2747]"
+                    className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#071530]"
                   >
                     Products
                   </Link>
 
                   <Link
                     href="/admin/enquiries"
-                    className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#0F2747]"
+                    className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#071530]"
                   >
                     Enquiries
                   </Link>
 
                   <Link
                     href="/admin/contact-messages"
-                    className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#0F2747]"
+                    className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#071530]"
                   >
                     Contact Messages
                   </Link>
 
                   <Link
                     href="/admin/users"
-                    className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#0F2747]"
+                    className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#071530]"
                   >
                     Users
                   </Link>

@@ -101,7 +101,7 @@ const recentEnquiries =
     <div className="space-y-8">
       {/* Header */}
       <div>
-        <h1 className="text-3xl font-bold text-[#0F2747]">
+        <h1 className="text-3xl font-bold text-[#071530]">
           Enquiry Management
         </h1>
 
@@ -117,7 +117,7 @@ const recentEnquiries =
           <p className="text-sm text-slate-500">
             Total Enquiries
           </p>
-          <p className="mt-2 text-3xl font-bold text-[#0F2747]">
+          <p className="mt-2 text-3xl font-bold text-[#071530]">
             {stats.totalEnquiries}
           </p>
         </div>
@@ -190,7 +190,7 @@ const recentEnquiries =
         <p className="text-sm text-slate-600">
           Total Results:
 
-          <span className="ml-2 font-semibold text-[#0F2747]">
+          <span className="ml-2 font-semibold text-[#071530]">
             {totalCount}
           </span>
         </p>
@@ -199,7 +199,7 @@ const recentEnquiries =
       <div className="overflow-hidden rounded-xl border bg-white shadow-sm">
         {enquiries.length === 0 ? (
           <div className="p-12 text-center">
-            <h3 className="text-xl font-semibold text-[#0F2747]">
+            <h3 className="text-xl font-semibold text-[#071530]">
               No Enquiries Found
             </h3>
 
@@ -212,35 +212,35 @@ const recentEnquiries =
             <table className="min-w-full">
               <thead className="bg-slate-50">
                 <tr>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Customer Name
                   </th>
 
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Product
                   </th>
 
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Mobile
                   </th>
 
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Email
                   </th>
 
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Quantity
                   </th>
 
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Status
                   </th>
 
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Created Date
                   </th>
 
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Actions
                   </th>
                 </tr>
@@ -302,7 +302,7 @@ const recentEnquiries =
                       <td className="px-4 py-4">
                         <Link
                           href={`/admin/enquiries/${enquiry.id}`}
-                          className="rounded-lg bg-[#0F2747] px-3 py-2 text-sm text-white"
+                          className="rounded-lg bg-[#071530] px-3 py-2 text-sm text-white"
                         >
                           View Details
                         </Link>
@@ -320,7 +320,7 @@ const recentEnquiries =
           {page > 1 && (
             <Link
               href={`/admin/enquiries?search=${search}&status=${status}&page=${page - 1}`}
-              className="rounded-lg border border-[#0F2747] px-4 py-2 text-[#0F2747]"
+              className="rounded-lg border border-[#071530] px-4 py-2 text-[#071530]"
             >
               Previous
             </Link>
@@ -334,8 +334,8 @@ const recentEnquiries =
                 href={`/admin/enquiries?search=${search}&status=${status}&page=${index + 1}`}
                 className={`rounded-lg px-4 py-2 ${
                   page === index + 1
-                    ? "bg-[#0F2747] text-white"
-                    : "border border-[#0F2747] text-[#0F2747]"
+                    ? "bg-[#071530] text-white"
+                    : "border border-[#071530] text-[#071530]"
                 }`}
               >
                 {index + 1}
@@ -346,7 +346,7 @@ const recentEnquiries =
           {page < totalPages && (
             <Link
               href={`/admin/enquiries?search=${search}&status=${status}&page=${page + 1}`}
-              className="rounded-lg border border-[#0F2747] px-4 py-2 text-[#0F2747]"
+              className="rounded-lg border border-[#071530] px-4 py-2 text-[#071530]"
             >
               Next
             </Link>

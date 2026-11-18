@@ -13,27 +13,27 @@ export default function ProductFAQ({
   const faqs = [
     {
       question: `What is ${productName}?`,
-      answer: `${productName} is an industrial automation solution designed to improve safety, security and operational efficiency.`,
+      answer: `${productName} is an engineered industrial storage and material handling solution designed to optimize warehouse capacity, improve load safety, and streamline operational flow.`,
     },
     {
       question: `Where can ${productName} be installed?`,
       answer:
-        "It can be installed at factories, warehouses, residential projects, commercial buildings, hospitals, IT parks and other industrial facilities.",
+        "It is engineered for warehouses, manufacturing plants, distribution centers, logistics hubs, automotive assembly lines, and industrial facilities.",
     },
     {
-      question: `Is installation provided by Aven Automation?`,
+      question: `Is installation provided by Evora Solutions?`,
       answer:
-        "Yes. We provide complete supply, installation, testing and after-sales support.",
+        "Yes. We provide complete turnkey services including site survey, CAD design, on-site erection, load testing, and after-sales support.",
     },
     {
-      question: `Is this product suitable for outdoor use?`,
+      question: `Can this system be customized for our facility?`,
       answer:
-        "Yes. Our products are designed using high-quality materials suitable for demanding indoor and outdoor environments.",
+        "Yes. All our storage racking and conveyor systems are custom-engineered to match your facility dimensions, payload weights, and material throughput.",
     },
     {
       question: `How can I get a quotation?`,
       answer:
-        "Simply fill out the enquiry form on this page and our technical team will contact you with the best solution.",
+        "Simply fill out the enquiry form on this page or reach out via WhatsApp/phone, and our technical team will provide a tailored quote and layout plan.",
     },
   ];
 
@@ -41,7 +41,7 @@ export default function ProductFAQ({
 
   return (
     <section className="mt-12 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-      <h2 className="text-2xl font-bold text-[#0F2747]">
+      <h2 className="text-2xl font-bold text-[#071530]">
         Frequently Asked Questions
       </h2>
 

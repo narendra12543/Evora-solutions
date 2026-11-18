@@ -13,12 +13,12 @@ export default function OrganizationSchema({
 
     "@id": `${url}#organization`,
 
-    name: "Aven Automation",
+    name: "Evora Solutions",
 
     alternateName: [
-      "Aven Automation Pune",
-      "Aven Industrial Automation",
-      "Aven Automation",
+      "Evora Solutions Pune",
+      "Evora Industrial Solutions",
+      "Evora Solutions",
     ],
 
     url,
@@ -28,20 +28,20 @@ export default function OrganizationSchema({
     image: logo,
 
     description:
-      "Aven Automation is a leading manufacturer and supplier of Industrial Entrance Automation Systems including Automatic Sliding Gates, Swing Gates, High Speed Doors, Rolling Shutters, Boom Barriers, Dock Levelers, Dock Shelters, Hangar Doors and Industrial Automation Solutions across India.",
+      "Evora Industrial Solutions (Evora Solutions) is a leading manufacturer and supplier of Industrial Storage Solutions and Industrial Conveyor Systems including Heavy Duty Pallet Racking, Cantilever Racking, Multi-tier Mezzanines, Roller Conveyors, Belt Conveyors, and complete material handling automation across India.",
 
     
 
     brand: {
     "@type": "Brand",
     name: [
-      "Aven Automation",
-      "Aven Industrial Automation",
-      "Aven Automation Pune",
+      "Evora Solutions",
+      "Evora Industrial Solutions",
+      "Evora Solutions Pune",
     ]
   },
 
-    email: "sales@avenautomation.in",
+    email: "sales@evorasolutions.in",
 
     telephone: "+91 8766918892",
 
@@ -80,130 +80,77 @@ export default function OrganizationSchema({
     ],
 
     knowsAbout: [
-      // Industrial Entrance Automation
-      "Industrial Entrance Automation",
-      "Automatic Gates",
-      "Automatic Sliding Gates",
-      "Automatic Swing Gates",
-      "Telescopic Sliding Gates",
-      "Cantilever Sliding Gates",
-      "Industrial Gates",
-      "Gate Automation",
-      "Gate Automation Systems",
+      // Industrial Storage Systems
+      "Industrial Storage Systems",
+      "Industrial Storage Solutions",
+      "Heavy Duty Pallet Racking",
+      "Medium Duty Storage Racks",
+      "Pallet Racking Systems",
+      "Selective Pallet Racking",
+      "Drive-In Pallet Racking",
+      "Cantilever Racking Systems",
+      "Multi-Tier Racking Systems",
+      "Mezzanine Floor Systems",
+      "Industrial Mezzanines",
+      "Warehouse Storage Racking",
+      "Industrial Shelving Systems",
+      "Long Span Shelving",
+      "Slotted Angle Shelving",
+      "Carton Flow Racks",
+      "FIFO Pallet Flow Racks",
+      "High Density Warehouse Storage",
+      "Warehouse Space Optimization",
 
-      // Industrial Doors
-      "Industrial Doors",
-      "High Speed Doors",
-      "High Speed Roll Up Doors",
-      "Clean Room Doors",
-      "Anti Crash Doors",
-      "Sectional Overhead Doors",
-      "Transparent Sectional Doors",
-      "Garage Doors",
-      "Rolling Shutters",
-      "Industrial Rolling Shutters",
-      "Fire Rated Doors",
-      "Fire Shutters",
-      "Hangar Doors",
-      "Steel Hangar Doors",
-      "Fold Up Hangar Doors",
-
-      // Loading Bay Equipment
-      "Dock Levelers",
-      "Dock Shelters",
-      "Dock Seals",
-      "Loading Bay Equipment",
-      "Loading Dock Solutions",
-
-      // Parking Automation
-      "Boom Barriers",
-      "Advertising Boom Barriers",
-      "Folding Boom Barriers",
-      "Automatic Bollards",
-      "Hydraulic Bollards",
-      "Road Blockers",
-      "Tyre Killers",
-      "Parking Management Systems",
-      "Access Control Systems",
-      "RFID Access Systems",
-      "Vehicle Access Control",
-
-      // Pedestrian Access
-      "Swing Barriers",
-      "Flap Barriers",
-      "Tripod Turnstiles",
-      "Full Height Turnstiles",
-      "Speed Gates",
-
-      // Conveyor Systems
+      // Industrial Conveyor Systems
       "Industrial Conveyor Systems",
-      "Material Handling Systems",
+      "Conveyor Systems Manufacturer",
+      "Powered Roller Conveyors",
+      "Motorized Roller Conveyors",
+      "Gravity Roller Conveyors",
+      "Roller Bed Conveyors",
+      "Flat Belt Conveyors",
+      "Modular Belt Conveyors",
+      "Plastic Modular Conveyors",
+      "Cleated Belt Conveyors",
+      "Incline Belt Conveyors",
+      "Z-Type Incline Conveyors",
+      "Swan Neck Conveyors",
+      "Curved Belt Conveyors",
+      "Slat Conveyor Systems",
+      "Chain Conveyor Systems",
+      "Assembly Line Conveyors",
+      "Packaging Conveyors",
+      "Sortation Conveyor Systems",
+      "Warehouse Conveyor Systems",
+      "Steep Angle Sidewall Conveyors",
+      "Elevator Conveyors",
+      "Floor to Floor Conveyors",
 
-      "Roller Conveyor",
-      "Powered Roller Conveyor",
-      "Gravity Roller Conveyor",
-      "Roller Bed Conveyor",
-
-      "Flat Belt Conveyor",
-      "Belt Conveyor",
-
-      "Modular Belt Conveyor",
-      "Plastic Modular Conveyor",
-
-      "Cleated Belt Conveyor",
-
-      "Curved Belt Conveyor",
-
-      "Incline Belt Conveyor",
-      "Decline Belt Conveyor",
-
-      "Sanitary Conveyor",
-      "Wash Down Conveyor",
-
-      "Specialty Conveyor",
-
-      "Slat Conveyor",
-      "Chain Conveyor",
-      "Mesh Belt Conveyor",
-      "Wire Mesh Conveyor",
-      "Overhead Conveyor",
-      "Spiral Conveyor",
-      "Pallet Conveyor",
-      "Assembly Line Conveyor",
-      "Packing Conveyor",
-      "Packaging Conveyor",
-      "Loading Conveyor",
-      "Unloading Conveyor",
-
-      // Material Handling
+      // Material Handling Solutions
       "Material Handling Equipment",
-      "Industrial Automation",
-      "Factory Automation",
+      "Warehouse Material Movement Systems",
+      "Automated Material Transfer",
+      "Zero Pressure Accumulation",
+      "Loading and Unloading Conveyors",
+      "Customized Material Handling Systems",
       "Warehouse Automation",
-      "Warehouse Conveyor",
-      "Production Line Automation",
+      "Intralogistics Solutions",
 
-      // Industries
-      "Food Processing Equipment",
-      "Pharmaceutical Equipment",
-      "Automotive Industry Solutions",
-      "Warehouse Solutions",
-      "Logistics Automation",
-      "Manufacturing Automation",
+      // Industries Served
+      "Warehousing and Distribution Centers",
+      "Manufacturing Plant Storage and Conveying",
+      "Automotive Assembly Handling Systems",
+      "Food and Beverage Conveyors",
+      "Pharmaceutical Storage and Conveyors",
+      "E-Commerce Fulfillment Racks and Conveyors",
+      "Logistics and Supply Chain Solutions",
 
-      // Services
-      "Industrial Automation Installation",
-      "Industrial Automation Maintenance",
-      "Industrial Automation Service",
-      "Industrial Automation Repair",
-      "Annual Maintenance Contract",
-      "Automation Consulting",
-
-      // Brand
-      "Aven Automation",
-      "Aven Automation Pune Maharashtra",
-      "Aven Automation Maharashtra",
-      "Aven Automation India",
+      // Geographic & Brand
+      "Industrial Storage Solutions Pune",
+      "Conveyor Systems Manufacturer Pune Maharashtra",
+      "Pallet Racking India",
+      "Evora Industrial Solutions",
+      "Evora Solutions",
     ],
     contactPoint: [
       {

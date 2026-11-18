@@ -153,7 +153,7 @@ if (REQUIRE_LOGIN_FOR_ENQUIRY && !isAuthenticated) {
       >
         <div className="grid gap-5 md:grid-cols-2">
           <div>
-            <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+            <label className="mb-2 block text-sm font-medium text-[#071530]">
               Name *
             </label>
 
@@ -163,12 +163,12 @@ if (REQUIRE_LOGIN_FOR_ENQUIRY && !isAuthenticated) {
               onChange={(e) =>
                 setName(e.target.value)
               }
-              className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] placeholder:text-slate-400 outline-none focus:border-[#0F2747]"
+              className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] placeholder:text-slate-400 outline-none focus:border-[#071530]"
             />
           </div>
 
           <div>
-            <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+            <label className="mb-2 block text-sm font-medium text-[#071530]">
               Email *
             </label>
 
@@ -178,12 +178,12 @@ if (REQUIRE_LOGIN_FOR_ENQUIRY && !isAuthenticated) {
               onChange={(e) =>
                 setEmail(e.target.value)
               }
-              className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] placeholder:text-slate-400 outline-none focus:border-[#0F2747]"
+              className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] placeholder:text-slate-400 outline-none focus:border-[#071530]"
             />
           </div>
 
           <div>
-            <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+            <label className="mb-2 block text-sm font-medium text-[#071530]">
               Mobile *
             </label>
 
@@ -196,12 +196,12 @@ if (REQUIRE_LOGIN_FOR_ENQUIRY && !isAuthenticated) {
               onChange={(e) =>
                 setMobile(e.target.value.replace(/\D/g, ""))
               }
-              className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] placeholder:text-slate-400 outline-none focus:border-[#0F2747]"
+              className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] placeholder:text-slate-400 outline-none focus:border-[#071530]"
             />
           </div>
 
           <div>
-            <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+            <label className="mb-2 block text-sm font-medium text-[#071530]">
               Quantity *
             </label>
 
@@ -214,13 +214,13 @@ if (REQUIRE_LOGIN_FOR_ENQUIRY && !isAuthenticated) {
                   Number(e.target.value)
                 )
               }
-              className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] placeholder:text-slate-400 outline-none focus:border-[#0F2747]"
+              className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] placeholder:text-slate-400 outline-none focus:border-[#071530]"
             />
           </div>
         </div>
 
         <div>
-          <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+          <label className="mb-2 block text-sm font-medium text-[#071530]">
             Address / City *
           </label>
 
@@ -231,12 +231,12 @@ if (REQUIRE_LOGIN_FOR_ENQUIRY && !isAuthenticated) {
             onChange={(e) =>
               setCity(e.target.value)
             }
-            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] placeholder:text-slate-400 outline-none focus:border-[#0F2747]"
+            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] placeholder:text-slate-400 outline-none focus:border-[#071530]"
           />
         </div>
 
         <div>
-          <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+          <label className="mb-2 block text-sm font-medium text-[#071530]">
             Message
           </label>
 
@@ -246,14 +246,14 @@ if (REQUIRE_LOGIN_FOR_ENQUIRY && !isAuthenticated) {
             onChange={(e) =>
               setMessage(e.target.value)
             }
-                className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] placeholder:text-slate-400 outline-none focus:border-[#0F2747]"
+                className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] placeholder:text-slate-400 outline-none focus:border-[#071530]"
           />
         </div>
 
         <button
           type="submit"
           disabled={loading}
-          className="rounded-lg bg-[#0F2747] px-6 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:cursor-not-allowed disabled:opacity-60"
+          className="rounded-lg bg-[#071530] px-6 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:cursor-not-allowed disabled:opacity-60"
         >
           {REQUIRE_LOGIN_FOR_ENQUIRY && !isAuthenticated
             ? "Login to Send Enquiry"

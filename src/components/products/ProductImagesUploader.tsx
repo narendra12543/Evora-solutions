@@ -126,7 +126,7 @@ export default function ProductImagesUploader({
 
   return (
     <div className="mb-8 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-      <h2 className="text-xl font-semibold text-[#0F2747]">
+      <h2 className="text-xl font-semibold text-[#071530]">
         Upload Images
       </h2>
 
@@ -134,13 +134,13 @@ export default function ProductImagesUploader({
         Upload product gallery images.
       </p>
 
-      <div className="mt-6 rounded-xl border-2 border-dashed border-[#0F2747]/30 p-10 text-center">
+      <div className="mt-6 rounded-xl border-2 border-dashed border-[#071530]/30 p-10 text-center">
         <input
           type="file"
           multiple
           accept=".jpg,.jpeg,.png,.webp"
           onChange={handleFileChange}
-          className="mb-4 block w-full text-sm text-[#0F2747]"
+          className="mb-4 block w-full text-sm text-[#071530]"
         />
 
         <button
@@ -150,7 +150,7 @@ export default function ProductImagesUploader({
             isUploading ||
             files.length === 0
           }
-          className="rounded-lg bg-[#0F2747] px-5 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:cursor-not-allowed disabled:opacity-60"
+          className="rounded-lg bg-[#071530] px-5 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:cursor-not-allowed disabled:opacity-60"
         >
           {isUploading
             ? "Uploading..."
@@ -172,7 +172,7 @@ export default function ProductImagesUploader({
 
       {files.length > 0 && (
         <div className="mt-8">
-          <h3 className="mb-4 text-lg font-semibold text-[#0F2747]">
+          <h3 className="mb-4 text-lg font-semibold text-[#071530]">
             Image Preview
           </h3>
 
@@ -195,7 +195,7 @@ export default function ProductImagesUploader({
                   </div>
 
                   <div className="p-3">
-                    <p className="truncate text-sm font-medium text-[#0F2747]">
+                    <p className="truncate text-sm font-medium text-[#071530]">
                       {
                         item.file
                           .name

@@ -79,7 +79,7 @@ export default async function UserEnquiryDetailsPage({
 
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold text-[#0F2747]">
+          <h1 className="text-3xl font-bold text-[#071530]">
             Enquiry Details
           </h1>
 
@@ -91,7 +91,7 @@ export default async function UserEnquiryDetailsPage({
 
         <Link
           href="/dashboard/enquiries"
-          className="rounded-lg border border-[#0F2747] px-4 py-2 text-[#0F2747]"
+          className="rounded-lg border border-[#071530] px-4 py-2 text-[#071530]"
         >
           Back
         </Link>
@@ -100,7 +100,7 @@ export default async function UserEnquiryDetailsPage({
       {/* Product Information */}
 
       <div className="rounded-xl border bg-white p-6 shadow-sm">
-        <h2 className="mb-5 text-xl font-bold text-[#0F2747]">
+        <h2 className="mb-5 text-xl font-bold text-[#071530]">
           Product Information
         </h2>
 
@@ -110,7 +110,7 @@ export default async function UserEnquiryDetailsPage({
               Product Name
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {enquiry.product?.name}
             </p>
           </div>
@@ -120,7 +120,7 @@ export default async function UserEnquiryDetailsPage({
               Category
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {enquiry.product?.category
                 ?.name ?? "-"}
             </p>
@@ -131,7 +131,7 @@ export default async function UserEnquiryDetailsPage({
       {/* Enquiry Information */}
 
       <div className="rounded-xl border bg-white p-6 shadow-sm">
-        <h2 className="mb-5 text-xl font-bold text-[#0F2747]">
+        <h2 className="mb-5 text-xl font-bold text-[#071530]">
           Enquiry Information
         </h2>
 
@@ -141,7 +141,7 @@ export default async function UserEnquiryDetailsPage({
               Quantity
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {enquiry.quantity}
             </p>
           </div>
@@ -165,7 +165,7 @@ export default async function UserEnquiryDetailsPage({
               Created Date
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {new Date(
                 enquiry.createdAt
               ).toLocaleString()}
@@ -177,7 +177,7 @@ export default async function UserEnquiryDetailsPage({
               Updated Date
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {new Date(
                 enquiry.updatedAt
               ).toLocaleString()}
@@ -192,7 +192,7 @@ export default async function UserEnquiryDetailsPage({
             </p>
 
             <div className="mt-2 rounded-lg border border-slate-200 bg-slate-50 p-4">
-              <p className="whitespace-pre-line text-[#0F2747]">
+              <p className="whitespace-pre-line text-[#071530]">
                 {enquiry.message}
               </p>
             </div>
@@ -204,7 +204,7 @@ export default async function UserEnquiryDetailsPage({
 
       <div className="rounded-xl border bg-white p-6 shadow-sm">
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-bold text-[#0F2747]">
+          <h2 className="text-xl font-bold text-[#071530]">
             Status Timeline
           </h2>
 

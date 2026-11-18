@@ -23,7 +23,7 @@ export default async function AdminUsersPage() {
 
         <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <h1 className="text-3xl font-bold text-[#0F2747]">
+            <h1 className="text-3xl font-bold text-[#071530]">
               User Management
             </h1>
 
@@ -32,7 +32,7 @@ export default async function AdminUsersPage() {
             </p>
           </div>
 
-          <div className="rounded-xl bg-[#0F2747] px-5 py-3 text-white">
+          <div className="rounded-xl bg-[#071530] px-5 py-3 text-white">
             Total Users : <b>{users.length}</b>
           </div>
         </div>
@@ -41,7 +41,7 @@ export default async function AdminUsersPage() {
 
         <div className="overflow-hidden rounded-2xl border bg-white shadow-sm">
 
-          <div className="border-b bg-[#0F2747] px-6 py-4">
+          <div className="border-b bg-[#071530] px-6 py-4">
             <h2 className="text-lg font-semibold text-white">
               Registered Users
             </h2>
@@ -134,7 +134,7 @@ export default async function AdminUsersPage() {
 
                       <Link
                         href={`/admin/users/${user.id}`}
-                        className="rounded-lg bg-[#0F2747] px-4 py-2 text-sm text-white hover:bg-[#123564]"
+                        className="rounded-lg bg-[#071530] px-4 py-2 text-sm text-white hover:bg-[#123564]"
                       >
                         View
                       </Link>

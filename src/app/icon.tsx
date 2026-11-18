@@ -9,7 +9,7 @@ export const size = {
 export const contentType = "image/png";
 
 export default function Icon() {
-  const logoPath = path.join(process.cwd(), "public", "aven-logo.png");
+  const logoPath = path.join(process.cwd(), "public", "evora-logo.png");
   const logoBuffer = fs.readFileSync(logoPath);
   const logoBase64 = logoBuffer.toString("base64");
 

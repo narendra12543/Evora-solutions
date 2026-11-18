@@ -101,7 +101,7 @@ export default function CreateCategoryPage() {
 
         {/* Form Card */}
         <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-          <div className="border-b border-slate-200 bg-[#0F2747] px-6 py-4">
+          <div className="border-b border-slate-200 bg-[#071530] px-6 py-4">
             <h2 className="text-lg font-semibold text-white">
               Category Information
             </h2>
@@ -128,7 +128,7 @@ export default function CreateCategoryPage() {
               <div>
                 <label
                   htmlFor="name"
-                  className="mb-2 block text-sm font-medium text-[#0F2747]"
+                  className="mb-2 block text-sm font-medium text-[#071530]"
                 >
                   Category Name *
                 </label>
@@ -141,7 +141,7 @@ export default function CreateCategoryPage() {
                     setName(event.target.value)
                   }
                   placeholder="Enter category name"
-                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0F2747] focus:ring-1 focus:ring-[#0F2747]"
+                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#071530] focus:ring-1 focus:ring-[#071530]"
                 />
 
                 <p className="mt-2 text-sm text-slate-500">
@@ -153,7 +153,7 @@ export default function CreateCategoryPage() {
               <div>
                 <label
                   htmlFor="slug"
-                  className="mb-2 block text-sm font-medium text-[#0F2747]"
+                  className="mb-2 block text-sm font-medium text-[#071530]"
                 >
                   Slug *
                 </label>
@@ -166,7 +166,7 @@ export default function CreateCategoryPage() {
                     setSlug(event.target.value)
                   }
                   placeholder="industrial-automation"
-                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0F2747] focus:ring-1 focus:ring-[#0F2747]"
+                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#071530] focus:ring-1 focus:ring-[#071530]"
                 />
 
                 <p className="mt-2 text-sm text-slate-500">
@@ -178,7 +178,7 @@ export default function CreateCategoryPage() {
               <div>
                 <label
                   htmlFor="description"
-                  className="mb-2 block text-sm font-medium text-[#0F2747]"
+                  className="mb-2 block text-sm font-medium text-[#071530]"
                 >
                   Description
                 </label>
@@ -191,7 +191,7 @@ export default function CreateCategoryPage() {
                     setDescription(event.target.value)
                   }
                   placeholder="Enter category description"
-                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0F2747] focus:ring-1 focus:ring-[#0F2747]"
+                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#071530] focus:ring-1 focus:ring-[#071530]"
                 />
 
                 <p className="mt-2 text-sm text-slate-500">
@@ -208,7 +208,7 @@ export default function CreateCategoryPage() {
                     onChange={(event) =>
                       setIsActive(event.target.checked)
                     }
-                    className="h-4 w-4 rounded border-slate-300 text-[#0F2747] focus:ring-[#0F2747]"
+                    className="h-4 w-4 rounded border-slate-300 text-[#071530] focus:ring-[#071530]"
                   />
 
                   <span className="font-medium text-slate-700">
@@ -227,7 +227,7 @@ export default function CreateCategoryPage() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="inline-flex items-center justify-center rounded-lg bg-[#0F2747] px-6 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:cursor-not-allowed disabled:opacity-70"
+                  className="inline-flex items-center justify-center rounded-lg bg-[#071530] px-6 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:cursor-not-allowed disabled:opacity-70"
                 >
                   {loading
                     ? "Creating..."

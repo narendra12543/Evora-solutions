@@ -68,14 +68,14 @@ function SortableImage({
       style={style}
       className={`overflow-hidden rounded-2xl border bg-white shadow-sm ${
         isDragging
-          ? "border-[#0F2747] opacity-60"
+          ? "border-[#071530] opacity-60"
           : "border-slate-200"
       }`}
     >
       <div
         {...attributes}
         {...listeners}
-        className="cursor-move bg-[#0F2747] px-4 py-2 text-sm font-medium text-white"
+        className="cursor-move bg-[#071530] px-4 py-2 text-sm font-medium text-white"
       >
         ☰ Drag Image
       </div>
@@ -94,7 +94,7 @@ function SortableImage({
           Image URL
         </p>
 
-        <p className="truncate text-sm text-[#0F2747]">
+        <p className="truncate text-sm text-[#071530]">
           {image.imageUrl}
         </p>
 
@@ -103,7 +103,7 @@ function SortableImage({
             Sort Order
           </p>
 
-          <p className="mt-1 font-semibold text-[#0F2747]">
+          <p className="mt-1 font-semibold text-[#071530]">
             {image.sortOrder}
           </p>
         </div>
@@ -115,7 +115,7 @@ function SortableImage({
 
           <button
             disabled
-            className="rounded-lg border border-[#0F2747] px-3 py-1.5 text-sm text-[#0F2747] opacity-60"
+            className="rounded-lg border border-[#071530] px-3 py-1.5 text-sm text-[#071530] opacity-60"
           >
             Set Primary
           </button>
@@ -215,7 +215,7 @@ export default function ProductImagesGrid({
         <button
           onClick={handleSave}
           disabled={saving}
-          className="rounded-lg bg-[#0F2747] px-5 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:opacity-60"
+          className="rounded-lg bg-[#071530] px-5 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:opacity-60"
         >
           {saving
             ? "Saving..."

@@ -26,7 +26,7 @@ interface CustomerContactTemplateProps {
 }
 
 const COLORS = {
-  primary: "#0F2747",
+  primary: "#071530",
   primaryDark: "#0A1B33",
   accent: "#F7941D",
   background: "#F8FAFC",
@@ -39,7 +39,7 @@ const COLORS = {
 };
 
 
-const LOGO_URL = "https://avenautomation.in/aven/aven-logo-1.png";
+const LOGO_URL = "https://evorasolutions.in/evora/evora-logo.png";
 
 export const CustomerContactTemplate = ({
   name,
@@ -64,16 +64,16 @@ export const CustomerContactTemplate = ({
               <Column align="center">
                 <Img
                   src={LOGO_URL}
-                  alt="Aven Automation"
+                  alt="Evora Solutions"
                   width="52"
                   height="52"
                   style={styles.logo}
                 />
                 <Text style={styles.headerCompanyName}>
-                  AVEN AUTOMATION
+                  EVORA SOLUTIONS
                 </Text>
                 <Text style={styles.headerTagline}>
-                  Industrial Entrance Automation.
+                  Industrial Storage &amp; Conveyor Solutions.
                 </Text>
               </Column>
             </Row>
@@ -139,7 +139,7 @@ export const CustomerContactTemplate = ({
             {/* CTA Button */}
             <Section style={styles.ctaSection}>
               <Button
-                href="https://avenautomation.in/products"
+                href="https://evorasolutions.in/products"
                 style={styles.ctaButton}
               >
                 View Products
@@ -156,21 +156,21 @@ export const CustomerContactTemplate = ({
                   <Text style={styles.contactIcon}>📞</Text>
                   <Text style={styles.contactLabel}>Sales</Text>
                   <Text style={styles.contactValue}>
-                    sales@avenautomation.in
+                    sales@evorasolutions.in
                   </Text>
                 </Column>
                 <Column align="center" style={styles.contactColumn}>
                   <Text style={styles.contactIcon}>✉️</Text>
                   <Text style={styles.contactLabel}>Support</Text>
                   <Text style={styles.contactValue}>
-                    info@avenautomation.in
+                    info@evorasolutions.in
                   </Text>
                 </Column>
                 <Column align="center" style={styles.contactColumn}>
                   <Text style={styles.contactIcon}>🌐</Text>
                   <Text style={styles.contactLabel}>Website</Text>
                   <Text style={styles.contactValue}>
-                    avenautomation.in
+                    evorasolutions.in
                   </Text>
                 </Column>
               </Row>
@@ -179,13 +179,13 @@ export const CustomerContactTemplate = ({
 
           {/* ===================== FOOTER ===================== */}
           <Section style={styles.footer}>
-            <Text style={styles.footerCompanyName}>Aven Automation</Text>
+            <Text style={styles.footerCompanyName}>Evora Solutions</Text>
             <Text style={styles.footerTagline}>
-              Reliable Industrial Entrance Automation.
+              Reliable Industrial Storage &amp; Conveyor Solutions.
             </Text>
             <Hr style={styles.footerDivider} />
             <Text style={styles.footerCopyright}>
-              © 2026 Aven Automation. All Rights Reserved.
+              © 2026 Evora Industrial Solutions. All Rights Reserved.
             </Text>
           </Section>
         </Container>

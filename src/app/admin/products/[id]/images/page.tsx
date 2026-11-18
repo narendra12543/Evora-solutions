@@ -26,7 +26,7 @@ export default async function ProductImagesPage({
       <div className="min-h-screen bg-slate-50">
         <div className="mx-auto max-w-4xl px-4 py-10">
           <div className="rounded-2xl border border-slate-200 bg-white p-10 text-center shadow-sm">
-            <h1 className="text-3xl font-bold text-[#0F2747]">
+            <h1 className="text-3xl font-bold text-[#071530]">
               Product Not Found
             </h1>
 
@@ -36,7 +36,7 @@ export default async function ProductImagesPage({
 
             <Link
               href="/admin/products"
-              className="mt-6 inline-flex rounded-lg bg-[#0F2747] px-5 py-3 font-medium text-white transition hover:bg-[#18385F]"
+              className="mt-6 inline-flex rounded-lg bg-[#071530] px-5 py-3 font-medium text-white transition hover:bg-[#18385F]"
             >
               Back to Products
             </Link>
@@ -60,12 +60,12 @@ export default async function ProductImagesPage({
             <div>
               <Link
                 href="/admin/products"
-                className="text-sm font-medium text-[#0F2747] hover:underline"
+                className="text-sm font-medium text-[#071530] hover:underline"
               >
                 ← Back to Products
               </Link>
 
-              <h1 className="mt-3 text-3xl font-bold text-[#0F2747]">
+              <h1 className="mt-3 text-3xl font-bold text-[#071530]">
                 Product Images
               </h1>
 
@@ -78,7 +78,7 @@ export default async function ProductImagesPage({
 
         {/* Product Info */}
         <div className="mb-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-          <div className="border-b border-slate-200 bg-[#0F2747] px-6 py-4">
+          <div className="border-b border-slate-200 bg-[#071530] px-6 py-4">
             <h2 className="text-lg font-semibold text-white">
               Product Information
             </h2>
@@ -90,7 +90,7 @@ export default async function ProductImagesPage({
                 Product Name
               </p>
 
-              <p className="mt-1 font-semibold text-[#0F2747]">
+              <p className="mt-1 font-semibold text-[#071530]">
                 {product.name}
               </p>
             </div>
@@ -100,7 +100,7 @@ export default async function ProductImagesPage({
                 Category
               </p>
 
-              <p className="mt-1 font-semibold text-[#0F2747]">
+              <p className="mt-1 font-semibold text-[#071530]">
                 {product.category?.name}
               </p>
             </div>
@@ -130,7 +130,7 @@ export default async function ProductImagesPage({
               Total Images
             </p>
 
-            <p className="mt-3 text-3xl font-bold text-[#0F2747]">
+            <p className="mt-3 text-3xl font-bold text-[#071530]">
               {images.length}
             </p>
           </div>
@@ -140,7 +140,7 @@ export default async function ProductImagesPage({
                 Primary Image
             </p>
 
-            <p className="mt-3 text-3xl font-bold text-[#0F2747]">
+            <p className="mt-3 text-3xl font-bold text-[#071530]">
                 {primaryImage ? "1" : "0"}
             </p>
 
@@ -156,7 +156,7 @@ export default async function ProductImagesPage({
               Gallery Images
             </p>
 
-            <p className="mt-3 text-3xl font-bold text-[#0F2747]">
+            <p className="mt-3 text-3xl font-bold text-[#071530]">
               {images.length}
             </p>
 
@@ -178,7 +178,7 @@ export default async function ProductImagesPage({
               </span>
             </div>
 
-            <h2 className="text-2xl font-semibold text-[#0F2747]">
+            <h2 className="text-2xl font-semibold text-[#071530]">
               No Images Found
             </h2>
 
@@ -189,7 +189,7 @@ export default async function ProductImagesPage({
         ) : (
           <div>
             <div className="mb-6">
-              <h2 className="text-xl font-semibold text-[#0F2747]">
+              <h2 className="text-xl font-semibold text-[#071530]">
                 Product Gallery
               </h2>
             </div>

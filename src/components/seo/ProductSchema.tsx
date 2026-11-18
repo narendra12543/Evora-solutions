@@ -23,28 +23,29 @@ export default function ProductSchema({
     "@graph": [
       {
         "@type": "Organization",
-        "@id": `https://avenautomation.in/products/${product.slug}#product`,
+        "@id": `https://evorasolutions.in/products/${product.slug}#product`,
         
 
-        name: "Aven Automation",
+        name: "Evora Solutions",
 
         sku: product.id,
         mpn: product.id,
 
-        url: "https://avenautomation.in",
+        url: "https://evorasolutions.in",
 
         keywords: [
           product.name,
           product.category?.name,
-          "Industrial Automation",
-          "Aven Automation",
+          "Industrial Storage Solutions",
+          "Industrial Conveyor Systems",
+          "Evora Solutions",
         ],
 
         isRelatedTo: {
-          "@id": "https://avenautomation.in/#organization",
+          "@id": "https://evorasolutions.in/#organization",
         },
 
-        logo: "https://avenautomation.in/logo.png",
+        logo: "https://evorasolutions.in/evora-logo.png",
       },
 
       {
@@ -61,33 +62,34 @@ export default function ProductSchema({
 
         brand: {
           "@type": "Brand",
-          name: "Aven Automation",
+          name: "Evora Solutions",
         },
 
         manufacturer: {
-          "@id": `https://avenautomation.in/products/${product.slug}#product`, 
+          "@id": `https://evorasolutions.in/products/${product.slug}#product`, 
         },
 
         category: product.category?.name,
 
-        url: `https://avenautomation.in/products/${product.slug}`,
+        url: `https://evorasolutions.in/products/${product.slug}`,
 
         keywords: [
           product.name,
           product.category?.name,
-          "Industrial Automation",
-          "Aven Automation",
+          "Industrial Storage Solutions",
+          "Industrial Conveyor Systems",
+          "Evora Solutions",
         ],
 
         isRelatedTo: {
-          "@id": "https://avenautomation.in/#organization",
+          "@id": "https://evorasolutions.in/#organization",
         },
 
         additionalProperty: [
           {
             "@type": "PropertyValue",
             name: "Business Type",
-            value: "Manufacturer",
+            value: "Manufacturer & Supplier",
           },
           {
             "@type": "PropertyValue",
@@ -103,18 +105,7 @@ export default function ProductSchema({
           {
             "@type": "PropertyValue",
             name: "Application",
-            value: "Industrial Automation",
-          },
-
-          {
-            "@type": "PropertyValue",
-            name: "Country of Origin",
-            value: "India",
-          },
-          {
-            "@type": "PropertyValue",
-            name: "Application",
-            value: "Industrial Automation",
+            value: "Industrial Storage & Conveyor Systems",
           },
         ],
       }

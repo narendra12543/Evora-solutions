@@ -62,7 +62,7 @@ export default function ProductSidebar({
     >
       {/* Header */}
 
-      <div className="border-b bg-[#0F2747] px-5 py-3 rounded-t-2xl text-white">
+      <div className="border-b bg-[#071530] px-5 py-3 rounded-t-2xl text-white">
         
         <h2 className="text-base tracking-wide">
           Product Categories
@@ -178,7 +178,7 @@ export default function ProductSidebar({
                         ${
                           selectedProductId === product.id
                             ? "font-semibold text-black"
-                            : "text-slate-700 hover:text-[#0F2747]"
+                            : "text-slate-700 hover:text-[#071530]"
                         }
                       `}
                     >

@@ -82,7 +82,7 @@
                 Total Categories
                 </p>
 
-                <p className="mt-3 text-3xl font-bold text-[#0F2747]">
+                <p className="mt-3 text-3xl font-bold text-[#071530]">
                 {totalCategories}
                 </p>
             </div>
@@ -92,7 +92,7 @@
                 Active Categories
                 </p>
 
-                <p className="mt-3 text-3xl font-bold text-[#0F2747]">
+                <p className="mt-3 text-3xl font-bold text-[#071530]">
                 {activeCategories}
                 </p>
             </div>
@@ -106,13 +106,13 @@
                 placeholder="Search categories..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] placeholder:text-slate-400 outline-none focus:border-[#0F2747] focus:ring-2 focus:ring-[#0F2747]/20"
+                className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] placeholder:text-slate-400 outline-none focus:border-[#071530] focus:ring-2 focus:ring-[#071530]/20"
                 />
 
                 <select
                 value={statusFilter}
                 onChange={(e) => setStatusFilter(e.target.value)}
-                className="rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] outline-none focus:border-[#0F2747] focus:ring-2 focus:ring-[#0F2747]/20"
+                className="rounded-lg border border-slate-300 px-4 py-3 text-[#071530] outline-none focus:border-[#071530] focus:ring-2 focus:ring-[#071530]/20"
                 >
                 <option value="ALL">
                     All Categories
@@ -130,18 +130,18 @@
             {/* Empty State */}
             {filteredCategories.length === 0 ? (
             <div className="rounded-2xl border border-slate-200 bg-white p-12 text-center shadow-sm">
-                <h2 className="text-2xl font-semibold text-[#0F2747]">
+                <h2 className="text-2xl font-semibold text-[#071530]">
                 No matching categories found.
                 </h2>
 
-                <p className="mt-3 text-[#0F2747]/70">
+                <p className="mt-3 text-[#071530]/70">
                 Try changing your search or filter.
                 </p>
             </div>
             ) : (
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <div className="border-b border-slate-200 px-6 py-4">
-                <h2 className="text-lg font-semibold text-[#0F2747]">
+                <h2 className="text-lg font-semibold text-[#071530]">
                     Categories
                 </h2>
                 </div>
@@ -150,27 +150,27 @@
                 <table className="w-full">
                     <thead>
                     <tr className="bg-slate-50">
-                        <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                        <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                         Name
                         </th>
 
-                        <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                        <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                         Slug
                         </th>
 
-                        <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                        <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                         Products
                         </th>
 
-                        <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                        <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                         Status
                         </th>
 
-                        <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                        <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                         Created
                         </th>
 
-                        <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                        <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                         Actions
                         </th>
                     </tr>
@@ -184,7 +184,7 @@
     >
       {/* Name */}
       <td className="px-6 py-5">
-        <div className="font-semibold text-[#0F2747]">
+        <div className="font-semibold text-[#071530]">
           {category.name}
         </div>
       </td>
@@ -198,7 +198,7 @@
 
       {/* Products */}
       <td className="px-6 py-5">
-        <span className="inline-flex items-center justify-center rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-[#0F2747]">
+        <span className="inline-flex items-center justify-center rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-[#071530]">
           {category._count.products}
         </span>
       </td>
@@ -226,7 +226,7 @@
         <div className="flex items-center gap-2">
           <Link
             href={`/admin/categories/${category.id}/edit`}
-            className="rounded-lg border border-[#0F2747] px-4 py-2 text-sm font-medium text-[#0F2747] transition hover:bg-[#0F2747] hover:text-white"
+            className="rounded-lg border border-[#071530] px-4 py-2 text-sm font-medium text-[#071530] transition hover:bg-[#071530] hover:text-white"
           >
             Edit
           </Link>

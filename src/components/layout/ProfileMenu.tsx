@@ -71,7 +71,7 @@ export default function ProfileMenu({
             items-center
             justify-center
             rounded-full
-            bg-[#0F2747]
+            bg-[#071530]
             text-white
             transition
             hover:scale-105

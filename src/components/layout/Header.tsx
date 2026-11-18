@@ -1,16 +1,14 @@
+
 "use client";
 
 import Link from "next/link";
-import { Search } from "lucide-react";
-import { useState } from "react";
-import { FaWhatsapp } from "react-icons/fa";
 import { LayoutGrid } from "lucide-react";
-import { useEffect } from "react";
-import { FileText } from "lucide-react";
+import { useState, useEffect } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
+
 import TopInfoBar from "./TopInfoBar";
 import ProductSearchModal from "@/components/search/ProductSearchModal";
-
 import MobileNavigation from "./MobileNavigation";
 import ProfileMenu from "./ProfileMenu";
 import ProductMegaMenu from "./MegaMenu";
@@ -36,24 +34,214 @@ export default function Header({
   categories,
 }: HeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
-
   const [searchOpen, setSearchOpen] = useState(false);
-
   const [megaMenuOpen, setMegaMenuOpen] = useState(false);
-  const [showTopBar, setShowTopBar] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
-      setShowTopBar(window.scrollY < 40);
+      setScrolled(window.scrollY > 10);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
+    });
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
     <>
-      <TopInfoBar show={showTopBar} />
+      {/* Top Info Bar - Scrolls with Page */}
+      <TopInfoBar />
+
+      {/* Main Header - Sticky */}
+      <div
+        className={`sticky top-0 z-50 w-full transition-shadow duration-300 ${
+          scrolled
+            ? "shadow-[0_6px_25px_rgba(7,21,48,0.12)]"
+            : "shadow-[0_2px_12px_rgba(7,21,48,0.05)]"
+        }`}
+      >
+        <header
+          className="
+            w-full
+            border-b
+            border-[#E2E8F0]
+            bg-white/98
+            backdrop-blur-md
+          "
+        >
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex h-16 items-center justify-between">
+
+              {/* Logo */}
+              <Link
+                href="/"
+                className="flex items-center transition-opacity duration-200 hover:opacity-95"
+              >
+                <Image
+                  src="/evora-logo.png"
+                  alt="Evora Industrial Solutions"
+                  width={190}
+                  height={65}
+                  priority
+                  className="h-10 sm:h-12 w-auto object-contain"
+                />
+              </Link>
+
+              {/* Desktop Navigation */}
+              <nav className="hidden items-center gap-1 xl:gap-2 lg:flex">
+
+                <ProductMegaMenu
+                  categories={categories}
+                  open={megaMenuOpen}
+                  setOpen={setMegaMenuOpen}
+                />
+
+                <Link
+                  href="/contact"
+                  className="
+                    rounded-lg
+                    px-3.5 py-2
+                    text-sm
+                    font-semibold
+                    text-[#071530]
+                    transition-all duration-200
+                    hover:bg-[#F3F6FC]
+                    hover:text-[#0865D8]
+                  "
+                >
+                  Contact Us
+                </Link>
+
+              </nav>
+
+              {/* Right Side */}
+              <div className="flex items-center gap-2 sm:gap-4">
+
+                {/* Request a Quote
+                <Link
+                  href="/contact"
+                  className="
+                    hidden lg:inline-flex
+                    items-center gap-2
+                    rounded-xl
+                    bg-[#0865D8]
+                    px-4 py-2.5
+                    text-xs
+                    font-bold
+                    uppercase
+                    tracking-wider
+                    text-white
+                    shadow-sm
+                    transition-all duration-200
+                    hover:bg-[#064FB0]
+                    hover:shadow-md
+                  "
+                >
+                  Request Quote
+                </Link> */}
+
+                {/* WhatsApp */}
+                <a
+                  href="https://wa.me/918766918892?text=Hello,%20I%20am%20interested%20in%20your%20Industrial%20Storage%20Solutions%20and%20Conveyor%20Systems.%20Please%20share%20product%20catalog,%20pricing%20and%20technical%20details."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Contact us on WhatsApp"
+                  className="
+                    group
+                    relative
+                    flex
+                    h-10 w-10
+                    items-center justify-center
+                    rounded-xl
+                    bg-[#25D366]
+                    text-white
+                    shadow-sm
+                    transition-all duration-300
+                    hover:scale-105
+                    hover:bg-[#20ba59]
+                    hover:shadow-md
+                  "
+                >
+                  <FaWhatsapp size={20} />
+
+                  <span
+                    className="
+                      pointer-events-none
+                      absolute
+                      top-12
+                      left-1/2
+                      -translate-x-1/2
+                      rounded-lg
+                      bg-[#071530]
+                      px-3 py-1.5
+                      text-xs
+                      font-medium
+                      text-white
+                      opacity-0
+                      shadow-lg
+                      transition-all duration-300
+                      group-hover:opacity-100
+                    "
+                  >
+                    WhatsApp
+                  </span>
+                </a>
+
+                {/* Profile */}
+                {isAdmin && (
+                  <div
+                    className="
+                      hidden lg:block
+                      rounded-xl
+                      border
+                      border-slate-200
+                      bg-white
+                      p-1
+                      shadow-sm
+                    "
+                  >
+                    <ProfileMenu
+                      isAuthenticated={isAuthenticated}
+                      isAdmin={isAdmin}
+                    />
+                  </div>
+                )}
+
+                {/* Mobile Menu */}
+                <button
+                  onClick={() => setMobileOpen(true)}
+                  aria-label="Open menu"
+                  aria-expanded={mobileOpen}
+                  className="
+                    flex lg:hidden
+                    h-10 w-10
+                    items-center justify-center
+                    rounded-xl
+                    border border-slate-200
+                    bg-white
+                    text-[#071530]
+                    shadow-sm
+                    transition-all duration-300
+                    hover:border-[#071530]
+                    hover:bg-[#071530]
+                    hover:text-white
+                  "
+                >
+                  <LayoutGrid size={20} />
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      {/* Mega Menu Overlay */}
       {megaMenuOpen && (
         <div
           onMouseEnter={() => setMegaMenuOpen(true)}
@@ -66,353 +254,18 @@ export default function Header({
             z-40
             bg-slate-900/15
             backdrop-blur-[4px]
-            transition-all
-            duration-300
+            transition-all duration-300
           "
         />
       )}
 
-      <header
-        className="
-          sticky
-          top-0
-          z-50
-          border-b
-          border-[#D9E2EE]
-          bg-gradient-to-r
-          from-[#FFF8F1]
-          via-white
-          to-[#EEF6FF]
-          backdrop-blur-xl
-          shadow-[0_8px_25px_rgba(15,39,71,0.08)]
-        "
-      >
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between">
-            {/* Logo */}
-             <Link
-              href="/"
-              className="flex items-center gap-1.5 transition-opacity duration-300 hover:opacity-90"
-            >
-              
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white shadow-sm sm:h-15 sm:w-15">
-                <Image
-                  src="/aven-logo.png"
-                  alt="Aven Automation"
-                  width={58}
-                  height={58}
-                  priority
-                  className="h-[42px] w-[42px] object-contain sm:h-[58px] sm:w-[58px]"
-                />
-              </div>
-
-             
-              <div className="flex flex-col justify-center">
-                <h1 className="text-xl font-extrabold tracking-tight text-[#0F2747] leading-none sm:text-[28px]">
-                  Aven
-                </h1>
-
-                <span
-                  className="mt-1 font-medium uppercase text-slate-500 sm:text-[11px] sm:tracking-[0.22em]"
-                  style={{
-                    fontSize: "7px",
-                    letterSpacing: "0.14em",
-                    WebkitTextSizeAdjust: "100%",
-                    textSizeAdjust: "100%",
-                  }}
-                >
-                  Industrial Automation 
-                </span>
-                
-              </div>
-            </Link>
-           {/* <Link
-              href="/"
-              className="flex items-center gap-1.5 transition-opacity duration-300 hover:opacity-90"
-            >
-              
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white shadow-sm sm:h-15 sm:w-15">
-                <Image
-                  src="/aven-logo.png"
-                  alt="Aven Automation"
-                  width={58}
-                  height={58}
-                  priority
-                  className="h-[42px] w-[42px] object-contain sm:h-[58px] sm:w-[58px]"
-                />
-              </div>
-
-              
-              <div className="flex flex-col justify-center">
-                <h1 className="text-xl font-extrabold tracking-tight text-[#0F2747] leading-none sm:text-[28px]">
-                  Aven
-                </h1>
-
-                <span
-                  className="mt-1 whitespace-nowrap font-medium uppercase text-slate-500 sm:text-[11px] sm:tracking-[0.2em]"
-                  style={{
-                    fontSize: "7px",
-                    letterSpacing: "0.06em",
-                    WebkitTextSizeAdjust: "100%",
-                    textSizeAdjust: "100%",
-                  }}
-                >
-                  Industrial Automation
-                </span>
-
-                <span
-                  className="mt-[3px] flex items-center gap-1 whitespace-nowrap font-semibold uppercase text-slate-600 sm:text-[10px] sm:tracking-[0.16em]"
-                  style={{
-                    fontSize: "6.5px",
-                    letterSpacing: "0.04em",
-                    WebkitTextSizeAdjust: "100%",
-                    textSizeAdjust: "100%",
-                  }}
-                >
-                  
-                  by GlowMac Engineers
-                </span>
-              </div>
-            </Link> */}
-
-            {/* Desktop Navigation */}
-
-            <nav className="hidden items-center gap-3 lg:flex">
-              {/* <Link
-                href="/"
-                className="
-                  rounded-xl
-                  px-5
-                  py-2.5
-                  font-medium
-                  text-slate-700
-                  transition-all
-                  duration-300
-                  hover:bg-[#0F2747]
-                  hover:text-white
-                  hover:shadow-md
-                "
-              >
-                Home
-              </Link> */}
-
-              <ProductMegaMenu
-                categories={categories}
-                open={megaMenuOpen}
-                setOpen={setMegaMenuOpen}
-              />
-              {/* <Link
-                href="/about"
-                className="
-                  rounded-xl
-                  px-5
-                  py-2.5
-                  font-medium
-                  text-slate-700
-                  transition-all
-                  duration-300
-                  hover:bg-[#0F2747]
-                  hover:text-white
-                  hover:shadow-md
-                "
-              >
-                About
-              </Link> */}
-
-              <Link
-                href="/contact"
-                className="
-                  rounded-xl
-                  underline
-                  px-5
-                  py-2.5
-                  font-medium
-                  text-[#0F2747]
-                  transition-all
-                  duration-300
-                  hover:bg-[#0F2747]
-                  hover:text-white
-                  hover:shadow-md
-                "
-              >
-                Contact Us
-              </Link>
-            </nav>
-            {/* Right Side */}
-
-            <div className="flex items-center gap-4">
-             
-              {/* <a
-                href="/catalog/Aven-Industrial-Automation-Catalog.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  hidden
-                  lg:inline-flex
-                  items-center
-                  gap-2
-                  rounded-2xl
-                  bg-[#0F2747]
-                  px-5
-                  py-2.5
-                  font-semibold
-                  text-white
-                  shadow-lg
-                  transition-all
-                  duration-300
-                  hover:-translate-y-1
-                  hover:scale-105
-                  hover:shadow-xl
-                "
-              >
-                <FileText size={18} />
-                Catalogue
-
-              </a> */}
-              {/* WhatsApp */}
-
-              <a
-                href="https://wa.me/918766918892?text=Hello,%20I%20am%20interested%20in%20your%20Industrial%20Automation%20Solutions.%20Please%20share%20product%20catalog,%20pricing%20and%20technical%20details."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  group
-                  relative
-                  hidden
-                  lg:flex
-                  h-10
-                  w-10
-                  items-center
-                  justify-center
-                  rounded-xl
-                  bg-green-500
-                  text-white
-                  shadow-sm
-                  transition-all
-                  duration-300
-                 
-                   animate-[pulse_3s_ease-in-out_infinite]
-                  hover:animate-none
-                     hover:scale-110
-                     hover:bg-green-600
-                 
-                  hover:shadow-lg
-                "
-              >
-                <FaWhatsapp size={20} />
-
-                <span
-                  className="
-                    pointer-events-none
-                    absolute
-                    top-12
-                    left-1/2
-                    -translate-x-1/2
-                    rounded-lg
-                    bg-[#0F2747]
-                    px-3
-                    py-1.5
-                    text-xs
-                    font-medium
-                    text-white
-                    opacity-0
-                    shadow-lg
-                    transition-all
-                    duration-300
-                    group-hover:opacity-100
-                  "
-                >
-                  WhatsApp
-                </span>
-              </a>
-
-              {/* Profile */}
-
-              {isAdmin && (
-                <div
-                  className="
-                    hidden
-                    lg:block
-                    rounded-xl
-                    border
-                    border-slate-200
-                    bg-white
-                    p-1
-                    shadow-sm
-                  "
-                >
-                  <ProfileMenu
-                    isAuthenticated={isAuthenticated}
-                    isAdmin={isAdmin}
-                  />
-                </div>
-              )}
-              {/* Mobile Catalogue */}
-              {/* <a
-                href="/catalog/Aven-Industrial-Automation-Catalog.pdf" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  lg:hidden
-                  inline-flex
-                  items-center
-                  gap-2
-                  rounded-xl
-                  bg-[#0F2747]
-                  px-4
-                  py-2.5
-                  font-semibold
-                  text-white
-                  shadow-lg
-                  transition-all
-                  duration-300
-                  hover:-translate-y-1
-                  hover:scale-105
-                  hover:shadow-xl
-                  active:scale-95
-                "
-              >
-                <FileText size={18} />
-
-                <span className="text-sm">Catalogue</span>
-              </a> */}
-
-              {/* Mobile Menu */}
-
-              <button
-                onClick={() => setMobileOpen(true)}
-                className="
-                  flex
-                  h-10
-                  w-10
-                  items-center
-                  justify-center
-                  rounded-xl
-                  border
-                  border-slate-200
-                  bg-white
-                  text-[#0F2747]
-                  shadow-sm
-                  transition-all
-                  duration-300
-                  hover:border-[#0F2747]
-                  hover:bg-[#0F2747]
-                  hover:text-white
-                  lg:hidden
-                "
-              >
-                <LayoutGrid size={20} />
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
-
+      {/* Product Search Modal */}
       <ProductSearchModal
         open={searchOpen}
         onClose={() => setSearchOpen(false)}
       />
 
+      {/* Mobile Navigation */}
       <MobileNavigation
         open={mobileOpen}
         onClose={() => setMobileOpen(false)}

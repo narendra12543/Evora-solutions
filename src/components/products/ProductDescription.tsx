@@ -14,7 +14,7 @@ export default function ProductDescription({
 
   return (
     <section className="mt-4 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-      <h2 className="mb-5 text-2xl font-bold text-[#0F2747]">
+      <h2 className="mb-5 text-2xl font-bold text-[#071530]">
         Introduction
       </h2>
 
@@ -32,7 +32,7 @@ export default function ProductDescription({
           onClick={() =>
             setExpanded(!expanded)
           }
-          className="mt-4 font-semibold text-[#0F2747] hover:text-red-500"
+          className="mt-4 font-semibold text-[#071530] hover:text-red-500"
         >
           {expanded
             ? "Read Less..."

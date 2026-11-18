@@ -70,7 +70,7 @@ export default async function DownloadsPage() {
             <div className="mt-6">
               <Link
                 href="/products"
-                className="inline-flex items-center rounded-lg bg-[#0F2747] px-6 py-3 font-medium text-white transition hover:bg-[#163A68]"
+                className="inline-flex items-center rounded-lg bg-[#071530] px-6 py-3 font-medium text-white transition hover:bg-[#163A68]"
               >
                 Browse Products
               </Link>

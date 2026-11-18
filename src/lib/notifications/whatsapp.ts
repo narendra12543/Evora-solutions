@@ -26,7 +26,7 @@ ${productName}
 Our team will contact you shortly.
 
 Regards,
-Aven Industrial automation
+Evora Industrial Solutions
 `;
 }
 

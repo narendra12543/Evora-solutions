@@ -14,7 +14,7 @@ export default function FeaturedProductsStrip({
   return (
     <section className="py-10">
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-6 text-2xl font-bold text-[#0F2747]">
+        <h2 className="mb-6 text-2xl font-bold text-[#071530]">
           Featured Products
         </h2>
 
@@ -54,7 +54,7 @@ export default function FeaturedProductsStrip({
               </div>
 
               <div className="p-4">
-                <h3 className="font-semibold text-[#0F2747]">
+                <h3 className="font-semibold text-[#071530]">
                   {product.name}
                 </h3>
 

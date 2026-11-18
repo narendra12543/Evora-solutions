@@ -133,7 +133,7 @@ export default function ProductGallery({
                       ${
                         selectedImage ===
                         index
-                          ? "border-[#0F2747] shadow-md"
+                          ? "border-[#071530] shadow-md"
                           : "border-slate-200 hover:border-slate-300"
                       }
                     `}

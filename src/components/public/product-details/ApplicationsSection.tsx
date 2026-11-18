@@ -45,7 +45,7 @@ export default function ApplicationsSection({
   return (
     <section className="mt-8 px-4 sm:px-0">
       <div className="mb-5">
-        <h2 className="text-xl font-bold text-[#0F2747] sm:text-2xl">
+        <h2 className="text-xl font-bold text-[#071530] sm:text-2xl">
           Applications
         </h2>
 
@@ -90,7 +90,7 @@ export default function ApplicationsSection({
                   className="text-orange-500 transition-transform group-hover:scale-110"
                 />
 
-                <p className="mt-2.5 text-sm font-semibold text-[#0F2747] leading-tight break-words">
+                <p className="mt-2.5 text-sm font-semibold text-[#071530] leading-tight break-words">
                   {String(application)}
                 </p>
               </div>

@@ -49,7 +49,7 @@ export async function createContact(data: {
     const customerEmailResponse = await resend.emails.send({
       from: process.env.FROM_EMAIL!,
       to: data.email,
-      subject: "Thank You for Contacting Aven Automation",
+      subject: "Thank You for Contacting Evora Solutions",
       react: CustomerContactTemplate({
         name: data.name,
         email: data.email,

@@ -47,14 +47,14 @@ export async function generateMetadata({
 
   const title =
     seo?.title ??
-    `${product.name} | Aven Industrial Automation`;
+    `${product.name} | Evora Industrial Solutions`;
 
   const description =
     seo?.description ??
     product.shortDescription ??
-    `${product.name} by Aven Industrial Automation`;
+    `${product.name} by Evora Industrial Solutions`;
 
-  const canonical = `https://avenautomation.in/products/${product.slug}`;
+  const canonical = `https://evorasolutions.in/products/${product.slug}`;
 
   const image =
     product.images.find((img) => img.isPrimary)?.imageUrl ??
@@ -78,7 +78,7 @@ export async function generateMetadata({
       description: seo?.ogDescription ?? description,
       url: canonical,
       type: "website",
-      siteName: "Aven Industrial Automation",
+      siteName: "Evora Industrial Solutions",
 
       images: image
         ? [
@@ -132,15 +132,15 @@ export default async function ProductDetailsPage({
         items={[
           {
             name: "Home",
-            url: "https://avenautomation.in",
+            url: "https://evorasolutions.in",
           },
           {
             name: "Products",
-            url: "https://avenautomation.in/products",
+            url: "https://evorasolutions.in/products",
           },
           {
             name: product.name,
-            url: `https://avenautomation.in/products/${product.slug}`,
+            url: `https://evorasolutions.in/products/${product.slug}`,
           },
         ]}
       />
@@ -162,7 +162,7 @@ export default async function ProductDetailsPage({
             <div className="mt-8">
               
 
-              <h1 className="mt-5 text-2xl font-bold text-[#0F2747]">
+              <h1 className="mt-5 text-2xl font-bold text-[#071530]">
                 {product.name}
               </h1>
 
@@ -180,7 +180,7 @@ export default async function ProductDetailsPage({
                 <a
                   href={product.brochureUrl}
                   target="_blank"
-                  className="rounded-xl bg-[#0F2747] px-6 py-3 font-medium text-white transition hover:bg-[#173865]"
+                  className="rounded-xl bg-[#071530] px-6 py-3 font-medium text-white transition hover:bg-[#173865]"
                 >
                   Download Brochure
                 </a>
@@ -190,7 +190,7 @@ export default async function ProductDetailsPage({
                 <a
                   href={product.datasheetUrl}
                   target="_blank"
-                  className="rounded-xl border border-[#0F2747] px-6 py-3 font-medium text-[#0F2747] transition hover:bg-slate-50"
+                  className="rounded-xl border border-[#071530] px-6 py-3 font-medium text-[#071530] transition hover:bg-slate-50"
                 >
                   Download Datasheet
                 </a>
@@ -229,25 +229,17 @@ export default async function ProductDetailsPage({
               className="
                 relative
                 overflow-hidden
-                rounded-[32px]
-                bg-[#183356]
+                rounded-3xl
+                border
+                border-[#0F2347]
+                bg-[#071530]
                 p-8
+                sm:p-10
                 shadow-2xl
               "
             >
-              {/* Background Pattern */}
-              <div
-                className="
-                  absolute
-                  inset-0
-                  opacity-[0.05]
-                 
-                  bg-[size:45px_45px]
-                "
-              />
-
-              {/* Orange Glow */}
-              <div className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-orange-500/20 blur-3xl" />
+              {/* Precision Dark Grid */}
+              <div className="pointer-events-none absolute inset-0 industrial-grid-dark opacity-30" />
 
               <div className="relative">
                 <div className="mb-10">
@@ -256,8 +248,8 @@ export default async function ProductDetailsPage({
                   </h2>
 
                   <p className="mt-1 max-w-2xl text-sm text-slate-300">
-                    Tell us about your requirement. Our Aven Automation
-                    experts will contact you with the best solution for your
+                    Tell us about your requirement. Our Evora Solutions
+                    specialists will contact you with the best solution for your
                     application.
                   </p>
                 </div>

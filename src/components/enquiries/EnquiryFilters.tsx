@@ -63,7 +63,7 @@ export default function EnquiryFilters({
         {/* Search */}
 
         <div>
-          <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+          <label className="mb-2 block text-sm font-medium text-[#071530]">
             Search
           </label>
 
@@ -76,14 +76,14 @@ export default function EnquiryFilters({
               )
             }
             placeholder="Search enquiries..."
-            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] placeholder:text-slate-400 outline-none focus:border-[#0F2747]"
+            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] placeholder:text-slate-400 outline-none focus:border-[#071530]"
           />
         </div>
 
         {/* Status */}
 
         <div>
-          <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+          <label className="mb-2 block text-sm font-medium text-[#071530]">
             Status
           </label>
 
@@ -94,7 +94,7 @@ export default function EnquiryFilters({
                 e.target.value
               )
             }
-            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] outline-none focus:border-[#0F2747]"
+            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] outline-none focus:border-[#071530]"
           >
             <option value="ALL">
               All Status
@@ -134,7 +134,7 @@ export default function EnquiryFilters({
             onClick={
               handleApplyFilters
             }
-            className="rounded-lg bg-[#0F2747] px-5 py-3 font-medium text-white transition hover:bg-[#18385F]"
+            className="rounded-lg bg-[#071530] px-5 py-3 font-medium text-white transition hover:bg-[#18385F]"
           >
             Apply
           </button>
@@ -142,7 +142,7 @@ export default function EnquiryFilters({
           <button
             type="button"
             onClick={handleReset}
-            className="rounded-lg border border-[#0F2747] px-5 py-3 font-medium text-[#0F2747]"
+            className="rounded-lg border border-[#071530] px-5 py-3 font-medium text-[#071530]"
           >
             Reset
           </button>

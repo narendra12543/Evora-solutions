@@ -100,7 +100,7 @@ export default function UserEnquiriesTable({
             );
             setPage(1);
           }}
-          className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] outline-none focus:border-[#0F2747]"
+          className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] outline-none focus:border-[#071530]"
         />
       </div>
 
@@ -110,27 +110,27 @@ export default function UserEnquiriesTable({
           <table className="w-full">
             <thead>
               <tr className="bg-slate-50">
-                <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                   Product
                 </th>
 
-                <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                   Quantity
                 </th>
 
-                <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                   Status
                 </th>
 
-                <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                   Created
                 </th>
 
-                <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                   Updated
                 </th>
 
-                <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                   Action
                 </th>
               </tr>
@@ -143,7 +143,7 @@ export default function UserEnquiriesTable({
                     colSpan={6}
                     className="px-6 py-12 text-center"
                   >
-                    <h3 className="text-lg font-semibold text-[#0F2747]">
+                    <h3 className="text-lg font-semibold text-[#071530]">
                       No Enquiries Found
                     </h3>
 
@@ -159,11 +159,11 @@ export default function UserEnquiriesTable({
                       key={enquiry.id}
                       className="border-t"
                     >
-                      <td className="px-6 py-4 text-[#0F2747]">
+                      <td className="px-6 py-4 text-[#071530]">
                         {enquiry.product?.name}
                       </td>
 
-                      <td className="px-6 py-4 text-[#0F2747]">
+                      <td className="px-6 py-4 text-[#071530]">
                         {enquiry.quantity}
                       </td>
 
@@ -177,13 +177,13 @@ export default function UserEnquiriesTable({
                         </span>
                       </td>
 
-                      <td className="px-6 py-4 text-[#0F2747]">
+                      <td className="px-6 py-4 text-[#071530]">
                         {new Date(
                           enquiry.createdAt
                         ).toLocaleDateString()}
                       </td>
 
-                      <td className="px-6 py-4 text-[#0F2747]">
+                      <td className="px-6 py-4 text-[#071530]">
                         {new Date(
                           enquiry.updatedAt
                         ).toLocaleDateString()}
@@ -192,7 +192,7 @@ export default function UserEnquiriesTable({
                       <td className="px-6 py-4">
                         <Link
                           href={`/dashboard/enquiries/${enquiry.id}`}
-                          className="rounded-lg bg-[#0F2747] px-4 py-2 text-sm text-white transition hover:bg-[#18385F]"
+                          className="rounded-lg bg-[#071530] px-4 py-2 text-sm text-white transition hover:bg-[#18385F]"
                         >
                           View
                         </Link>
@@ -223,8 +223,8 @@ export default function UserEnquiriesTable({
                 }
                 className={`rounded-lg px-4 py-2 transition ${
                   page === index + 1
-                    ? "bg-[#0F2747] text-white"
-                    : "border border-[#0F2747] text-[#0F2747]"
+                    ? "bg-[#071530] text-white"
+                    : "border border-[#071530] text-[#071530]"
                 }`}
               >
                 {index + 1}

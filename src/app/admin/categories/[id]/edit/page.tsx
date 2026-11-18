@@ -169,7 +169,7 @@ export default function EditCategoryPage({
 
             <Link
               href="/admin/categories"
-              className="mt-6 inline-flex rounded-lg bg-[#0F2747] px-5 py-3 text-white"
+              className="mt-6 inline-flex rounded-lg bg-[#071530] px-5 py-3 text-white"
             >
               Back to Categories
             </Link>
@@ -206,7 +206,7 @@ export default function EditCategoryPage({
 
         {/* Form Card */}
         <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-          <div className="border-b border-slate-200 bg-[#0F2747] px-6 py-4">
+          <div className="border-b border-slate-200 bg-[#071530] px-6 py-4">
             <h2 className="text-lg font-semibold text-white">
               Category Information
             </h2>
@@ -233,7 +233,7 @@ export default function EditCategoryPage({
               <div>
                 <label
                   htmlFor="name"
-                  className="mb-2 block text-sm font-medium text-[#0F2747]"
+                  className="mb-2 block text-sm font-medium text-[#071530]"
                 >
                   Category Name *
                 </label>
@@ -243,7 +243,7 @@ export default function EditCategoryPage({
                   type="text"
                   value={name}
                   onChange={handleNameChange}
-                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0F2747] focus:ring-1 focus:ring-[#0F2747]"
+                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#071530] focus:ring-1 focus:ring-[#071530]"
                 />
               </div>
 
@@ -251,7 +251,7 @@ export default function EditCategoryPage({
               <div>
                 <label
                   htmlFor="slug"
-                  className="mb-2 block text-sm font-medium text-[#0F2747]"
+                  className="mb-2 block text-sm font-medium text-[#071530]"
                 >
                   Slug *
                 </label>
@@ -261,7 +261,7 @@ export default function EditCategoryPage({
                   type="text"
                   value={slug}
                   onChange={handleSlugChange}
-                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0F2747] focus:ring-1 focus:ring-[#0F2747]"
+                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#071530] focus:ring-1 focus:ring-[#071530]"
                 />
               </div>
 
@@ -269,7 +269,7 @@ export default function EditCategoryPage({
               <div>
                 <label
                   htmlFor="description"
-                  className="mb-2 block text-sm font-medium text-[#0F2747]"
+                  className="mb-2 block text-sm font-medium text-[#071530]"
                 >
                   Description
                 </label>
@@ -281,7 +281,7 @@ export default function EditCategoryPage({
                   onChange={(event) =>
                     setDescription(event.target.value)
                   }
-                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0F2747] focus:ring-1 focus:ring-[#0F2747]"
+                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#071530] focus:ring-1 focus:ring-[#071530]"
                 />
               </div>
 
@@ -294,10 +294,10 @@ export default function EditCategoryPage({
                     onChange={(event) =>
                       setIsActive(event.target.checked)
                     }
-                    className="h-4 w-4 rounded border-slate-300 text-[#0F2747] focus:ring-[#0F2747]"
+                    className="h-4 w-4 rounded border-slate-300 text-[#071530] focus:ring-[#071530]"
                   />
 
-                  <span className="font-medium text-[#0F2747]">
+                  <span className="font-medium text-[#071530]">
                     Active Status
                   </span>
                 </label>
@@ -313,7 +313,7 @@ export default function EditCategoryPage({
                 <button
                   type="submit"
                   disabled={loading}
-                  className="inline-flex items-center justify-center rounded-lg bg-[#0F2747] px-6 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:cursor-not-allowed disabled:opacity-70"
+                  className="inline-flex items-center justify-center rounded-lg bg-[#071530] px-6 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:cursor-not-allowed disabled:opacity-70"
                 >
                   {loading
                     ? "Updating..."

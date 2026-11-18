@@ -16,41 +16,41 @@ export default function EnquiryStatsCards({
   return (
     <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
       {/* <div className="rounded-xl border bg-white p-5 shadow-sm">
-        <p className="text-sm text-[#0F2747]">
+        <p className="text-sm text-[#071530]">
           Total Enquiries
         </p>
 
-        <p className="mt-2 text-3xl font-bold text-[#0F2747]">
+        <p className="mt-2 text-3xl font-bold text-[#071530]">
           {analytics.totalEnquiries}
         </p>
       </div>
 
       <div className="rounded-xl border bg-white p-5 shadow-sm">
-        <p className="text-sm text-[#0F2747]">
+        <p className="text-sm text-[#071530]">
           Today's Enquiries
         </p>
 
-        <p className="mt-2 text-3xl font-bold text-[#0F2747]">
+        <p className="mt-2 text-3xl font-bold text-[#071530]">
           {analytics.todayEnquiries}
         </p>
       </div>
 
       <div className="rounded-xl border bg-white p-5 shadow-sm">
-        <p className="text-sm text-[#0F2747]">
+        <p className="text-sm text-[#071530]">
           This Week
         </p>
 
-        <p className="mt-2 text-3xl font-bold text-[#0F2747]">
+        <p className="mt-2 text-3xl font-bold text-[#071530]">
           {analytics.thisWeekEnquiries}
         </p>
       </div>
 
       <div className="rounded-xl border bg-white p-5 shadow-sm">
-        <p className="text-sm text-[#0F2747]">
+        <p className="text-sm text-[#071530]">
           This Month
         </p>
 
-        <p className="mt-2 text-3xl font-bold text-[#0F2747]">
+        <p className="mt-2 text-3xl font-bold text-[#071530]">
           {analytics.thisMonthEnquiries}
         </p>
       </div>
@@ -75,7 +75,7 @@ export default function EnquiryStatsCards({
         </p>
       </div> */}
 
-      <div className="rounded-xl border border-[#0F2747] bg-[#0F2747] p-5 shadow-sm md:col-span-2">
+      <div className="rounded-xl border border-[#071530] bg-[#071530] p-5 shadow-sm md:col-span-2">
         <p className="text-sm text-white">
             Conversion Rate
         </p>

@@ -15,7 +15,7 @@ export default function ProductFAQSchema({
         name: `What is ${productName}?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `${productName} is a premium industrial entrance automation solution offered by Aven Automation.`,
+          text: `${productName} is a premium industrial storage and conveyor solution engineered by Evora Solutions.`,
         },
       },
       {
@@ -23,15 +23,15 @@ export default function ProductFAQSchema({
         name: `Where is ${productName} used?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `${productName} is suitable for residential, commercial and industrial applications.`,
+          text: `${productName} is suitable for manufacturing plants, distribution warehouses, logistics hubs, and industrial facilities.`,
         },
       },
       {
         "@type": "Question",
-        name: `Can Aven Automation customize ${productName}?`,
+        name: `Can Evora Solutions customize ${productName}?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `Yes. Aven Automation provides customized solutions based on project requirements.`,
+          text: `Yes. Evora Solutions provides customized layout and engineering solutions based on project requirements.`,
         },
       },
     ],

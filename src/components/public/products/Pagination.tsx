@@ -35,7 +35,7 @@ export default function Pagination({
               transition
               ${
                 currentPage === page
-                  ? "bg-[#0F2747] text-white"
+                  ? "bg-[#071530] text-white"
                   : "bg-white hover:bg-slate-100"
               }
             `}

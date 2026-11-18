@@ -85,7 +85,7 @@ export default function ProductSearchModal({
         "
       >
         <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-xl font-bold text-[#0F2747]">
+          <h2 className="text-xl font-bold text-[#071530]">
             Search Products
           </h2>
 
@@ -125,7 +125,7 @@ export default function ProductSearchModal({
             px-4
             py-3
             outline-none
-            focus:border-[#0F2747]
+            focus:border-[#071530]
           "
         />
 

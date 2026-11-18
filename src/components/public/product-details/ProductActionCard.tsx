@@ -18,13 +18,13 @@ export default function ProductActionCard({
   return (
     <div className="sticky top-24">
       <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-lg">
-        <div className="bg-[#0F2747] p-5 text-white">
+        <div className="bg-[#071530] p-5 text-white">
           <h3 className="text-xl font-bold">
             Need Assistance?
           </h3>
 
           <p className="mt-2 text-sm text-slate-200">
-            Talk with our automation experts.
+            Talk with our industrial storage &amp; conveyor specialists.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function ProductActionCard({
               Product Category
             </p>
 
-            <p className="mt-1 font-semibold text-[#0F2747]">
+            <p className="mt-1 font-semibold text-[#071530]">
               {category}
             </p>
           </div>
@@ -51,35 +51,36 @@ export default function ProductActionCard({
             <div className="flex items-center gap-2">
               <Headphones
                 size={18}
-                className="text-blue-600"
+                className="text-[#0865D8]"
               />
-              Technical Support
+              Engineering Support
             </div>
 
             <div className="flex items-center gap-2">
               <Clock3
                 size={18}
-                className="text-orange-600"
+                className="text-[#F7941D]"
               />
-              Fast Response
+              Fast Technical Turnaround
             </div>
           </div>
 
           <div className="mt-6 space-y-3">
             <Link
               href={`/products/${slug}#enquiry`}
-              className="block rounded-xl bg-[#0F2747] px-5 py-3 text-center font-medium text-white transition hover:bg-[#173865]"
-           >
+              className="block rounded-xl bg-[#0865D8] px-5 py-3 text-center text-xs font-bold uppercase tracking-wider text-white shadow-sm transition hover:bg-[#064FB0]"
+            >
               Request Quote
             </Link>
 
             <a
-              href="https://wa.me/918766918892"
+              href="https://wa.me/918766918892?text=Hello,%20I%20am%20interested%20in%20product%20details%20for%20industrial%20solutions."
               target="_blank"
-              className="flex items-center justify-center gap-2 rounded-xl bg-orange-500 px-5 py-3 font-medium text-white transition hover:bg-orange-600"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-xs font-bold uppercase tracking-wider text-white shadow-sm transition hover:bg-[#20ba59]"
             >
-              <FaWhatsapp />
-              WhatsApp Expert
+              <FaWhatsapp size={16} />
+              WhatsApp Specialist
             </a>
           </div>
         </div>

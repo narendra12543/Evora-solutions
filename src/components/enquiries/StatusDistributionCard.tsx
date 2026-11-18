@@ -49,7 +49,7 @@ export default function StatusDistributionCard({
 
   return (
     <div className="rounded-xl border bg-white p-6 shadow-sm">
-      <h2 className="mb-6 text-xl font-bold text-[#0F2747]">
+      <h2 className="mb-6 text-xl font-bold text-[#071530]">
         Status Distribution
       </h2>
 
@@ -65,12 +65,12 @@ export default function StatusDistributionCard({
                   className={`h-3 w-3 rounded-full ${status.color}`}
                 />
 
-                <span className="text-sm font-medium text-[#0F2747]">
+                <span className="text-sm font-medium text-[#071530]">
                   {status.label}
                 </span>
               </div>
 
-              <span className="font-bold text-[#0F2747]">
+              <span className="font-bold text-[#071530]">
                 {status.value}
               </span>
             </div>

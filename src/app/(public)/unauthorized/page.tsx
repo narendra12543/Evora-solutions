@@ -40,7 +40,7 @@ export default function UnauthorizedPage() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Link
                 href="/"
-                className="inline-flex items-center justify-center rounded-lg bg-[#0F2747] px-6 py-3 font-medium text-white transition hover:bg-[#163A68]"
+                className="inline-flex items-center justify-center rounded-lg bg-[#071530] px-6 py-3 font-medium text-white transition hover:bg-[#163A68]"
               >
                 Return Home
               </Link>

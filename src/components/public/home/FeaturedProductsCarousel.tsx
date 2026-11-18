@@ -52,7 +52,7 @@ export default function FeaturedProductsCarousel({
           border
           border-slate-200
           bg-white
-          text-[#0F2747]
+          text-[#071530]
           shadow-xl
           transition-all
           duration-300
@@ -86,7 +86,7 @@ export default function FeaturedProductsCarousel({
           border
           border-slate-200
           bg-white
-          text-[#0F2747]
+          text-[#071530]
           shadow-xl
           transition-all
           duration-300

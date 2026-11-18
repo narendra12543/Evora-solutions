@@ -1,26 +1,76 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0F2747;
+  --primary: #071530;
+  --secondary: #0865D8;
+  --accent: #F7941D;
+  --background: #FFFFFF;
+  --surface: #F8FAFC;
+  --text: #0F172A;
+  --border: #E2E8F0;
+  --foreground: #0F172A;
+  --primary-hover: #050E22;
+  --secondary-hover: #064FB0;
+  --accent-hover: #DE7E0D;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 104px;
+  overflow-x: clip;
+}
+
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--text);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #0865D8;
+  color: #FFFFFF;
+}
+
+/* Precision Industrial Grid Backgrounds */
+.industrial-grid {
+  background-image: 
+    linear-gradient(to right, rgba(11, 40, 100, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(11, 40, 100, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.industrial-grid-dark {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.glass-navy {
+  background: rgba(7, 21, 48, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 input,
 textarea,
 select {
-  color: #0F2747;
+  color: #071530;
 }
 
 input::placeholder,
@@ -33,7 +83,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-  -webkit-text-fill-color: #0F2747 !important;
+  -webkit-text-fill-color: #071530 !important;
   transition: background-color 5000s ease-in-out 0s;
 }
 

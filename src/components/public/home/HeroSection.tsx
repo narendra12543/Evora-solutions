@@ -16,7 +16,7 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <Image
           src="/images/hero-bg.png"
-          alt="Industrial Automation"
+          alt="Evora Industrial Solutions - Storage & Conveyor Systems"
           fill
           priority
           className="object-cover object-center"
@@ -41,10 +41,6 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="absolute -top-20 left-0 h-72 w-72 rounded-full bg-orange-100 blur-3xl" />
-
-      <div className="absolute right-0 top-0 h-72 w-72 rounded-full blur-3xl" />
-
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-2 sm:px-6 lg:px-8 lg:py-2">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1.6fr)_380px] lg:items-start">
           {/* Left Content */}
@@ -62,12 +58,12 @@ export default function HeroSection() {
                 px-4
                 py-2
                 text-sm
-                font-medium
+                font-semibold
                 text-orange-700
                 backdrop-blur-sm
               "
             >
-              Aven Industrial automation
+              Evora Industrial Solutions
             </div>
 
             <h1
@@ -81,17 +77,17 @@ export default function HeroSection() {
                 md:text-4xl
                 lg:text-4xl
                 bg-gradient-to-r
-                from-[#0F2747]
-                via-[#0e2849]
-                to-[#0F2747]
+                from-[#071530]
+                via-[#1E3A8A]
+                to-orange-600
                 bg-clip-text
                 text-transparent
                 animate-[fadeUp_1s_ease-out]
               "
             >
-              Smart Aven Industrial automation
+              Advanced Industrial Storage &amp; Conveyor Systems
               <br />
-              For Modern Manufacturing
+              For Modern Manufacturing &amp; Logistics
             </h1>
             <h2
               className="
@@ -109,19 +105,18 @@ export default function HeroSection() {
               
               "
             >
-              We specialize in delivering advanced industrial automation
-              solutions for manufacturing plants, warehouses, commercial
-              facilities and infrastructure projects. Our expertise includes PLC
-              & SCADA systems, electrical control panels, Industrial IoT
-              integration, VFD drives, sensors, HMI solutions, gate automation,
-              boom barriers, rolling shutters, access control systems and
-              customized engineering services, helping businesses improve
-              productivity, safety and operational efficiency.
+              We specialize in delivering high-density industrial storage
+              solutions and customized industrial conveyor systems for
+              manufacturing plants, distribution warehouses, e-commerce hubs,
+              and logistics parks. Our offerings include heavy-duty pallet racking,
+              cantilever racks, multi-tier mezzanine floors, drive-in systems,
+              powered roller conveyors, belt conveyors, modular conveyors, and
+              complete material handling automation.
             </h2>
 
             {/* CTA */}
 
-            <div className="mt-4 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-4 flex flex-col gap-4 sm:flex-row justify-center">
               <Link
                 href="/products"
                 className="
@@ -131,19 +126,18 @@ export default function HeroSection() {
                   justify-center
                   rounded-xl
                   border
-                  border-[#0F2747]
-                  bg-white/95
+                  border-orange-500
+                  bg-orange-500
                   px-6
                   py-3
                   font-semibold
-                  text-[#0F2747]
+                  text-white
                   shadow-md
                   backdrop-blur-sm
                   transition-all
                   duration-300
                   hover:-translate-y-1
-                  hover:bg-[#0F2747]
-                  hover:text-white
+                  hover:bg-orange-600
                   hover:shadow-xl
                 "
               >

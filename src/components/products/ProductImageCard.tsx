@@ -119,7 +119,7 @@ export default function ProductImageCard({
           Image URL
         </p>
 
-        <p className="mt-1 truncate text-sm text-[#0F2747]">
+        <p className="mt-1 truncate text-sm text-[#071530]">
           {image.imageUrl}
         </p>
 
@@ -128,7 +128,7 @@ export default function ProductImageCard({
             Sort Order
           </p>
 
-          <p className="mt-1 font-semibold text-[#0F2747]">
+          <p className="mt-1 font-semibold text-[#071530]">
             {image.sortOrder}
           </p>
         </div>
@@ -147,7 +147,7 @@ export default function ProductImageCard({
                 e.target.value
               )
             }
-            className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-[#0F2747] outline-none focus:border-[#0F2747]"
+            className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-[#071530] outline-none focus:border-[#071530]"
             placeholder="Enter image alt text"
           />
         </div>
@@ -159,7 +159,7 @@ export default function ProductImageCard({
               handleSaveAltText
             }
             disabled={savingAlt}
-            className="rounded-lg border border-[#0F2747] px-3 py-1.5 text-sm text-[#0F2747] transition hover:bg-[#0F2747] hover:text-white"
+            className="rounded-lg border border-[#071530] px-3 py-1.5 text-sm text-[#071530] transition hover:bg-[#071530] hover:text-white"
           >
             {savingAlt
               ? "Saving..."
@@ -175,7 +175,7 @@ export default function ProductImageCard({
               disabled={
                 settingPrimary
               }
-              className="rounded-lg border border-[#0F2747] px-3 py-1.5 text-sm text-[#0F2747] transition hover:bg-[#0F2747] hover:text-white"
+              className="rounded-lg border border-[#071530] px-3 py-1.5 text-sm text-[#071530] transition hover:bg-[#071530] hover:text-white"
             >
               {settingPrimary
                 ? "Updating..."

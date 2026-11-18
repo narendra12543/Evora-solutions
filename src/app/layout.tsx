@@ -19,176 +19,79 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://avenautomation.in"),
+  metadataBase: new URL("https://evorasolutions.in"),
 
   title: {
     default:
-      "Aven Industrial Automation | Automatic Gates, Industrial Doors, Boom Barriers & Conveyor Systems",
-    template: "%s | Aven Industrial Automation",
+      "Evora Industrial Solutions | Industrial Storage Solutions & Industrial Conveyor Systems",
+    template: "%s | Evora Industrial Solutions",
   },
 
   description:
-    "Aven Industrial Automation(Aven Automation) is a leading Industrial Automation and Industrial Entrance Automation company in Pune, Maharashtra, India. We manufacture and supply Automatic Sliding Gates, Swing Gates, High Speed Doors, Industrial Doors, Boom Barriers, Rolling Shutters, Dock Levelers, Dock Shelters, Conveyor Systems, Belt Conveyors, Material Handling Equipment and complete factory automation solutions.",
+    "Evora Industrial Solutions (Evora Solutions) is a leading manufacturer and supplier of Industrial Storage Solutions and Industrial Conveyor Systems in Pune, Maharashtra, India. We specialize in Heavy Duty Pallet Racking, Cantilever Racking, Multi-tier Mezzanine Systems, Industrial Roller Conveyors, Belt Conveyors, Modular Conveyors and complete warehouse material handling automation.",
 
   keywords: [
-    "Industrial Entrance Automation",
-    "Industrial Automation",
-    "Industrial Automation Company",
-    "Industrial Automation Solutions",
-
-    "Automatic Gates",
-    "Automatic Gate",
-    "Automatic Sliding Gate",
-    "Motorized Sliding Gate",
-    "Sliding Gate Automation",
-    "Automatic Swing Gate",
-    "Swing Gate Automation",
-    "Telescopic Sliding Gate",
-
-    "Industrial Door",
-    "Industrial Doors",
-    "Sectional Overhead Door",
-    "Transparent Sectional Door",
-    "Garage Sectional Door",
-
-    "High Speed Door",
-    "Industrial High Speed Door",
-    "Roll Up Door",
-    "Clean Room Door",
-    "Anti Crash Door",
-    "Fold Up Door",
-
-    "Motorized Sliding Door",
-    "Manual Sliding Door",
-
-    "Boom Barrier",
-    "Automatic Boom Barrier",
-    "Automatic Swing Barrier",
-    "Automatic Rising Bollard",
-
-    "Rolling Shutter",
-    "Automatic Rolling Shutter",
-    "Motorized Rolling Shutter",
-    "Gear Operated Rolling Shutter",
-
-    "Dock Leveler",
-    "Hydraulic Dock Leveler",
-    "Dock Shelter",
-    "Loading Bay Equipment",
-
-    "Steel Sliding Hangar Door",
-    "Fabric Fold Up Hangar Door",
-
-    "Sliding Gate Motor",
-    "Swing Gate Motor",
-    "Rolling Shutter Motor",
-    "Glass Sliding Door Motor",
-
-    "Inclined Belt Conveyor",
-    "Flat Belt Conveyor",
-
-    "Automatic Gate Manufacturer",
-    "Industrial Door Supplier",
-    "Boom Barrier Supplier",
-    "Industrial Automation Pune",
-    "Industrial Automation Maharashtra",
-    "Industrial Entrance Automation India",
-
-    "Aven Automation",
-    "aven automation",
-    "Aven Automation Pune",
-    "Aven Automation Maharashtra",
-    "Aven Automation India",
-    "Aven Industrial Automation",
-    "aven industrial automation",
-    "Aven Industrial Automation Pune",
-    "Aven Industrial Automation Maharashtra",
-    "Aven Industrial Automation India",
-    // Conveyor
-
-    "Industrial Conveyor",
-    "Conveyor System",
-    "Conveyor Manufacturer",
-    "Conveyor Supplier",
-    "Material Handling Conveyor",
-
-    "Roller Bed Conveyor",
+    "Industrial Storage Solutions",
+    "Industrial Storage Solutions Pune",
+    "Industrial Storage Solutions Maharashtra",
+    "Industrial Storage Solutions India",
+    "Industrial Conveyor Systems",
+    "Industrial Conveyor Systems Pune",
+    "Industrial Conveyor Manufacturer",
+    "Industrial Conveyor Supplier",
+    "Heavy Duty Pallet Racking",
+    "Pallet Racking System",
+    "Warehouse Storage Racking",
+    "Cantilever Racking System",
+    "Multi Tier Mezzanine Racking",
+    "Drive In Racking System",
+    "Industrial Shelving Systems",
+    "Roller Conveyor System",
     "Powered Roller Conveyor",
     "Gravity Roller Conveyor",
-    "Roller Conveyor",
-
     "Flat Belt Conveyor",
-    "Belt Conveyor",
-
     "Modular Belt Conveyor",
-    "Plastic Modular Conveyor",
-
     "Cleated Belt Conveyor",
-
-    "Curved Belt Conveyor",
-
     "Incline Belt Conveyor",
-    "Decline Belt Conveyor",
-
-    "Sanitary Conveyor",
-    "Wash Down Conveyor",
-
-    "Specialty Conveyor",
-
-    "Chain Conveyor",
+    "Curved Belt Conveyor",
+    "Chain Conveyor System",
     "Slat Conveyor",
-    "Mesh Belt Conveyor",
-    "Wire Mesh Conveyor",
-    "Overhead Conveyor",
-    "Spiral Conveyor",
-    "Assembly Line Conveyor",
-    "Packing Conveyor",
-    "Packaging Conveyor",
-    "Loading Conveyor",
-    "Unloading Conveyor",
-    "Warehouse Conveyor",
-
+    "Assembly Line Conveyors",
+    "Packaging Conveyors",
+    "Warehouse Conveyor Systems",
     "Material Handling Equipment",
-    "Material Handling System",
-    "Factory Automation",
-    "Warehouse Automation",
-    "Production Line Automation",
-    "Industrial Material Handling",
-    "Access Control System",
-    "Turnstile Gate",
-    "Swing Barrier",
-    "Flap Barrier",
-    "Speed Gate",
-    "Tripod Turnstile",
-    "Full Height Turnstile",
+    "Warehouse Material Handling",
+    "Storage Space Optimization",
+    "Evora Solutions",
+    "evora solutions",
+    "Evora Solutions Pune",
+    "Evora Industrial Solutions",
+    "evora industrial solutions",
+    "Evora Industrial Solutions Pune",
+    "Evora Industrial Solutions Maharashtra",
+    "Evora Industrial Solutions India",
     "Pune",
     "Pimpri Chinchwad",
     "Chakan",
     "Talegaon",
+    "Bhosari",
     "Hinjawadi",
     "Mumbai",
-    "Nashik",
-    "Kolhapur",
-    "Nagpur",
-    "Aurangabad",
-    "Satara",
-    "Sangli",
-    "Solapur",
     "Maharashtra",
     "India",
   ],
 
   authors: [
     {
-      name: "Aven Automation",
+      name: "Evora Solutions",
     },
   ],
 
-  creator: "Aven Automation",
+  creator: "Evora Solutions",
 
-  publisher: "Aven Automation",
+  publisher: "Evora Solutions",
 
-  applicationName: "Aven Automation",
+  applicationName: "Evora Solutions",
 
   robots: {
     index: true,
@@ -208,12 +111,12 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    url: "https://avenautomation.in",
+    url: "https://evorasolutions.in",
     title:
-      "Aven Industrial Automation | Automatic Gates, Industrial Doors & Conveyor Systems",
+      "Evora Industrial Solutions | Industrial Storage Solutions & Conveyor Systems",
     description:
-    "Automatic Gates, Industrial Doors, High Speed Doors, Boom Barriers, Conveyor Systems, Dock Equipment and Industrial Automation Solutions across Pune, Maharashtra and India.",
-    siteName: "Aven Automation",
+      "Heavy Duty Pallet Racking, Multi-Tier Mezzanine Floors, Roller Conveyors, Belt Conveyor Systems, and Complete Material Handling Automation across Pune, Maharashtra and India.",
+    siteName: "Evora Solutions",
 
     locale: "en_IN",
 
@@ -222,21 +125,19 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Aven Automation",
+        alt: "Evora Solutions",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Aven Automation",
+    title: "Evora Solutions",
     description:
-      "Automatic Gates, Boom Barriers, Industrial Doors & Entrance Automation.",
-
-    // images: ["/og-image.jpg"],
+      "High-Performance Industrial Storage Solutions & Industrial Conveyor Systems.",
   },
   manifest: "/manifest.webmanifest",
-  category: "Industrial Automation",
+  category: "Industrial Storage & Conveyor Systems",
 };
 
 export default async function RootLayout({
@@ -245,26 +146,70 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const session = await auth();
-  const categories = await prisma.category.findMany({
-    orderBy: {
-      name: "asc",
-    },
-    include: {
-      products: {
-        where: {
-          isActive: true,
-        },
-        select: {
-          id: true,
-          name: true,
-          slug: true,
-        },
-        orderBy: {
-          name: "asc",
+
+  let categories: {
+    id: string;
+    name: string;
+    slug?: string;
+    products: {
+      id: string;
+      name: string;
+      slug: string;
+    }[];
+  }[] = [];
+
+  try {
+    categories = await prisma.category.findMany({
+      orderBy: {
+        name: "asc",
+      },
+      include: {
+        products: {
+          where: {
+            isActive: true,
+          },
+          select: {
+            id: true,
+            name: true,
+            slug: true,
+          },
+          orderBy: {
+            name: "asc",
+          },
         },
       },
-    },
-  });
+    });
+  } catch (error) {
+    console.error("Layout category fetch fallback:", error);
+    categories = [
+      {
+        id: "cat-storage",
+        name: "Industrial Storage Solutions",
+        slug: "industrial-storage-solutions",
+        products: [
+          { id: "p-1", name: "Heavy Duty Pallet Racking", slug: "heavy-duty-pallet-racking" },
+          { id: "p-2", name: "Cantilever Racks", slug: "heavy-duty-cantilever-racks" },
+        ],
+      },
+      {
+        id: "cat-conveyors",
+        name: "Industrial Conveyor Systems",
+        slug: "industrial-conveyor-systems",
+        products: [
+          { id: "p-3", name: "Powered Roller Conveyor Line", slug: "automated-powered-roller-conveyor-line" },
+          { id: "p-4", name: "Z-Type Cleated Incline Conveyor", slug: "z-type-cleated-incline-conveyor" },
+        ],
+      },
+      {
+        id: "cat-mezzanine",
+        name: "Mezzanine Floor Systems",
+        slug: "mezzanine-floors",
+        products: [
+          { id: "p-5", name: "Multi-Tier Mezzanine Storage System", slug: "multi-tier-mezzanine-storage-floor" },
+        ],
+      },
+    ];
+  }
 
   const isAuthenticated =
     !!session?.user;
@@ -283,8 +228,8 @@ export default async function RootLayout({
       >
         <GoogleTagManager gtmId="GTM-NLWFD6SD" />
         <OrganizationSchema
-          url="https://avenautomation.in"
-          logo="https://avenautomation.in/aven-logo.png"
+          url="https://evorasolutions.in"
+          logo="https://evorasolutions.in/evora-logo.png"
         />
         <WebsiteSchema />
         <LocalBusinessSchema />

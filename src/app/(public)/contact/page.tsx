@@ -6,106 +6,93 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-  "Contact Aven Industrial Automation | Industrial Entrance Automation Experts",
+    "Contact Evora Industrial Solutions | Industrial Storage & Conveyor Specialists",
 
   description:
-    "Contact Aven Industrial Automation for Automatic Sliding Gates, Swing Gates, High Speed Doors, Industrial Doors, Boom Barriers, Dock Levelers, Dock Shelters, Conveyor Systems, Material Handling Equipment and complete Industrial Automation solutions across Pune, Maharashtra and India.",
+    "Contact Evora Industrial Solutions (Evora Solutions) for Heavy Duty Pallet Racking, Cantilever Racks, Multi-Tier Mezzanines, Industrial Roller Conveyors, Belt Conveyor Systems, and complete Warehouse Material Handling Solutions across Pune, Maharashtra, and India.",
   keywords: [
     // Brand
-    "Contact Aven Automation",
-    "Aven Automation",
-    "Aven Automation Pune",
-    "Aven Automation Maharashtra",
-    "Aven Automation India",
-    "Aven Industrial Automation",
-    "aven industrial automation",
-    "Aven Industrial Automation Pune",
-    "Aven Industrial Automation Maharashtra",
-    "Aven Industrial Automation India",
+    "Contact Evora Solutions",
+    "Evora Solutions",
+    "Evora Solutions Pune",
+    "Evora Solutions Maharashtra",
+    "Evora Solutions India",
+    "Evora Industrial Solutions",
+    "evora industrial solutions",
+    "Evora Industrial Solutions Pune",
+    "Evora Industrial Solutions Maharashtra",
+    "Evora Industrial Solutions India",
 
     // Company
-    "Industrial Automation Company",
-    "Industrial Entrance Automation Company",
-    "Industrial Automation Contact",
-    "Industrial Automation Supplier",
+    "Industrial Storage Solutions Company",
+    "Industrial Conveyor Systems Manufacturer",
+    "Industrial Storage Systems Pune",
+    "Warehouse Racking Supplier",
 
-    // Gates
-    "Automatic Sliding Gate Supplier",
-    "Automatic Swing Gate Supplier",
-    "Telescopic Sliding Gate Supplier",
-    "Gate Automation Company",
-
-    // Doors
-    "Industrial Door Supplier",
-    "High Speed Door Supplier",
-    "Sectional Overhead Door Supplier",
-    "Garage Door Supplier",
-    "Rolling Shutter Supplier",
-
-    // Parking
-    "Boom Barrier Supplier",
-    "Automatic Bollards Supplier",
-    "Dock Leveler Supplier",
-    "Dock Shelter Supplier",
+    // Racking & Storage
+    "Heavy Duty Pallet Racking",
+    "Cantilever Racking Supplier",
+    "Multi Tier Mezzanine Floors",
+    "Drive In Racking System",
+    "Industrial Shelving Pune",
 
     // Conveyors
     "Industrial Conveyor Supplier",
-    "Conveyor Manufacturer",
-    "Roller Bed Conveyor",
+    "Conveyor System Manufacturer",
+    "Roller Conveyor Manufacturer",
     "Flat Belt Conveyor",
     "Modular Belt Conveyor",
     "Cleated Belt Conveyor",
-    "Curved Belt Conveyor",
     "Incline Belt Conveyor",
-    "Sanitary Conveyor",
-    "Wash Down Conveyor",
-    "Specialty Conveyor",
+    "Warehouse Conveyor Systems",
     "Material Handling Equipment",
 
     // Location
-    "Industrial Automation Pune",
-    "Industrial Automation Chakan",
-    "Industrial Automation Pimpri Chinchwad",
-    "Industrial Automation Hinjawadi",
-    "Industrial Automation Maharashtra",
-    "Industrial Automation India",
+    "Industrial Storage Pune",
+    "Conveyor Systems Chakan",
+    "Warehouse Racking Bhosari",
+    "Industrial Conveyors Pimpri Chinchwad",
+    "Industrial Storage Solutions Maharashtra",
+    "Industrial Conveyor Systems India",
   ],
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
-  title:
-    "Contact Aven Automation",
+    title:
+      "Contact Evora Industrial Solutions",
 
-  description:
-    "Get in touch with Aven Automation for Industrial Entrance Automation Solutions.",
+    description:
+      "Get in touch with Evora Solutions for Industrial Storage & Conveyor Systems.",
 
-  url: "https://avenautomation.in/contact",
+    url: "https://evorasolutions.in/contact",
 
-  siteName: "Aven Automation",
+    siteName: "Evora Solutions",
 
-  type: "website",
-},
+    type: "website",
+  },
 
-twitter: {
-  card: "summary_large_image",
+  twitter: {
+    card: "summary_large_image",
 
-  title:
-    "Contact Aven Automation",
+    title:
+      "Contact Evora Solutions",
 
-  description:
-    "Industrial Entrance Automation Solutions.",
-},
+    description:
+      "Industrial Storage Solutions & Conveyor Systems across India.",
+  },
 
-robots: {
-  index: true,
-  follow: true,
-},
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 export default async function ContactPage() {
-  
-  const categories =
-    await prisma.category.findMany({
+  let categories: { id: string; name: string }[] = [];
+  let products: { id: string; name: string; categoryId: string }[] = [];
+
+  try {
+    categories = await prisma.category.findMany({
       where: {
         isActive: true,
       },
@@ -118,8 +105,7 @@ export default async function ContactPage() {
       },
     });
 
-  const products =
-    await prisma.product.findMany({
+    products = await prisma.product.findMany({
       where: {
         isActive: true,
       },
@@ -132,39 +118,33 @@ export default async function ContactPage() {
         categoryId: true,
       },
     });
+  } catch (error) {
+    console.error("Failed to load products/categories on contact page:", error);
+  }
+
   return (
     <>
       {/* Contact Section */}
+      <section className="relative overflow-hidden border-b border-[#E2E8F0] bg-[#F8FAFC] py-10 lg:py-16">
+        <div className="pointer-events-none absolute inset-0 industrial-grid opacity-40" />
 
-      <section className="relative overflow-hidden bg-slate-50 py-4">
-        {/* Background Decoration */}
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <span className="inline-flex items-center gap-2 rounded-full border border-[#F7941D]/30 bg-white px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-[#F7941D] shadow-sm">
+              Get In Touch
+            </span>
 
-        <div className="absolute -top-24 left-0 h-80 w-80 rounded-full bg-orange-100 blur-3xl" />
-
-        <div className="absolute top-0 right-0 h-80 w-80 rounded-full bg-blue-100 blur-3xl" />
-
-        <div className="absolute bottom-0 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-slate-100 blur-3xl" />
-
-        <div className="relative mx-auto max-w-7xl px-4">
-          
-
-          {/* Form + Map */}
-            <h1 className="text-3xl font-bold text-[#0F2747]">
-              Contact Aven Automation
+            <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-[#071530] sm:text-4xl">
+              Contact Evora Industrial Solutions
             </h1>
 
-            <p className="mt-1 text-slate-600">
-              Contact our Industrial Entrance Automation experts for Automatic Gates,
-              Industrial Doors, Boom Barriers, High Speed Doors and customized automation
-              solutions.
+            <p className="mt-2 text-base text-[#334155]">
+              Consult our Industrial Storage Solutions and Conveyor Systems specialists for customized warehouse racking layouts, automated conveyor design, and project estimates.
             </p>
-          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start mt-2">
-            
-            <ContactForm
-              
-              products={products}
-            />
+          </div>
 
+          <div className="mt-8 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start">
+            <ContactForm products={products} />
             <GoogleMapSection />
           </div>
         </div>

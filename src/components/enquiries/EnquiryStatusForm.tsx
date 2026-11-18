@@ -67,7 +67,7 @@ export default function EnquiryStatusForm({
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white shadow-sm">
-      <div className="bg-[#0F2747] px-6 py-4">
+      <div className="bg-[#071530] px-6 py-4">
         <h2 className="text-lg font-semibold text-white">
           Status Management
         </h2>
@@ -87,7 +87,7 @@ export default function EnquiryStatusForm({
         )}
 
         <div>
-          <label className="mb-2 block text-sm font-medium text-[#0F2747]">
+          <label className="mb-2 block text-sm font-medium text-[#071530]">
             Enquiry Status
           </label>
 
@@ -104,7 +104,7 @@ export default function EnquiryStatusForm({
                   | "LOST"
               )
             }
-            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] outline-none focus:border-[#0F2747]"
+            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] outline-none focus:border-[#071530]"
           >
             <option value="NEW">
               NEW
@@ -136,7 +136,7 @@ export default function EnquiryStatusForm({
           type="button"
           onClick={handleSubmit}
           disabled={loading}
-          className="rounded-lg bg-[#0F2747] px-5 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:opacity-60"
+          className="rounded-lg bg-[#071530] px-5 py-3 font-medium text-white transition hover:bg-[#18385F] disabled:opacity-60"
         >
           {loading
             ? "Updating..."

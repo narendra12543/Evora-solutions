@@ -7,7 +7,7 @@ export default function StatisticsSection() {
             grid
             gap-6
             rounded-3xl
-            bg-[#0F2747]
+            bg-[#071530]
             p-10
             text-white
             md:grid-cols-4

@@ -1,5 +1,5 @@
 import { PDFDocument, StandardFonts, PDFPage, PDFFont, PDFImage, rgb, RGB } from "pdf-lib";
-import { AVEN_LOGO_FULL_BASE64 } from "./aven-logo-base64";
+import { evora_LOGO_FULL_BASE64 } from "./evora-logo-base64";
 
 interface ProductPdfData {
   productName: string;
@@ -13,7 +13,7 @@ interface ProductPdfData {
 
 // Brand palette (matches the email templates)
 const COLORS = {
-  primary: rgb(0.059, 0.153, 0.278), // #0F2747
+  primary: rgb(0.059, 0.153, 0.278), // #071530
   primaryDark: rgb(0.039, 0.106, 0.2), // #0A1B33
   accent: rgb(0.969, 0.58, 0.114), // #F7941D
   background: rgb(0.973, 0.98, 0.988), // #F8FAFC
@@ -40,7 +40,7 @@ export async function generateProductPdf(data: ProductPdfData): Promise<Uint8Arr
   const boldFont = await pdfDoc.embedFont(StandardFonts.HelveticaBold);
 
   // Embed the full logo — icon + wordmark + tagline already baked in (base64, safe for Vercel/serverless)
-  const logoBytes = Buffer.from(AVEN_LOGO_FULL_BASE64, "base64");
+  const logoBytes = Buffer.from(evora_LOGO_FULL_BASE64, "base64");
   const logoImage: PDFImage = await pdfDoc.embedPng(logoBytes);
   const logoAspect = logoImage.width / logoImage.height;
 
@@ -464,14 +464,14 @@ export async function generateProductPdf(data: ProductPdfData): Promise<Uint8Arr
       color: COLORS.primaryDark,
     });
 
-    page.drawText("Aven Automation", {
+    page.drawText("Evora Solutions", {
       x: MARGIN,
       y: 26,
       size: 10,
       font: boldFont,
       color: COLORS.white,
     });
-    page.drawText("sales@avenautomation.in  |  +91 8766918892  |  avenautomation.in", {
+    page.drawText("sales@evorasolutions.in  |  +91 8766918892  |  evorasolutions.in", {
       x: MARGIN,
       y: 12,
       size: 8.5,

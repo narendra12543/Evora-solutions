@@ -1,11 +1,11 @@
 /* TEAM */
 
-Company: Aven Automation
-Website: https://avenautomation.in
-Email: sales@avenautomation.in
+Company: Evora Solutions
+Website: https://evorasolutions.in
+Email: sales@evorasolutions.in
 
 Technology:
-Next.js 15
+Next.js 16
 TypeScript
 Tailwind CSS
 Prisma ORM
@@ -13,13 +13,14 @@ PostgreSQL
 Auth.js
 
 Services:
-Industrial Entrance Automation
-Automatic Gates
-Industrial Doors
-Boom Barriers
-High Speed Doors
-Dock Levelers
-Dock Shelters
+Industrial Storage Solutions
+Industrial Conveyor Systems
+Heavy Duty Pallet Racking
+Cantilever Racking Systems
+Multi-Tier Mezzanine Floors
+Powered & Gravity Roller Conveyors
+Belt Conveyor Systems
+Warehouse Material Handling
 
 Location:
 Pune, Maharashtra, India

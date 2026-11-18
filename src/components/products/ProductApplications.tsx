@@ -14,7 +14,7 @@ export default function ProductApplications({
 
   return (
     <div className="mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-      <h2 className="mb-6 text-2xl font-bold text-[#0F2747]">
+      <h2 className="mb-6 text-2xl font-bold text-[#071530]">
         Applications
       </h2>
 
@@ -26,7 +26,7 @@ export default function ProductApplications({
           ) => (
             <span
               key={index}
-              className="rounded-full bg-[#0F2747] px-4 py-2 text-sm font-medium text-white"
+              className="rounded-full bg-[#071530] px-4 py-2 text-sm font-medium text-white"
             >
               {String(
                 application

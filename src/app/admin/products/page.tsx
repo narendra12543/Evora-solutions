@@ -30,18 +30,18 @@ export default async function AdminProductsPage() {
         <div className="mb-8">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div>
-              <h1 className="text-3xl font-bold text-[#0F2747]">
+              <h1 className="text-3xl font-bold text-[#071530]">
                 Product Management
               </h1>
 
               <p className="mt-2 text-slate-600">
-                Manage Aven Industrial automation products.
+                Manage Evora Industrial Solutions products.
               </p>
             </div>
 
             <Link
               href="/admin/products/create"
-              className="inline-flex items-center rounded-lg bg-[#0F2747] px-5 py-3 font-medium text-white transition hover:bg-[#18385F]"
+              className="inline-flex items-center rounded-lg bg-[#071530] px-5 py-3 font-medium text-white transition hover:bg-[#18385F]"
             >
               Add Product
             </Link>
@@ -55,7 +55,7 @@ export default async function AdminProductsPage() {
               Total Products
             </p>
 
-            <p className="mt-3 text-3xl font-bold text-[#0F2747]">
+            <p className="mt-3 text-3xl font-bold text-[#071530]">
               {totalProducts}
             </p>
           </div>
@@ -65,7 +65,7 @@ export default async function AdminProductsPage() {
               Active Products
             </p>
 
-            <p className="mt-3 text-3xl font-bold text-[#0F2747]">
+            <p className="mt-3 text-3xl font-bold text-[#071530]">
               {activeProducts}
             </p>
           </div>
@@ -75,7 +75,7 @@ export default async function AdminProductsPage() {
               Featured Products
             </p>
 
-            <p className="mt-3 text-3xl font-bold text-[#0F2747]">
+            <p className="mt-3 text-3xl font-bold text-[#071530]">
               {featuredProducts}
             </p>
           </div>
@@ -109,7 +109,7 @@ export default async function AdminProductsPage() {
               </span>
             </div>
 
-            <h2 className="text-2xl font-semibold text-[#0F2747]">
+            <h2 className="text-2xl font-semibold text-[#071530]">
               No Products Found
             </h2>
 
@@ -120,7 +120,7 @@ export default async function AdminProductsPage() {
 
             <Link
               href="/admin/products/create"
-              className="mt-6 inline-flex items-center rounded-lg bg-[#0F2747] px-5 py-3 font-medium text-white transition hover:bg-[#18385F]"
+              className="mt-6 inline-flex items-center rounded-lg bg-[#071530] px-5 py-3 font-medium text-white transition hover:bg-[#18385F]"
             >
               Create Product
             </Link>
@@ -128,7 +128,7 @@ export default async function AdminProductsPage() {
         ) : (
           <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-slate-200 px-6 py-4">
-              <h2 className="text-lg font-semibold text-[#0F2747]">
+              <h2 className="text-lg font-semibold text-[#071530]">
                 Products
               </h2>
             </div>
@@ -137,39 +137,39 @@ export default async function AdminProductsPage() {
               <table className="w-full">
                 <thead>
                   <tr className="bg-slate-50">
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                       Product Name
                     </th>
 
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                       Category
                     </th>
 
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                       Featured
                     </th>
 
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                       Status
                     </th>
 
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                       Images
                     </th>
 
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                       Enquiries
                     </th>
 
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                       Downloads
                     </th>
 
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                       Created
                     </th>
 
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#0F2747]">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-[#071530]">
                       Actions
                     </th>
                   </tr>
@@ -181,7 +181,7 @@ export default async function AdminProductsPage() {
                       key={product.id}
                       className="border-t border-slate-100"
                     >
-                      <td className="px-6 py-4 font-medium text-[#0F2747]">
+                      <td className="px-6 py-4 font-medium text-[#071530]">
                         {product.name}
                       </td>
 
@@ -234,7 +234,7 @@ export default async function AdminProductsPage() {
                         <div className="flex flex-wrap items-center gap-2">
                           <Link
                             href={`/admin/products/${product.id}/edit`}
-                            className="rounded-lg border border-[#0F2747] px-3 py-1.5 text-sm text-[#0F2747]"
+                            className="rounded-lg border border-[#071530] px-3 py-1.5 text-sm text-[#071530]"
                           >
                             Edit
                           </Link>

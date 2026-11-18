@@ -13,27 +13,31 @@ export default function DirectorMessage() {
               className="
                 inline-flex
                 rounded-full
-                bg-orange-50
+                border
+                border-[#F7941D]/30
+                bg-[#FFF8F1]
                 px-4
-                py-2
-                text-sm
-                font-semibold
-                text-orange-600
+                py-1.5
+                text-xs
+                font-bold
+                uppercase
+                tracking-wider
+                text-[#F7941D]
               "
             >
-              Director's Message
+              Director&apos;s Message
             </span>
 
             <h2
               className="
-                mt-6
+                mt-4
                 text-3xl
-                font-bold
+                font-extrabold
                 leading-tight
-                text-[#0F2747]
+                text-[#071530]
               "
             >
-              Leadership Driven By Innovation, Quality & Customer Success
+              Leadership Driven By Engineering Excellence &amp; Customer Success
             </h2>
 
             {/* Quote */}
@@ -43,12 +47,15 @@ export default function DirectorMessage() {
                 mt-4
                 rounded-2xl
                 border-l-4
-                border-orange-500
-                bg-orange-50
+                border-[#0865D8]
+                bg-[#F8FAFC]
                 p-6
+                border
+                border-slate-200
+                shadow-sm
               "
             >
-              <Quote size={24} className="mb-4 text-orange-500" />
+              <Quote size={24} className="mb-4 text-[#0865D8]" />
 
               <p
                 className="
@@ -58,7 +65,7 @@ export default function DirectorMessage() {
                   text-slate-700
                 "
               >
-                Our vision is to become one of India's most trusted Industrial Entrance Automation companies by delivering reliable, innovative and future-ready engineering solutions.
+                Our vision is to become India&apos;s premier Industrial Storage Solutions and Conveyor Systems engineering company by delivering durable, innovative, and space-optimizing material handling infrastructure.
               </p>
             </div>
 
@@ -69,14 +76,14 @@ export default function DirectorMessage() {
                 className="
                   text-2xl
                   font-bold
-                  text-[#0F2747]
+                  text-[#071530]
                 "
               >
                 Mr. Narendra Khamkar
               </h3>
 
-              <p className="mt-1 text-orange-600 font-medium">
-                Aven Automation Leadership Team
+              <p className="mt-1 text-[#0865D8] font-semibold">
+                Evora Solutions Leadership Team
               </p>
             </div>
 
@@ -92,7 +99,7 @@ export default function DirectorMessage() {
               "
             >
               <p>
-                At Aven Automation, we believe every industry deserves dependable, efficient and intelligent automation solutions. We provide Automatic Gates, Boom Barriers, Industrial Doors, High Speed Doors, Dock Levelers, Dock Shelters and customized Industrial Entrance Automation systems for factories, warehouses and commercial facilities.
+                At Evora Solutions, we believe modern industrial operations demand highly organized, scalable, and safe warehouse storage and material flow infrastructure. We design and install Heavy Duty Pallet Racking, Cantilever Racks, Multi-Tier Mezzanine Floors, and Custom Industrial Conveyor Systems that elevate operational throughput.
               </p>
 
               <p>

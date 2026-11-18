@@ -152,7 +152,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={isPending}
-              className="w-full rounded-lg bg-[#0F2747] px-4 py-3 font-medium text-white transition hover:bg-[#163A68] disabled:cursor-not-allowed disabled:opacity-70"
+              className="w-full rounded-lg bg-[#071530] px-4 py-3 font-medium text-white transition hover:bg-[#163A68] disabled:cursor-not-allowed disabled:opacity-70"
             >
               {isPending ? "Signing In..." : "Sign In"}
             </button>

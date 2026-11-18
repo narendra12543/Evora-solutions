@@ -24,11 +24,11 @@ export default function FeaturesSection({
   return (
     <section className="mt-8 px-4 sm:px-0">
       <div className="mb-5">
-        <h2 className="text-xl font-bold text-[#0F2747] sm:text-2xl">
+        <h2 className="text-xl font-bold text-[#071530] sm:text-2xl">
           Key Features
         </h2>
         <p className="mt-1 text-sm text-slate-500">
-          Designed for reliable Aven Industrial automationperformance.
+          Designed for reliable industrial storage and conveyor performance by Evora Industrial Solutions.
         </p>
       </div>
 
@@ -48,7 +48,7 @@ export default function FeaturesSection({
               transition-all
               duration-200
               hover:-translate-y-0.5
-              hover:border-[#0F2747]
+              hover:border-[#071530]
               hover:shadow-md
             "
           >

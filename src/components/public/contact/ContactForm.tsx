@@ -151,7 +151,9 @@ export default function ContactForm({
           className="
           inline-flex
           rounded-full
-          bg-orange-100
+          border
+          border-orange-200
+          bg-orange-50
           px-3
           py-1
           text-xs
@@ -159,7 +161,7 @@ export default function ContactForm({
           text-orange-600
         "
         >
-         Get a Response from Our Industrial Automation Experts Within 24 Hours
+         Get a Response from Our Industrial Storage &amp; Conveyor Specialists Within 24 Hours
         </span>
 
       </div>
@@ -197,7 +199,7 @@ export default function ContactForm({
             text-sm
             outline-none
             transition
-            focus:border-[#0F2747]
+            focus:border-[#071530]
             focus:ring-2
             focus:ring-blue-100
           "
@@ -218,7 +220,7 @@ export default function ContactForm({
             text-sm
             outline-none
             transition
-            focus:border-[#0F2747]
+            focus:border-[#071530]
             focus:ring-2
             focus:ring-blue-100
           "
@@ -249,7 +251,7 @@ export default function ContactForm({
               text-sm
               outline-none
               transition
-              focus:border-[#0F2747]
+              focus:border-[#071530]
               focus:ring-2
               focus:ring-blue-100
             "
@@ -270,7 +272,7 @@ export default function ContactForm({
                 text-sm
                 outline-none
                 transition
-                focus:border-[#0F2747]
+                focus:border-[#071530]
                 focus:ring-2
                 focus:ring-blue-100
               "
@@ -313,8 +315,8 @@ export default function ContactForm({
               text-left
               text-sm
               transition
-              hover:border-[#0F2747]
-              focus:border-[#0F2747]
+              hover:border-[#071530]
+              focus:border-[#071530]
               focus:ring-2
               focus:ring-blue-100
             "
@@ -525,7 +527,7 @@ export default function ContactForm({
                 outline-none
                 transition
                 placeholder:text-slate-500
-                focus:border-[#0F2747]
+                focus:border-[#071530]
                 focus:bg-white
                 focus:ring-2
                 focus:ring-blue-100
@@ -553,7 +555,7 @@ export default function ContactForm({
             text-sm
             outline-none
             transition
-            focus:border-[#0F2747]
+            focus:border-[#071530]
             focus:ring-2
             focus:ring-blue-100
           "
@@ -577,7 +579,7 @@ export default function ContactForm({
           outline-none
           transition
           resize-none
-          focus:border-[#0F2747]
+          focus:border-[#071530]
           focus:ring-2
           focus:ring-blue-100
         "
@@ -591,7 +593,7 @@ export default function ContactForm({
             disabled={loading}
             className="
             rounded-xl
-            bg-[#0F2747]
+            bg-[#071530]
             px-5
             py-3
             text-sm

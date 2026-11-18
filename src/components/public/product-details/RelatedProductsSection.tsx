@@ -12,7 +12,7 @@ export default function RelatedProductsSection({
 
   return (
     <section className="mt-16">
-      <h2 className="mb-6 text-2xl font-bold text-[#0F2747]">
+      <h2 className="mb-6 text-2xl font-bold text-[#071530]">
         Related Products
       </h2>
 

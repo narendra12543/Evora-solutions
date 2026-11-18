@@ -37,7 +37,7 @@ export default async function ContactMessagesPage({
     <div className="space-y-8">
       {/* Header */}
       <div>
-        <h1 className="text-3xl font-bold text-[#0F2747]">
+        <h1 className="text-3xl font-bold text-[#071530]">
           Contact Form Submissions
         </h1>
         <p className="mt-2 text-slate-600">
@@ -49,7 +49,7 @@ export default async function ContactMessagesPage({
       <div className="grid gap-4 sm:grid-cols-3">
         <div className="rounded-xl border bg-white p-5 shadow-sm">
           <p className="text-sm text-slate-500">Total Messages</p>
-          <p className="mt-2 text-3xl font-bold text-[#0F2747]">
+          <p className="mt-2 text-3xl font-bold text-[#071530]">
             {stats.totalMessages}
           </p>
         </div>
@@ -80,7 +80,7 @@ export default async function ContactMessagesPage({
         />
         <button
           type="submit"
-          className="rounded-lg bg-[#0F2747] px-4 py-2 text-sm text-white"
+          className="rounded-lg bg-[#071530] px-4 py-2 text-sm text-white"
         >
           Search
         </button>
@@ -89,7 +89,7 @@ export default async function ContactMessagesPage({
       <div className="flex items-center justify-between">
         <p className="text-sm text-slate-600">
           Total Results:
-          <span className="ml-2 font-semibold text-[#0F2747]">
+          <span className="ml-2 font-semibold text-[#071530]">
             {totalCount}
           </span>
         </p>
@@ -99,7 +99,7 @@ export default async function ContactMessagesPage({
       <div className="overflow-hidden rounded-xl border bg-white shadow-sm">
         {messages.length === 0 ? (
           <div className="p-12 text-center">
-            <h3 className="text-xl font-semibold text-[#0F2747]">
+            <h3 className="text-xl font-semibold text-[#071530]">
               No Messages Found
             </h3>
             <p className="mt-2 text-slate-600">
@@ -111,28 +111,28 @@ export default async function ContactMessagesPage({
             <table className="min-w-full">
               <thead className="bg-slate-50">
                 <tr>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Name
                   </th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Company
                   </th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Mobile
                   </th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Email
                   </th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Products
                   </th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     City
                   </th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Message
                   </th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#0F2747]">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-[#071530]">
                     Received
                   </th>
                 </tr>
@@ -169,7 +169,7 @@ export default async function ContactMessagesPage({
           {page > 1 && (
             <Link
               href={`/admin/contact-messages?search=${search}&page=${page - 1}`}
-              className="rounded-lg border border-[#0F2747] px-4 py-2 text-[#0F2747]"
+              className="rounded-lg border border-[#071530] px-4 py-2 text-[#071530]"
             >
               Previous
             </Link>
@@ -181,8 +181,8 @@ export default async function ContactMessagesPage({
               href={`/admin/contact-messages?search=${search}&page=${index + 1}`}
               className={`rounded-lg px-4 py-2 ${
                 page === index + 1
-                  ? "bg-[#0F2747] text-white"
-                  : "border border-[#0F2747] text-[#0F2747]"
+                  ? "bg-[#071530] text-white"
+                  : "border border-[#071530] text-[#071530]"
               }`}
             >
               {index + 1}
@@ -192,7 +192,7 @@ export default async function ContactMessagesPage({
           {page < totalPages && (
             <Link
               href={`/admin/contact-messages?search=${search}&page=${page + 1}`}
-              className="rounded-lg border border-[#0F2747] px-4 py-2 text-[#0F2747]"
+              className="rounded-lg border border-[#071530] px-4 py-2 text-[#071530]"
             >
               Next
             </Link>

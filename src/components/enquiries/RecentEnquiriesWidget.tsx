@@ -47,7 +47,7 @@ export default function RecentEnquiriesWidget({
   return (
     <div className="rounded-xl border bg-white p-4 shadow-sm">
       <div className="mb-5">
-        <h2 className="text-xl font-bold text-[#0F2747]">
+        <h2 className="text-xl font-bold text-[#071530]">
           Recent Enquiries
         </h2>
       </div>
@@ -60,7 +60,7 @@ export default function RecentEnquiriesWidget({
               className="flex flex-col gap-3 rounded-lg border border-slate-200 p-2 lg:flex-row lg:items-center lg:justify-between"
             >
               <div>
-                <h3 className="font-semibold text-[#0F2747]">
+                <h3 className="font-semibold text-[#071530]">
                   {enquiry.name}
                 </h3>
 
@@ -86,7 +86,7 @@ export default function RecentEnquiriesWidget({
 
                 <Link
                   href={`/admin/enquiries/${enquiry.id}`}
-                  className="rounded-lg bg-[#0F2747] px-3 py-2 text-sm text-white"
+                  className="rounded-lg bg-[#071530] px-3 py-2 text-sm text-white"
                 >
                   View
                 </Link>

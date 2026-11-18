@@ -131,7 +131,7 @@ export default function PublicProductsCatalog({
         </div>
 
         <div className="p-5">
-          <h3 className="font-bold text-[#0F2747]">
+          <h3 className="font-bold text-[#071530]">
             {product.name}
           </h3>
 
@@ -150,7 +150,7 @@ export default function PublicProductsCatalog({
 
           <Link
             href={`/products/${product.slug}`}
-            className="mt-4 inline-flex rounded-lg bg-[#0F2747] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#18385F]"
+            className="mt-4 inline-flex rounded-lg bg-[#071530] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#18385F]"
           >
             View Details
           </Link>
@@ -173,7 +173,7 @@ export default function PublicProductsCatalog({
                 e.target.value
               )
             }
-            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] outline-none focus:border-[#0F2747]"
+            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-[#071530] outline-none focus:border-[#071530]"
           />
 
           <select
@@ -183,7 +183,7 @@ export default function PublicProductsCatalog({
                 e.target.value
               )
             }
-            className="rounded-lg border border-slate-300 px-4 py-3 text-[#0F2747] outline-none focus:border-[#0F2747]"
+            className="rounded-lg border border-slate-300 px-4 py-3 text-[#071530] outline-none focus:border-[#071530]"
           >
             <option value="all">
               All Categories
@@ -207,7 +207,7 @@ export default function PublicProductsCatalog({
       {featuredProducts.length >
         0 && (
         <>
-          <h2 className="mb-6 text-2xl font-bold text-[#0F2747]">
+          <h2 className="mb-6 text-2xl font-bold text-[#071530]">
             Featured Products
           </h2>
 
@@ -220,14 +220,14 @@ export default function PublicProductsCatalog({
       )}
 
       {/* Products */}
-      <h2 className="mb-6 text-2xl font-bold text-[#0F2747]">
+      <h2 className="mb-6 text-2xl font-bold text-[#071530]">
         Products Catalog
       </h2>
 
       {filteredProducts.length ===
       0 ? (
         <div className="rounded-2xl border border-slate-200 bg-white p-12 text-center shadow-sm">
-          <h3 className="text-xl font-semibold text-[#0F2747]">
+          <h3 className="text-xl font-semibold text-[#071530]">
             No Products Found
           </h3>
 

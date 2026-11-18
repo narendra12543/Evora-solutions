@@ -1,128 +1,95 @@
-import { Phone, ClipboardList, Wrench, Headphones } from "lucide-react";
+import {
+  FileText,
+  MapPin,
+  Compass,
+  Factory,
+  Wrench,
+  Headphones,
+} from "lucide-react";
 
 const steps = [
   {
-    title: "Consultation",
+    step: "01",
+    title: "Requirement Understanding",
     description:
-      "We understand your industrial automation requirements and site conditions.",
-    icon: Phone,
+      "Detailed analysis of your warehouse inventory profile, throughput targets, payload weights, and material handling objectives.",
+    icon: FileText,
   },
   {
-    title: "Planning",
+    step: "02",
+    title: "Site Assessment",
     description:
-      "Our experts prepare a customized automation solution for your facility.",
-    icon: ClipboardList,
+      "Physical site surveying, floor slab load verification, column grid measurement, and vertical clear headroom mapping.",
   },
   {
-    title: "Implementation",
+    step: "03",
+    title: "Engineering & Design",
     description:
-      "Professional installation, testing and commissioning.",
-    icon: Wrench,
+      "Developing optimal CAD layouts, 3D structural simulations, conveyor velocity calculations, and customized storage density plans.",
   },
   {
+    step: "04",
+    title: "Manufacturing",
+    description:
+      "Precision structural fabrication using certified high-tensile steel, CNC roll-forming, and high-adhesion powder coating.",
+  },
+  {
+    step: "05",
+    title: "Installation",
+    description:
+      "Professional on-site erection, optical laser alignment, electrical drive integration, and rigorous full-load testing.",
+  },
+  {
+    step: "06",
     title: "Support",
     description:
-      "Long-term maintenance and technical support across India.",
+      "Comprehensive handover, operator safety guidelines, routine preventive maintenance, and prompt technical support.",
     icon: Headphones,
   },
 ];
 
 export default function ProcessSection() {
   return (
-    <section className="bg-slate-50 py-8">
-      <div className="mx-auto max-w-7xl px-4">
-        <h2 className="text-center text-3xl font-bold text-[#0F2747]">
-          Our Working Process
-        </h2>
-        <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-slate-500">
-          A streamlined, four-step approach designed for reliable, on-time
-          automation delivery.
-        </p>
+    <section className="bg-white py-14 lg:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center text-center">
+          <span className="inline-flex items-center gap-2 rounded-full border border-[#F7941D]/30 bg-[#FFF8F1] px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#F7941D]">
+            Systematic Execution
+          </span>
 
-        <div className="relative mt-14 grid gap-6 md:grid-cols-4">
-          {/* connecting line for desktop */}
-          <div className="pointer-events-none absolute left-0 right-0 top-10 hidden h-px bg-slate-200 md:block" />
+          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#071530] sm:text-4xl">
+            Our Work Process
+          </h2>
 
-          {steps.map((step, index) => {
-            const Icon = step.icon;
+          <p className="mt-3 max-w-2xl text-base text-[#334155]">
+            A disciplined, engineering-first project lifecycle ensuring precision, compliance, safety, and on-time commissioning.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {steps.map((step) => {
+            const Icon = step.icon || Wrench;
             return (
               <div
                 key={step.title}
-                className="
-                  group
-                  relative
-                  rounded-2xl
-                  border
-                  border-slate-200
-                  bg-white
-                  p-8
-                  text-center
-                  shadow-sm
-                  transition-all
-                  duration-300
-                  hover:-translate-y-1
-                  hover:border-[#0F2747]/20
-                  hover:shadow-xl
-                "
+                className="group relative flex flex-col rounded-2xl border border-[#E2E8F0] bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#0865D8]/40 hover:shadow-xl"
               >
-                {/* Number badge */}
-                <div
-                  className="
-                    relative
-                    z-10
-                    mx-auto
-                    flex
-                    h-16
-                    w-16
-                    items-center
-                    justify-center
-                    rounded-2xl
-                    bg-gradient-to-br
-                    from-[#0F2747]
-                    to-[#1B3A63]
-                    text-2xl
-                    font-extrabold
-                    text-white
-                    shadow-md
-                    shadow-[#0F2747]/20
-                    transition-transform
-                    duration-300
-                    group-hover:scale-105
-                  "
-                >
-                  {String(index + 1).padStart(2, "0")}
+                <div className="flex items-center justify-between">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#F8FAFC] text-[#0865D8] ring-1 ring-[#0865D8]/10 transition-colors group-hover:bg-[#0865D8] group-hover:text-white">
+                    <Icon size={24} />
+                  </div>
+                  <span className="text-2xl font-black text-[#E2E8F0] transition-colors group-hover:text-[#F7941D]">
+                    {step.step}
+                  </span>
                 </div>
 
-                {/* Icon + Title in one row */}
-                <div className="mt-5 flex items-center justify-center gap-1">
-                  <Icon
-                    className="h-5 w-5 shrink-0 text-[#0F2747]/70"
-                    strokeWidth={1.75}
-                  />
-                  <h3 className="text-lg font-semibold text-slate-800">
-                    {step.title}
-                  </h3>
-                </div>
+                <h3 className="mt-5 text-lg font-bold text-[#071530] transition-colors group-hover:text-[#0865D8]">
+                  {step.title}
+                </h3>
 
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                <p className="mt-2 text-sm leading-relaxed text-[#334155]">
                   {step.description}
                 </p>
-
-                {/* bottom accent line */}
-                <div
-                  className="
-                    mx-auto
-                    mt-5
-                    h-1
-                    w-8
-                    rounded-full
-                    bg-[#0F2747]/15
-                    transition-all
-                    duration-300
-                    group-hover:w-12
-                    group-hover:bg-[#0F2747]
-                  "
-                />
               </div>
             );
           })}

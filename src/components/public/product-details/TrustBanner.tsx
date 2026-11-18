@@ -8,30 +8,30 @@ export default function TrustBanner() {
       className="
         mt-12
         rounded-2xl
-        bg-[#0F2747]
+        bg-[#071530]
         p-6
         text-white
       "
     >
-      <div className="grid gap-4 md:grid-cols-4">
-        <div className="flex items-center gap-2">
-          <CheckCircle2 size={18} />
-          Quality Assured
+      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+        <div className="flex items-center gap-2.5 text-sm font-semibold">
+          <CheckCircle2 size={18} className="text-[#F7941D]" />
+          <span>Quality Assured</span>
         </div>
 
-        <div className="flex items-center gap-2">
-          <CheckCircle2 size={18} />
-          Technical Support
+        <div className="flex items-center gap-2.5 text-sm font-semibold">
+          <CheckCircle2 size={18} className="text-[#F7941D]" />
+          <span>Technical Support</span>
         </div>
 
-        <div className="flex items-center gap-2">
-          <CheckCircle2 size={18} />
-          Fast Response
+        <div className="flex items-center gap-2.5 text-sm font-semibold">
+          <CheckCircle2 size={18} className="text-[#F7941D]" />
+          <span>Fast Response</span>
         </div>
 
-        <div className="flex items-center gap-2">
-          <CheckCircle2 size={18} />
-          Industrial Expertise
+        <div className="flex items-center gap-2.5 text-sm font-semibold">
+          <CheckCircle2 size={18} className="text-[#F7941D]" />
+          <span>Industrial Expertise</span>
         </div>
       </div>
     </div>

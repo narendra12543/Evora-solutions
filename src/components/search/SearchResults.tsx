@@ -32,7 +32,7 @@ export default function SearchResults({
             border-slate-200
             p-3
             transition
-            hover:border-[#0F2747]
+            hover:border-[#071530]
             hover:bg-slate-50
           "
         >
