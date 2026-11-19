@@ -31,6 +31,16 @@ export const metadata: Metadata = {
     "Evora Industrial Solutions (Evora Solutions) is a leading manufacturer and supplier of Industrial Storage Solutions and Industrial Conveyor Systems in Pune, Maharashtra, India. We specialize in Heavy Duty Pallet Racking, Cantilever Racking, Multi-tier Mezzanine Systems, Industrial Roller Conveyors, Belt Conveyors, Modular Conveyors and complete warehouse material handling automation.",
 
   keywords: [
+    "Industrial Storage Solutions Manufacturer in Pune",
+    "Industrial Storage Solutions Manufacturer in Chakan",
+    "Conveyor Systems Manufacturer in Chakan",
+    "Pallet Racking Manufacturer in Bhosari",
+    "Warehouse Storage Solutions in Pimpri Chinchwad",
+    "Conveyor Systems Supplier in Mumbai",
+    "Industrial Storage Solutions Manufacturer in Gujarat",
+    "Industrial Conveyor Systems Manufacturer in Bengaluru",
+    "Material Handling Equipment Supplier India",
+    "Heavy Duty Pallet Racking Manufacturer India",
     "Industrial Storage Solutions",
     "Industrial Storage Solutions Pune",
     "Industrial Storage Solutions Maharashtra",

@@ -1,110 +1,114 @@
 import { Metadata } from "next";
-
 import { prisma } from "@/lib/prisma";
-
 import ProductsHero from "@/components/public/products/ProductsHero";
 import ProductsCatalog from "@/components/public/products/ProductsCatalog";
 import ProductsCTA from "@/components/public/products/ProductsCTA";
+import { CATEGORY_SEO } from "@/lib/product-seo";
 
-export const metadata: Metadata = {
-  title: "Evora Industrial Solutions Products | Industrial Storage & Conveyor Systems",
+interface ProductsPageProps {
+  searchParams?: Promise<{
+    category?: string;
+  }>;
+}
 
-  description:
-    "Explore Evora Industrial Solutions (Evora Solutions) complete range of Industrial Storage Solutions and Conveyor Systems including Heavy Duty Pallet Racking, Cantilever Racking, Multi-tier Mezzanines, Drive-In Racks, Industrial Roller Conveyors, Belt Conveyors, Modular Conveyors, and turnkey material handling systems across Pune, Maharashtra, and India.",
+export async function generateMetadata({
+  searchParams,
+}: ProductsPageProps): Promise<Metadata> {
+  const params = searchParams ? await searchParams : {};
+  const categorySlug = params.category;
 
-  alternates: {
-    canonical: "/products",
-  },
+  if (categorySlug && CATEGORY_SEO[categorySlug]) {
+    const cat = CATEGORY_SEO[categorySlug];
+    const canonical = `https://evorasolutions.in/products?category=${categorySlug}`;
 
-  keywords: [
-    // Brand
-    "Evora Solutions",
-    "Evora Solutions Products",
-    "Evora Industrial Solutions",
-    "evora industrial solutions",
-    "Evora Industrial Solutions Pune",
-    "Evora Industrial Solutions Maharashtra",
-    "Evora Industrial Solutions India",
+    return {
+      title: cat.title,
+      description: cat.description,
+      keywords: cat.keywords,
+      alternates: {
+        canonical,
+      },
+      robots: {
+        index: true,
+        follow: true,
+      },
+      openGraph: {
+        title: cat.ogTitle ?? cat.title,
+        description: cat.ogDescription ?? cat.description,
+        url: canonical,
+        type: "website",
+        siteName: "Evora Industrial Solutions",
+        images: [
+          {
+            url: "/images/pallet-racking.jpg",
+            width: 1200,
+            height: 630,
+            alt: cat.h1,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: cat.ogTitle ?? cat.title,
+        description: cat.ogDescription ?? cat.description,
+      },
+    };
+  }
 
-    // Industrial Storage Solutions
-    "Industrial Storage Solutions",
-    "Industrial Storage Solutions Pune",
-    "Industrial Storage Solutions Maharashtra",
-    "Heavy Duty Pallet Racking",
-    "Heavy Duty Pallet Racking Pune",
-    "Pallet Racking System",
-    "Warehouse Pallet Racking",
-    "Cantilever Racking",
-    "Cantilever Racks Pune",
-    "Multi Tier Mezzanine Floors",
-    "Mezzanine Storage Racking",
-    "Drive In Racking System",
-    "Industrial Shelving Systems",
-    "Slotted Angle Racks",
-    "Warehouse Storage Systems",
-    "Warehouse Space Optimization",
+  const defaultCanonical = "https://evorasolutions.in/products";
 
-    // Industrial Conveyor Systems
-    "Industrial Conveyor",
-    "Conveyor System",
-    "Industrial Conveyor Manufacturer in Pune",
-    "Industrial Conveyor Supplier in Pune",
-    "Conveyor System Manufacturer in Pune",
-    "Conveyor System Supplier in Pune",
-    "Roller Bed Conveyor",
-    "Gravity Roller Conveyor",
-    "Powered Roller Conveyor",
-    "Flat Belt Conveyor",
-    "Modular Belt Conveyor",
-    "Cleated Belt Conveyor",
-    "Curved Belt Conveyor",
-    "Incline Belt Conveyor",
-    "Decline Belt Conveyor",
-    "Sanitary Conveyor",
-    "Wash Down Conveyor",
-    "Specialty Conveyor",
-    "Chain Conveyor",
-    "Slat Conveyor",
-    "Mesh Belt Conveyor",
-    "Spiral Conveyor",
-    "Assembly Line Conveyor",
-    "Packing Conveyor",
-    "Warehouse Conveyor",
-    "Warehouse Conveyor Systems Pune",
-    "Material Handling Equipment Pune",
-    "Material Handling Systems",
-    "Intralogistics Conveyors",
+  return {
+    title: "Industrial Storage Solutions & Conveyor Systems Manufacturer in Pune, Chakan & India | Evora Solutions",
+    description: "Explore Heavy Duty Pallet Racking, Cantilever Racking, Multi-tier Mezzanines, Powered Roller Conveyors, Z-Type Incline Belt Conveyors, and complete turnkey material handling systems manufactured in Pune, Chakan, and Maharashtra for facilities across India.",
+    alternates: {
+      canonical: defaultCanonical,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+    keywords: [
+      "Industrial Storage Solutions Manufacturer in Pune",
+      "Industrial Storage Solutions Manufacturer in Chakan",
+      "Industrial Conveyor Systems Manufacturer in Pune",
+      "Industrial Conveyor Systems Manufacturer in Chakan",
+      "Pallet Racking Manufacturer in Pune",
+      "Pallet Racking Manufacturer in Maharashtra",
+      "Warehouse Storage Solutions in Pimpri Chinchwad",
+      "Heavy Duty Pallet Racking Supplier Mumbai",
+      "Cantilever Racking Manufacturer Pune",
+      "Multi Tier Mezzanine Floor Manufacturer Chakan",
+      "Powered Roller Conveyor Manufacturer Bhosari",
+      "Cleated Incline Conveyor Manufacturer Maharashtra",
+      "Material Handling Equipment Supplier India",
+      "Warehouse Storage Systems Across India",
+      "Evora Industrial Solutions",
+      "Evora Solutions Pune",
+    ],
+    openGraph: {
+      title: "Industrial Storage Solutions & Conveyor Systems | Evora Industrial Solutions",
+      description: "Certified heavy-duty pallet racking, multi-tier mezzanines, and automated conveyor lines manufactured in Pune, Maharashtra for factories across India.",
+      url: defaultCanonical,
+      type: "website",
+      siteName: "Evora Industrial Solutions",
+      images: [
+        {
+          url: "/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Evora Industrial Solutions Products",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Industrial Storage & Conveyor Systems | Evora Industrial Solutions",
+      description: "Heavy Duty Pallet Racking and Industrial Conveyor Systems manufactured in Pune, Maharashtra.",
+    },
+  };
+}
 
-    // Locations
-    "Industrial Storage Pune",
-    "Industrial Conveyor Chakan",
-    "Storage Racking Bhosari",
-    "Industrial Storage Maharashtra",
-    "Industrial Conveyor Systems India",
-  ],
-  openGraph: {
-    title: "Industrial Storage & Conveyor Products | Evora Solutions",
-    description:
-      "Heavy Duty Pallet Racking, Multi-Tier Mezzanines, Roller Conveyors, Belt Conveyor Systems, and Industrial Material Handling Solutions.",
-    url: "https://evorasolutions.in/products",
-    siteName: "Evora Solutions",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Industrial Storage & Conveyor Products | Evora Solutions",
-    description:
-      "Explore Heavy Duty Pallet Racking, Industrial Conveyor Systems, and Complete Material Handling Solutions.",
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
-
-export default async function ProductsPage() {
+export default async function ProductsPage({ searchParams }: ProductsPageProps) {
   let products: any[] = [];
   let categories: any[] = [];
 
@@ -114,8 +118,8 @@ export default async function ProductsPage() {
         isActive: true,
       },
       include: {
-        category: true,
         images: true,
+        category: true,
       },
       orderBy: {
         createdAt: "desc",
@@ -150,18 +154,36 @@ export default async function ProductsPage() {
     (product) => product.featured === true
   );
 
+  const collectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Industrial Storage Solutions & Conveyor Systems Products",
+    description: "Complete equipment catalog of heavy duty pallet racking, cantilever racks, mezzanine floors, and industrial conveyors by Evora Industrial Solutions.",
+    url: "https://evorasolutions.in/products",
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: products.map((prod, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: `https://evorasolutions.in/products/${prod.slug}`,
+        name: prod.name,
+      })),
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(collectionSchema),
+        }}
+      />
+
       <ProductsHero
-        totalProducts={
-          products.length
-        }
-        totalCategories={
-          categories.length
-        }
-        featuredProducts={
-          featuredProducts.length
-        }
+        totalProducts={products.length}
+        totalCategories={categories.length}
+        featuredProducts={featuredProducts.length}
       />
 
       <ProductsCatalog
@@ -172,4 +194,4 @@ export default async function ProductsPage() {
       <ProductsCTA />
     </>
   );
-} 
+}

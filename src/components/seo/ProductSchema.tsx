@@ -1,3 +1,7 @@
+function isJsonObject(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
 interface ProductSchemaProps {
   product: {
     id: string;
@@ -11,104 +15,105 @@ interface ProductSchemaProps {
     category?: {
       name: string;
     } | null;
+    specifications?: unknown;
   };
 }
 
-export default function ProductSchema({
-  product,
-}: ProductSchemaProps) {
+export default function ProductSchema({ product }: ProductSchemaProps) {
+  const images = product.images.map((img) =>
+    img.imageUrl.startsWith("http")
+      ? img.imageUrl
+      : `https://evorasolutions.in${img.imageUrl}`
+  );
+
+  const additionalProperties = [
+    {
+      "@type": "PropertyValue",
+      name: "Business Type",
+      value: "Manufacturer & Turnkey Supplier",
+    },
+    {
+      "@type": "Supply Coverage",
+      name: "Supply Coverage",
+      value: "Pune, Chakan, Maharashtra & Pan India",
+    },
+    {
+      "@type": "PropertyValue",
+      name: "Country of Origin",
+      value: "India",
+    },
+    {
+      "@type": "PropertyValue",
+      name: "Application",
+      value: "Industrial Storage Solutions & Conveyor Systems",
+    },
+  ];
+
+  if (isJsonObject(product.specifications)) {
+    for (const [key, val] of Object.entries(product.specifications)) {
+      if (typeof val === "string" || typeof val === "number") {
+        additionalProperties.push({
+          "@type": "PropertyValue",
+          name: key,
+          value: String(val),
+        });
+      }
+    }
+  }
+
   const schema = {
     "@context": "https://schema.org",
-
     "@graph": [
       {
-        "@type": "Organization",
-        "@id": `https://evorasolutions.in/products/${product.slug}#product`,
-        
-
-        name: "Evora Solutions",
-
-        sku: product.id,
-        mpn: product.id,
-
-        url: "https://evorasolutions.in",
-
-        keywords: [
-          product.name,
-          product.category?.name,
-          "Industrial Storage Solutions",
-          "Industrial Conveyor Systems",
-          "Evora Solutions",
-        ],
-
-        isRelatedTo: {
-          "@id": "https://evorasolutions.in/#organization",
-        },
-
-        logo: "https://evorasolutions.in/evora-logo.png",
-      },
-
-      {
         "@type": "Product",
-
+        "@id": `https://evorasolutions.in/products/${product.slug}#product`,
         name: product.name,
-
         description:
           product.shortDescription ??
           product.description ??
-          product.name,
-
-        image: product.images.map((img) => img.imageUrl),
-
+          `${product.name} manufactured by Evora Industrial Solutions`,
+        sku: product.id,
+        mpn: product.id,
+        image: images.length > 0 ? images : ["https://evorasolutions.in/evora-logo.png"],
+        category: product.category?.name ?? "Industrial Equipment",
+        url: `https://evorasolutions.in/products/${product.slug}`,
         brand: {
           "@type": "Brand",
-          name: "Evora Solutions",
+          name: "Evora Industrial Solutions",
         },
-
         manufacturer: {
-          "@id": `https://evorasolutions.in/products/${product.slug}#product`, 
+          "@type": "Organization",
+          name: "Evora Industrial Solutions",
+          url: "https://evorasolutions.in",
+          logo: "https://evorasolutions.in/evora-logo.png",
+          telephone: "+91 8766918892",
+          email: "sales@evorasolutions.in",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Office No-03, Near Akurdi Railway Station Road, Gurudwara Colony, Nigdi",
+            addressLocality: "Pimpri-Chinchwad",
+            addressRegion: "Maharashtra",
+            postalCode: "411035",
+            addressCountry: "IN",
+          },
         },
-
-        category: product.category?.name,
-
-        url: `https://evorasolutions.in/products/${product.slug}`,
-
-        keywords: [
-          product.name,
-          product.category?.name,
-          "Industrial Storage Solutions",
-          "Industrial Conveyor Systems",
-          "Evora Solutions",
-        ],
-
-        isRelatedTo: {
-          "@id": "https://evorasolutions.in/#organization",
+        additionalProperty: additionalProperties,
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://evorasolutions.in/#organization",
+        name: "Evora Industrial Solutions",
+        url: "https://evorasolutions.in",
+        logo: "https://evorasolutions.in/evora-logo.png",
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+91 8766918892",
+          contactType: "sales",
+          email: "sales@evorasolutions.in",
+          areaServed: "IN",
+          availableLanguage: ["English", "Hindi", "Marathi"],
         },
-
-        additionalProperty: [
-          {
-            "@type": "PropertyValue",
-            name: "Business Type",
-            value: "Manufacturer & Supplier",
-          },
-          {
-            "@type": "PropertyValue",
-            name: "Supply",
-            value: "Pan India",
-          },
-
-          {
-            "@type": "PropertyValue",
-            name: "Country of Origin",
-            value: "India",
-          },
-          {
-            "@type": "PropertyValue",
-            name: "Application",
-            value: "Industrial Storage & Conveyor Systems",
-          },
-        ],
-      }
+      },
     ],
   };
 

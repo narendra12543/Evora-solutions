@@ -93,8 +93,9 @@ const goNext = () => {
         <Image
           src={selectedImage.imageUrl}
           alt={
-            selectedImage.altText ??
-            `${productName} - Evora Solutions`
+            selectedImage.altText && selectedImage.altText !== productName
+              ? selectedImage.altText
+              : `${productName} Manufacturer in Pune, Chakan & Maharashtra - Evora Industrial Solutions`
           }
           fill
           sizes="(max-width:768px) 100vw, 50vw"
@@ -122,8 +123,9 @@ const goNext = () => {
               <Image
                 src={image.imageUrl}
                 alt={
-                  image.altText ??
-                  `${productName} Thumbnail`
+                  image.altText && image.altText !== productName
+                    ? image.altText
+                    : `${productName} Industrial Equipment - Evora Industrial Solutions`
                 }
                 fill
                 sizes="120px"

@@ -10,41 +10,24 @@ export default function OrganizationSchema({
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-
     "@id": `${url}#organization`,
-
-    name: "Evora Solutions",
-
+    name: "Evora Industrial Solutions",
     alternateName: [
-      "Evora Solutions Pune",
-      "Evora Industrial Solutions",
       "Evora Solutions",
+      "Evora Solutions Pune",
+      "Evora Industrial Solutions Pune",
     ],
-
     url,
-
     logo,
-
     image: logo,
-
     description:
-      "Evora Industrial Solutions (Evora Solutions) is a leading manufacturer and supplier of Industrial Storage Solutions and Industrial Conveyor Systems including Heavy Duty Pallet Racking, Cantilever Racking, Multi-tier Mezzanines, Roller Conveyors, Belt Conveyors, and complete material handling automation across India.",
-
-    
-
+      "Evora Industrial Solutions is a premier manufacturer and supplier of Industrial Storage Solutions and Industrial Conveyor Systems, providing Heavy Duty Pallet Racking, Cantilever Racks, Multi-Tier Mezzanines, Roller Conveyors, and Belt Conveyor Systems across Pune, Maharashtra, and India.",
     brand: {
-    "@type": "Brand",
-    name: [
-      "Evora Solutions",
-      "Evora Industrial Solutions",
-      "Evora Solutions Pune",
-    ]
-  },
-
+      "@type": "Brand",
+      name: "Evora Industrial Solutions",
+    },
     email: "sales@evorasolutions.in",
-
     telephone: "+91 8766918892",
-
     address: {
       "@type": "PostalAddress",
       streetAddress:
@@ -60,119 +43,37 @@ export default function OrganizationSchema({
     },
     areaServed: [
       "Pune",
-      "Pimpri-Chinchwad",
-      "Nigdi",
-      "Akurdi",
-      "Chinchwad",
-      "Wakad",
-      "Hinjawadi",
-      "Moshi",
-      "Bhosari",
       "Chakan",
+      "Bhosari",
       "Talegaon",
+      "Pimpri-Chinchwad",
       "Mumbai",
-      "Nashik",
-      "Kolhapur",
-      "Aurangabad",
-      "Nagpur",
       "Maharashtra",
+      "Gujarat",
+      "Karnataka",
+      "Tamil Nadu",
+      "Telangana",
+      "Delhi NCR",
       "India",
-    ],
-
-    knowsAbout: [
-      // Industrial Storage Systems
-      "Industrial Storage Systems",
-      "Industrial Storage Solutions",
-      "Heavy Duty Pallet Racking",
-      "Medium Duty Storage Racks",
-      "Pallet Racking Systems",
-      "Selective Pallet Racking",
-      "Drive-In Pallet Racking",
-      "Cantilever Racking Systems",
-      "Multi-Tier Racking Systems",
-      "Mezzanine Floor Systems",
-      "Industrial Mezzanines",
-      "Warehouse Storage Racking",
-      "Industrial Shelving Systems",
-      "Long Span Shelving",
-      "Slotted Angle Shelving",
-      "Carton Flow Racks",
-      "FIFO Pallet Flow Racks",
-      "High Density Warehouse Storage",
-      "Warehouse Space Optimization",
-
-      // Industrial Conveyor Systems
-      "Industrial Conveyor Systems",
-      "Conveyor Systems Manufacturer",
-      "Powered Roller Conveyors",
-      "Motorized Roller Conveyors",
-      "Gravity Roller Conveyors",
-      "Roller Bed Conveyors",
-      "Flat Belt Conveyors",
-      "Modular Belt Conveyors",
-      "Plastic Modular Conveyors",
-      "Cleated Belt Conveyors",
-      "Incline Belt Conveyors",
-      "Z-Type Incline Conveyors",
-      "Swan Neck Conveyors",
-      "Curved Belt Conveyors",
-      "Slat Conveyor Systems",
-      "Chain Conveyor Systems",
-      "Assembly Line Conveyors",
-      "Packaging Conveyors",
-      "Sortation Conveyor Systems",
-      "Warehouse Conveyor Systems",
-      "Steep Angle Sidewall Conveyors",
-      "Elevator Conveyors",
-      "Floor to Floor Conveyors",
-
-      // Material Handling Solutions
-      "Material Handling Equipment",
-      "Warehouse Material Movement Systems",
-      "Automated Material Transfer",
-      "Zero Pressure Accumulation",
-      "Loading and Unloading Conveyors",
-      "Customized Material Handling Systems",
-      "Warehouse Automation",
-      "Intralogistics Solutions",
-
-      // Industries Served
-      "Warehousing and Distribution Centers",
-      "Manufacturing Plant Storage and Conveying",
-      "Automotive Assembly Handling Systems",
-      "Food and Beverage Conveyors",
-      "Pharmaceutical Storage and Conveyors",
-      "E-Commerce Fulfillment Racks and Conveyors",
-      "Logistics and Supply Chain Solutions",
-
-      // Geographic & Brand
-      "Industrial Storage Solutions Pune",
-      "Conveyor Systems Manufacturer Pune Maharashtra",
-      "Pallet Racking India",
-      "Evora Industrial Solutions",
-      "Evora Solutions",
     ],
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: "+91 8956614106",
+        telephone: "+91 8766918892",
         contactType: "sales",
+        email: "sales@evorasolutions.in",
         areaServed: "IN",
-        availableLanguage: [
-          "English",
-          "Hindi",
-          "Marathi",
-        ],
+        availableLanguage: ["English", "Hindi", "Marathi"],
       },
       {
         "@type": "ContactPoint",
         telephone: "+91 8766918892",
-        contactType: "customer support",
+        contactType: "customer service",
+        email: "info@evorasolutions.in",
         areaServed: "IN",
+        availableLanguage: ["English", "Hindi", "Marathi"],
       },
     ],
-
-  
   };
 
   return (

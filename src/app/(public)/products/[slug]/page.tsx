@@ -126,7 +126,7 @@ export default async function ProductDetailsPage({
   return (
     <>
       <ProductSchema product={product} />
-      <ProductFAQSchema productName={product.name} />
+      <ProductFAQSchema productName={product.name} slug={product.slug} />
       
       <BreadcrumbSchema
         items={[
@@ -138,6 +138,14 @@ export default async function ProductDetailsPage({
             name: "Products",
             url: "https://evorasolutions.in/products",
           },
+          ...(product.category
+            ? [
+                {
+                  name: product.category.name,
+                  url: `https://evorasolutions.in/products?category=${product.category.slug}`,
+                },
+              ]
+            : []),
           {
             name: product.name,
             url: `https://evorasolutions.in/products/${product.slug}`,

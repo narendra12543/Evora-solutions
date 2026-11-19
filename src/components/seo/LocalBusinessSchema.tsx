@@ -2,35 +2,22 @@ export default function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-
     "@id": "https://evorasolutions.in/#localbusiness",
-
-    name: "Evora Solutions",
-
+    name: "Evora Industrial Solutions",
     alternateName: [
-      "Evora Industrial Solutions",
       "Evora Solutions",
+      "Evora Solutions Pune",
+      "Evora Industrial Solutions Pune",
     ],
-    
-
     url: "https://evorasolutions.in",
-
     image: "https://evorasolutions.in/evora-logo.png",
-
     logo: "https://evorasolutions.in/evora-logo.png",
-
     telephone: "+91 8766918892",
-
     email: "sales@evorasolutions.in",
-
     priceRange: "$$",
-
     description:
-      "Evora Industrial Solutions (Evora Solutions) is a leading provider of Industrial Storage Solutions and Industrial Conveyor Systems providing Heavy Duty Pallet Racking, Cantilever Racks, Multi-Tier Mezzanine Floors, Industrial Roller Conveyors, Belt Conveyor Systems, and Material Handling Equipment across Pune, Maharashtra and India.",
-
-    slogan:
-    "Industrial Storage Solutions & Industrial Conveyor Systems",
-
+      "Evora Industrial Solutions is a leading manufacturer and supplier of Industrial Storage Solutions and Industrial Conveyor Systems, providing Heavy Duty Pallet Racking, Cantilever Racks, Multi-Tier Mezzanine Floors, Automated Powered Roller Conveyors, Z-Type Incline Belt Conveyors, and complete turnkey material handling systems across Pune, Maharashtra, and India.",
+    slogan: "Engineering Smarter Industrial Storage & Conveyor Systems",
     address: {
       "@type": "PostalAddress",
       streetAddress:
@@ -40,39 +27,63 @@ export default function LocalBusinessSchema() {
       postalCode: "411035",
       addressCountry: "IN",
     },
-
     geo: {
       "@type": "GeoCoordinates",
       latitude: "18.646617",
       longitude: "73.764662",
     },
-
     areaServed: [
+      // Maharashtra Priority Industrial Clusters
       "Pune",
       "Pimpri-Chinchwad",
+      "Chakan",
+      "Bhosari",
+      "Talegaon",
       "Nigdi",
       "Akurdi",
       "Chinchwad",
-      "Ravet",
-      "Wakad",
-      "Hinjawadi",
       "Moshi",
-      "Bhosari",
-      "Chakan",
-      "Talegaon",
-      "Kharadi",
-      "Baner",
-      "Balewadi",
-      "Hadapsar",
+      "Hinjawadi",
+      "Ranjangaon",
+      "Shirur",
+      "Baramati",
       "Mumbai",
+      "Navi Mumbai",
+      "Thane",
+      "Panvel",
       "Nashik",
-      "Kolhapur",
       "Aurangabad",
+      "Kolhapur",
       "Nagpur",
+      "Solapur",
+      "Satara",
       "Maharashtra",
+
+      // Priority Pan-India Industrial States & Cities
+      "Gujarat",
+      "Ahmedabad",
+      "Surat",
+      "Vadodara",
+      "Vapi",
+      "Karnataka",
+      "Bengaluru",
+      "Tamil Nadu",
+      "Chennai",
+      "Coimbatore",
+      "Telangana",
+      "Hyderabad",
+      "Delhi NCR",
+      "Gurugram",
+      "Noida",
+      "Faridabad",
+      "Rajasthan",
+      "Jaipur",
+      "Madhya Pradesh",
+      "Indore",
+      "Uttar Pradesh",
+      "West Bengal",
       "India",
     ],
-
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -88,50 +99,36 @@ export default function LocalBusinessSchema() {
         closes: "18:00",
       },
     ],
-
-    paymentAccepted: [
-      "Cash",
-      "UPI",
-      "Bank Transfer",
-    ],
-
+    paymentAccepted: ["Cash", "UPI", "Bank Transfer", "NEFT", "RTGS"],
     currenciesAccepted: "INR",
-
     foundingLocation: {
       "@type": "Place",
       name: "Pune, Maharashtra, India",
     },
-
     knowsAbout: [
       "Industrial Storage Solutions",
       "Industrial Conveyor Systems",
-      "Heavy Duty Pallet Racking",
-      "Pallet Racking System",
-      "Cantilever Racking",
-      "Multi Tier Mezzanine Floors",
-      "Drive In Racking System",
-      "Industrial Shelving Systems",
-      "Industrial Roller Conveyors",
-      "Powered Roller Conveyor",
-      "Gravity Roller Conveyor",
-      "Flat Belt Conveyor",
-      "Modular Belt Conveyor",
-      "Cleated Belt Conveyor",
-      "Curved Belt Conveyor",
-      "Incline Belt Conveyor",
-      "Chain Conveyor System",
-      "Slat Conveyor",
-      "Assembly Line Conveyors",
-      "Packaging Conveyors",
-      "Warehouse Conveyor Systems",
-      "Material Handling Equipment",
-      "Warehouse Storage Optimization",
-      "Turnkey Warehouse Solutions",
+      "Heavy Duty Pallet Racking System",
+      "Z-Type Cleated Incline Belt Conveyor",
+      "Multi-Tier Mezzanine Storage System",
+      "Steep Incline Corrugated Sidewall Conveyor",
+      "Automated Powered Roller Conveyor Line",
+      "Staircase Incline Flight Conveyor",
+      "Heavy Duty Cantilever Racking System",
+      "High-Incline Cleated Elevator Conveyor",
+      "Industrial Pallet Racking Manufacturer",
+      "Warehouse Storage Solutions",
+      "Cantilever Storage Racks",
+      "Multi-Tier Mezzanine Floors",
+      "Powered Roller Conveyors",
+      "Zero Pressure Accumulation Roller Conveyor",
+      "Cleated Incline Conveyor",
+      "Floor to Floor Conveyor System",
+      "Warehouse Material Handling Equipment",
+      "Turnkey Warehouse Automation",
     ],
-
   };
 
-  
   return (
     <script
       type="application/ld+json"
