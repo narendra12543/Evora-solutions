@@ -33,7 +33,7 @@ export default function ProductSchema({ product }: ProductSchemaProps) {
       value: "Manufacturer & Turnkey Supplier",
     },
     {
-      "@type": "Supply Coverage",
+      "@type": "PropertyValue",
       name: "Supply Coverage",
       value: "Pune, Chakan, Maharashtra & Pan India",
     },
