@@ -140,12 +140,12 @@ export default function Footer() {
             <div className="space-y-2.5 text-xs text-slate-300 sm:text-[13px]">
 
               <a
-                href="tel:+918766918892"
+                href="tel:+918793280540"
                 className="flex items-center gap-2.5 transition hover:text-white"
               >
                 <Phone size={14} className="shrink-0 text-[#F7941D]" />
                 <span className="font-semibold text-white">
-                  +91 8766918892
+                  +91 8793280540
                 </span>
               </a>
 
@@ -166,7 +166,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://wa.me/918766918892?text=Hello,%20I%20am%20interested%20in%20Evora%20Industrial%20Storage%20and%20Conveyor%20Systems."
+                href="https://wa.me/918793280540?text=Hello,%20I%20am%20interested%20in%20Evora%20Industrial%20Storage%20and%20Conveyor%20Systems."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group mt-2 inline-flex items-center rounded-lg bg-[#25D366] px-3.5 py-2 text-[11px] font-bold uppercase tracking-wider text-white shadow transition hover:bg-[#20ba59]"

@@ -471,7 +471,7 @@ export async function generateProductPdf(data: ProductPdfData): Promise<Uint8Arr
       font: boldFont,
       color: COLORS.white,
     });
-    page.drawText("sales@evorasolutions.in  |  +91 8766918892  |  evorasolutions.in", {
+    page.drawText("sales@evorasolutions.in  |  +91 8793280540  |  evorasolutions.in", {
       x: MARGIN,
       y: 12,
       size: 8.5,

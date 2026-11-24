@@ -19,7 +19,7 @@ export default function ProductFAQSchema({ productName, slug }: Props) {
     },
     {
       question: `Can ${productName} be customized to our warehouse or facility layout?`,
-      answer: `Yes, all ${productName} systems are engineered to custom facility dimensions, required load capacities, speed ratings, and cubic storage profiles. Contact sales@evorasolutions.in or call +91 8766918892 for custom CAD layouts and quotations.`,
+      answer: `Yes, all ${productName} systems are engineered to custom facility dimensions, required load capacities, speed ratings, and cubic storage profiles. Contact sales@evorasolutions.in or call +91 8793280540 for custom CAD layouts and quotations.`,
     },
   ];
 

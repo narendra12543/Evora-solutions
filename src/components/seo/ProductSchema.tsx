@@ -86,7 +86,7 @@ export default function ProductSchema({ product }: ProductSchemaProps) {
           name: "Evora Industrial Solutions",
           url: "https://evorasolutions.in",
           logo: "https://evorasolutions.in/evora-logo.png",
-          telephone: "+91 8766918892",
+          telephone: "+91 8793280540",
           email: "sales@evorasolutions.in",
           address: {
             "@type": "PostalAddress",
@@ -107,7 +107,7 @@ export default function ProductSchema({ product }: ProductSchemaProps) {
         logo: "https://evorasolutions.in/evora-logo.png",
         contactPoint: {
           "@type": "ContactPoint",
-          telephone: "+91 8766918892",
+          telephone: "+91 8793280540",
           contactType: "sales",
           email: "sales@evorasolutions.in",
           areaServed: "IN",

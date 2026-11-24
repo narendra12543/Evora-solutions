@@ -35,11 +35,11 @@ export default function TopInfoBar({ show = true }: TopInfoBarProps) {
           </a>
 
           <a
-            href="tel:+918766918892"
+            href="tel:+918793280540"
             className="flex items-center gap-1 sm:gap-1.5 font-bold text-white transition-colors hover:text-[#F7941D] whitespace-nowrap"
           >
             <Phone size={11} className="text-[#F7941D] sm:size-3" />
-            <span>+91 8766918892</span>
+            <span>+91 8793280540</span>
           </a>
 
           <div className="hidden items-center gap-2.5 border-l border-slate-700/60 pl-4 lg:flex">

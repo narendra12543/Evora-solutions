@@ -27,7 +27,7 @@ export default function OrganizationSchema({
       name: "Evora Industrial Solutions",
     },
     email: "sales@evorasolutions.in",
-    telephone: "+91 8766918892",
+    telephone: "+91 8793280540",
     address: {
       "@type": "PostalAddress",
       streetAddress:
@@ -59,7 +59,7 @@ export default function OrganizationSchema({
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: "+91 8766918892",
+        telephone: "+91 8793280540",
         contactType: "sales",
         email: "sales@evorasolutions.in",
         areaServed: "IN",
@@ -67,7 +67,7 @@ export default function OrganizationSchema({
       },
       {
         "@type": "ContactPoint",
-        telephone: "+91 8766918892",
+        telephone: "+91 8793280540",
         contactType: "customer service",
         email: "info@evorasolutions.in",
         areaServed: "IN",

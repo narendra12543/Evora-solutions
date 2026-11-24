@@ -273,7 +273,7 @@ export default function MobileNavigation({
 
           {/* WhatsApp Direct */}
           <a
-            href="https://wa.me/918766918892?text=Hello,%20I%20am%20interested%20in%20your%20Industrial%20Storage%20Solutions%20and%20Conveyor%20Systems.%20Please%20share%20product%20details."
+            href="https://wa.me/918793280540?text=Hello,%20I%20am%20interested%20in%20your%20Industrial%20Storage%20Solutions%20and%20Conveyor%20Systems.%20Please%20share%20product%20details."
             target="_blank"
             rel="noopener noreferrer"
             className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] py-2.5 text-xs font-bold uppercase tracking-wider text-white shadow transition hover:bg-[#20ba59]"
@@ -285,11 +285,11 @@ export default function MobileNavigation({
           {/* Call and Email links */}
           <div className="flex items-center justify-between pt-1 px-1 text-xs text-slate-400">
             <a
-              href="tel:+918766918892"
+              href="tel:+918793280540"
               className="flex items-center gap-1.5 transition hover:text-[#F7941D]"
             >
               <PhoneCall size={13} className="text-[#F7941D]" />
-              <span>+91 8766918892</span>
+              <span>+91 8793280540</span>
             </a>
 
             <a

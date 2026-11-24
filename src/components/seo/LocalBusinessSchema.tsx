@@ -12,7 +12,7 @@ export default function LocalBusinessSchema() {
     url: "https://evorasolutions.in",
     image: "https://evorasolutions.in/evora-logo.png",
     logo: "https://evorasolutions.in/evora-logo.png",
-    telephone: "+91 8766918892",
+    telephone: "+91 8793280540",
     email: "sales@evorasolutions.in",
     priceRange: "$$",
     description:

@@ -40,11 +40,11 @@ export default function FinalCTASection() {
           </Link>
 
           <a
-            href="tel:+918766918892"
+            href="tel:+918793280540"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/5 px-5 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-200 transition-all duration-200 hover:border-[#F7941D] hover:text-white"
           >
             <PhoneCall size={15} className="text-[#F7941D]" />
-            <span>+91 8766918892</span>
+            <span>+91 8793280540</span>
           </a>
         </div>
       </div>
