@@ -122,7 +122,7 @@ export default function Footer() {
               </div>
 
               <div className="pt-1 text-[11px] leading-relaxed text-slate-400">
-                <p>GSTIN: 27AABCE1234F1Z5</p>
+                {/* <p>GSTIN: 27AABCE1234F1Z5</p> */}
                 <p className="mt-0.5">
                   Operating Hours: Mon - Sat 9:00 AM - 7:00 PM
                 </p>
